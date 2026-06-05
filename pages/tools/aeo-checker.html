@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -9,16 +9,16 @@
   <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
   <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
 
-  <title>사이트 SEO 체커 - URL 종합 점검</title>
-  <meta name="description" content="URL을 입력하면 SEO/모바일/소셜/구조화 데이터를 무료로 분석합니다.">
-  <meta name="keywords" content="사이트 체커, SEO 검사, URL 분석, 무료 SEO 도구, 웹사이트 진단">
-  <link rel="canonical" href="https://geoptmize.pages.dev/pages/tools/site-checker.html">
+  <title>AEO 체커 - Featured Snippet/음성 검색 최적화</title>
+  <meta name="description" content="URL을 입력하면 Featured Snippet, 음성 검색, AI 답변 엔진에 최적화되었는지 분석합니다.">
+  <meta name="keywords" content="AEO 체커, Featured Snippet, 음성 검색, 답변 엔진, FAQ 스키마">
+  <link rel="canonical" href="https://geoptmize.pages.dev/pages/tools/aeo-checker.html">
   <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="사이트 SEO 체커 - URL 종합 점검">
-  <meta property="og:description" content="URL을 입력하면 SEO/모바일/소셜/구조화 데이터를 무료로 분석합니다.">
-  <meta property="og:url" content="https://geoptmize.pages.dev/pages/tools/site-checker.html">
+  <meta property="og:title" content="AEO 체커 - Featured Snippet/음성 검색 최적화">
+  <meta property="og:description" content="Featured Snippet, 음성 검색 최적화 14개 항목 무료 분석.">
+  <meta property="og:url" content="https://geoptmize.pages.dev/pages/tools/aeo-checker.html">
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
 
@@ -30,8 +30,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "사이트 SEO 체커",
-    "description": "URL을 입력하면 SEO/모바일/소셜/구조화 데이터를 종합 분석합니다.",
+    "name": "AEO 체커",
+    "description": "URL을 입력하면 Featured Snippet, 음성 검색, AI 답변 엔진에 최적화되었는지 분석합니다.",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}
@@ -42,104 +42,21 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1955893232253258" crossorigin="anonymous"></script>
 
   <style>
-    .checker-input-group {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .checker-input-group input {
-      flex: 1;
-      min-width: 240px;
-      padding: 12px 16px;
-      border: 2px solid var(--color-border);
-      border-radius: var(--radius-md);
-      font-size: 16px;
-      background: var(--color-bg);
-      color: var(--color-text);
-    }
-    .checker-input-group input:focus {
-      outline: none;
-      border-color: var(--color-primary);
-    }
-    .score-circle {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      position: relative;
-      background: conic-gradient(var(--color-primary) 0deg, var(--color-border) 0deg);
-      transition: background 0.6s;
-    }
-    .score-circle::before {
-      content: '';
-      position: absolute;
-      inset: 12px;
-      background: var(--color-bg);
-      border-radius: 50%;
-    }
-    .score-circle-text {
-      position: relative;
-      text-align: center;
-    }
-    .score-number {
-      font-size: 48px;
-      font-weight: 700;
-      color: var(--color-text);
-      line-height: 1;
-    }
-    .score-label {
-      font-size: 13px;
-      color: var(--color-text-secondary);
-      margin-top: 4px;
-    }
-    .check-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 16px;
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      background: var(--color-bg);
-      margin-bottom: 8px;
-    }
-    .check-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: white;
-      flex-shrink: 0;
-      font-size: 14px;
-    }
-    .check-icon.pass { background: #1e8e3e; }
-    .check-icon.warn { background: #f9ab00; }
-    .check-icon.fail { background: #d93025; }
+    .checker-input-group { display: flex; gap: 8px; flex-wrap: wrap; }
+    .checker-input-group input { flex: 1; min-width: 240px; padding: 12px 16px; border: 2px solid var(--color-border); border-radius: var(--radius-md); font-size: 16px; background: var(--color-bg); color: var(--color-text); }
+    .checker-input-group input:focus { outline: none; border-color: var(--color-primary); }
+    .score-circle { width: 180px; height: 180px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; position: relative; background: conic-gradient(var(--color-primary) 0deg, var(--color-border) 0deg); transition: background 0.6s; }
+    .score-circle::before { content: ''; position: absolute; inset: 12px; background: var(--color-bg); border-radius: 50%; }
+    .score-circle-text { position: relative; text-align: center; }
+    .score-number { font-size: 48px; font-weight: 700; color: var(--color-text); line-height: 1; }
+    .score-label { font-size: 13px; color: var(--color-text-secondary); margin-top: 4px; }
+    .check-item { display: flex; align-items: flex-start; gap: 12px; padding: 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); margin-bottom: 8px; }
+    .check-icon { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; flex-shrink: 0; font-size: 14px; }
+    .check-icon.pass { background: #1e8e3e; } .check-icon.warn { background: #f9ab00; } .check-icon.fail { background: #d93025; }
     .check-body { flex: 1; }
-    .check-title {
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: var(--color-text);
-    }
-    .check-msg {
-      font-size: 14px;
-      color: var(--color-text-secondary);
-      line-height: 1.5;
-    }
-    .loading-spinner {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      border: 2px solid #fff;
-      border-top-color: transparent;
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
+    .check-title { font-weight: 600; margin-bottom: 4px; color: var(--color-text); }
+    .check-msg { font-size: 14px; color: var(--color-text-secondary); line-height: 1.5; }
+    .loading-spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
@@ -166,9 +83,9 @@
           <ul class="nav-dropdown">
             <li><a href="../tools.html">실전 도구</a></li>
             <li><a href="../checklist.html">체크리스트</a></li>
-            <li><a href="site-checker.html" class="active">사이트 체커</a></li>
+            <li><a href="site-checker.html">사이트 체커</a></li>
             <li><a href="geo-checker.html">GEO 체커</a></li>
-            <li><a href="aeo-checker.html">AEO 체커</a></li>
+            <li><a href="aeo-checker.html" class="active">AEO 체커</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
@@ -193,9 +110,9 @@
   <main>
     <header class="page-header">
       <div class="container">
-        <ol class="breadcrumb"><li><a href="../../index.html">홈</a></li><li><a href="../tools.html">도구</a></li><li>사이트 체커</li></ol>
-        <h1>🔍 사이트 SEO 체커</h1>
-        <p>URL을 입력하면 SEO·모바일·소셜·구조화 데이터를 종합 분석합니다</p>
+        <ol class="breadcrumb"><li><a href="../../index.html">홈</a></li><li><a href="../tools.html">도구</a></li><li>AEO 체커</li></ol>
+        <h1>💬 AEO 체커</h1>
+        <p>Featured Snippet·음성 검색·AI 답변 엔진에 추출되기 좋은지 14개 항목으로 점검합니다</p>
       </div>
     </header>
 
@@ -208,9 +125,7 @@
             <button type="button" class="btn btn-primary" id="checker-btn" onclick="runCheck()">검사하기</button>
           </div>
           <div class="form-help mt-2">
-            <small style="color: var(--color-text-secondary);">
-              💡 CORS 제한이 있는 사이트는 분석이 제한될 수 있습니다. 공개 페이지를 권장합니다.
-            </small>
+            <small style="color: var(--color-text-secondary);">💡 Featured Snippet·음성 검색에 노출되기 위한 핵심 요소를 점검합니다.</small>
           </div>
         </form>
 
@@ -228,48 +143,37 @@
             <p id="score-summary" class="text-secondary"></p>
           </div>
 
-          <h4 class="mb-4">📋 항목별 점검 결과</h4>
+          <h4 class="mb-4">📋 AEO 항목별 점검 결과</h4>
           <div id="check-list"></div>
 
           <div class="callout callout-info mt-6">
-            <p class="callout-title">💡 더 정밀한 분석</p>
-            <p>이 도구는 클라이언트 사이드 기본 검사입니다. 더 자세한 분석은 <a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console</a>, <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights</a>, <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Rich Results Test</a>를 사용하세요.</p>
+            <p class="callout-title">💡 AEO란?</p>
+            <p>AEO(Answer Engine Optimization)는 Featured Snippet, 음성 검색, AI 답변 엔진에서 콘텐츠가 직접 답변으로 추출되도록 최적화하는 전략입니다. <a href="../aeo-guide.html">AEO 가이드</a>에서 자세히 알아보세요.</p>
           </div>
         </div>
       </div>
 
       <div class="flex gap-4 mt-6" style="flex-wrap: wrap; justify-content: center;">
         <a href="../tools.html" class="btn btn-secondary">← 도구 목록으로</a>
+        <a href="site-checker.html" class="btn btn-outline">SEO 체커로 이동</a>
+        <a href="geo-checker.html" class="btn btn-outline">GEO 체커로 이동</a>
       </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <div class="footer-section">
-        <a href="../../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
-        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p>
-      </div>
+      <div class="footer-section"><a href="../../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a><p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p></div>
       <div class="footer-section"><h4>가이드</h4><ul><li><a href="../seo-fundamentals.html">SEO 기초</a></li><li><a href="../geo-guide.html">GEO</a></li><li><a href="../aeo-guide.html">AEO</a></li></ul></div>
       <div class="footer-section"><h4>심화</h4><ul><li><a href="../eeat-content.html">E-E-A-T</a></li><li><a href="../ai-crawlers.html">AI 크롤러</a></li></ul></div>
       <div class="footer-section"><h4>도구</h4><ul><li><a href="../tools.html">실전 도구</a></li><li><a href="../checklist.html">체크리스트</a></li></ul></div>
-      <div class="footer-section">
-        <h4>사이트</h4>
-        <ul>
-          <li><a href="../faq.html">FAQ</a></li>
-          <li><a href="../about.html">소개</a></li>
-          <li><a href="../contact.html">문의하기</a></li>
-          <li><a href="../privacy-policy.html">개인정보 처리방침</a></li>
-          <li><a href="../terms-of-service.html">이용약관</a></li>
-          <li><a href="../disclaimer.html">면책조항</a></li>
-        </ul>
-      </div>
+      <div class="footer-section"><h4>사이트</h4><ul><li><a href="../faq.html">FAQ</a></li><li><a href="../about.html">소개</a></li><li><a href="../contact.html">문의하기</a></li><li><a href="../privacy-policy.html">개인정보 처리방침</a></li><li><a href="../terms-of-service.html">이용약관</a></li><li><a href="../disclaimer.html">면책조항</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 GEO·SEO·AEO 가이드. | <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central</a> 공식 문서 기반</p>
     </div>
   </footer>
   <script src="../../js/main.js"></script>
-  <script src="../../js/site-checker.js"></script>
+  <script src="../../js/aeo-checker.js"></script>
 </body>
 </html>

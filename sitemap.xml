@@ -195,4 +195,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://geoptmize.pages.dev/pages/tools/geo-checker.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://geoptmize.pages.dev/pages/tools/aeo-checker.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
