@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Site Verification -->
+  <meta name="naver-site-verification" content="a87a8cabc2c9e1f7d9d1fa16b8fc0cb9dbc5102a" />
+  <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
+  <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
+
+  <title>FAQ 스키마 생성기 | GEO/SEO/AEO 도구</title>
+  <meta name="description" content="FAQPage JSON-LD를 무료로 생성합니다. FAQ 리치 결과와 AI 검색 답변에 인용될 수 있는 구조화 데이터를 만듭니다.">
+  <meta name="keywords" content="FAQ 스키마, FAQPage, JSON-LD, 자주 묻는 질문, 리치 결과">
+  <link rel="canonical" href="https://geoptmize.pages.dev/pages/tools/faq-schema.html">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FAQ 스키마 생성기">
+  <meta property="og:description" content="FAQPage JSON-LD를 무료로 생성합니다. FAQ 리치 결과와 AI 검색 답변에 인용될 수 있는 구조화 데이터를 만듭니다.">
+  <meta property="og:url" content="https://geoptmize.pages.dev/pages/tools/faq-schema.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FAQ 스키마 생성기",
+    "description": "FAQPage JSON-LD를 무료로 생성합니다. FAQ 리치 결과와 AI 검색 답변에 인용될 수 있는 구조화 데이터를 만듭니다.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1955893232253258" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../../index.html" class="logo"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+      <ul class="nav-menu">
+        <li><a href="../../index.html">홈</a></li>
+        <li><a href="../seo-fundamentals.html">SEO 기초</a></li>
+        <li><a href="../geo-guide.html">GEO 가이드</a></li>
+        <li><a href="../aeo-guide.html">AEO 가이드</a></li>
+        <li><a href="../structured-data.html">구조화 데이터</a></li>
+        <li><a href="../eeat-content.html">E-E-A-T</a></li>
+        <li><a href="../ai-crawlers.html">AI 크롤러</a></li>
+        <li><a href="../measurement.html">성과 측정</a></li>
+        <li><a href="../tools.html" class="active" aria-current="page">도구</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="../../index.html">홈</a></li><li><a href="../tools.html">도구</a></li><li>FAQ 스키마</li></ol>
+        <h1>❓ FAQ 스키마 생성기</h1>
+        <p>FAQPage JSON-LD로 자주 묻는 질문을 구조화합니다</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="tool-container">
+        <form id="faq-form">
+          <div id="faq-items">
+            <div class="faq-item">
+              <div class="form-group">
+                <label class="form-label">질문 1 *</label>
+                <input class="form-input" type="text" name="faq-q" placeholder="질문을 입력하세요" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">답변 1 *</label>
+                <textarea class="form-textarea" name="faq-a" placeholder="답변을 입력하세요" required></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary" onclick="addFaqItem()">+ 질문 추가</button>
+          <button type="button" class="btn btn-primary" onclick="generateFAQ()">JSON-LD 생성</button>
+        </form>
+        <div id="faq-output" class="mt-6 hidden">
+          <h4>생성된 JSON-LD</h4>
+          <div class="schema-card">
+            <button class="copy-btn" onclick="copyOutput('faq-output-code')">복사</button>
+            <pre><code id="faq-output-code"></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-info mt-6">
+        <p class="callout-title">💡 도움말</p>
+        <p>FAQ 스키마를 적용하면 Google 검색 결과에 자주 묻는 질문이 드롭다운으로 표시되며, AI 검색에서도 답변으로 인용될 가능성이 높아집니다.</p>
+      </div>
+
+      <div class="flex gap-4 mt-6" style="flex-wrap: wrap; justify-content: center;">
+        <a href="../tools.html" class="btn btn-secondary">← 도구 목록으로</a>
+        <a href="../structured-data.html" class="btn btn-outline">구조화 데이터 가이드</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p>
+      </div>
+      <div class="footer-section"><h4>가이드</h4><ul><li><a href="../seo-fundamentals.html">SEO 기초</a></li><li><a href="../geo-guide.html">GEO</a></li><li><a href="../aeo-guide.html">AEO</a></li></ul></div>
+      <div class="footer-section"><h4>심화</h4><ul><li><a href="../eeat-content.html">E-E-A-T</a></li><li><a href="../ai-crawlers.html">AI 크롤러</a></li></ul></div>
+      <div class="footer-section"><h4>도구</h4><ul><li><a href="../tools.html">실전 도구</a></li><li><a href="../checklist.html">체크리스트</a></li></ul></div>
+      <div class="footer-section">
+        <h4>사이트</h4>
+        <ul>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../about.html">소개</a></li>
+          <li><a href="../contact.html">문의하기</a></li>
+          <li><a href="../privacy-policy.html">개인정보 처리방침</a></li>
+          <li><a href="../terms-of-service.html">이용약관</a></li>
+          <li><a href="../disclaimer.html">면책조항</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GEO·SEO·AEO 가이드. | <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central</a> 공식 문서 기반</p>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
-# robots.txt for GEO/SEO/AEO Guide
-# https://geo-seo-aeo-guide.example.com/
+﻿# robots.txt for GEO/SEO/AEO Guide
+# https://geoptmize.pages.dev/
 
 # 모든 검색엔진 봇 허용
 User-agent: *
@@ -74,4 +74,4 @@ Allow: /
 # ============================================
 # 사이트맵
 # ============================================
-Sitemap: https://geo-seo-aeo-guide.example.com/sitemap.xml
+Sitemap: https://geoptmize.pages.dev/sitemap.xml

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Site Verification -->
+  <meta name="naver-site-verification" content="a87a8cabc2c9e1f7d9d1fa16b8fc0cb9dbc5102a" />
+  <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
+  <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
+
+  <title>Product 스키마 생성기 | GEO/SEO/AEO 도구</title>
+  <meta name="description" content="Product JSON-LD를 무료로 생성합니다. 제품 페이지에 가격, 브랜드, 리뷰 등 풍부한 정보를 구조화합니다.">
+  <meta name="keywords" content="Product 스키마, 제품 마크업, JSON-LD, 이커머스 SEO, Schema.org Product">
+  <link rel="canonical" href="https://geoptmize.pages.dev/pages/tools/product-schema.html">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Product 스키마 생성기">
+  <meta property="og:description" content="Product JSON-LD를 무료로 생성합니다. 제품 페이지에 가격, 브랜드, 리뷰 등 풍부한 정보를 구조화합니다.">
+  <meta property="og:url" content="https://geoptmize.pages.dev/pages/tools/product-schema.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Product 스키마 생성기",
+    "description": "Product JSON-LD를 무료로 생성합니다. 제품 페이지에 가격, 브랜드, 리뷰 등 풍부한 정보를 구조화합니다.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW"
+    }
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1955893232253258" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../../index.html" class="logo"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+      <ul class="nav-menu">
+        <li><a href="../../index.html">홈</a></li>
+        <li><a href="../seo-fundamentals.html">SEO 기초</a></li>
+        <li><a href="../geo-guide.html">GEO 가이드</a></li>
+        <li><a href="../aeo-guide.html">AEO 가이드</a></li>
+        <li><a href="../structured-data.html">구조화 데이터</a></li>
+        <li><a href="../eeat-content.html">E-E-A-T</a></li>
+        <li><a href="../ai-crawlers.html">AI 크롤러</a></li>
+        <li><a href="../measurement.html">성과 측정</a></li>
+        <li><a href="../tools.html" class="active" aria-current="page">도구</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="../../index.html">홈</a></li><li><a href="../tools.html">도구</a></li><li>Product 스키마</li></ol>
+        <h1>🛍️ Product 스키마 생성기</h1>
+        <p>제품 정보를 위한 Product JSON-LD를 생성합니다</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="tool-container">
+        <form id="product-form">
+          <div class="form-group">
+            <label class="form-label" for="prod-name">제품명 *</label>
+            <input class="form-input" type="text" id="prod-name" placeholder="무선 이어폰 Pro X" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-desc">설명 *</label>
+            <textarea class="form-textarea" id="prod-desc" placeholder="프리미엄 노이즈 캔슬링 무선 이어폰" required></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-image">이미지 URL *</label>
+            <input class="form-input" type="url" id="prod-image" placeholder="https://example.com/earbuds.jpg" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-brand">브랜드 *</label>
+            <input class="form-input" type="text" id="prod-brand" placeholder="오디오브랜드" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-price">가격 (숫자) *</label>
+            <input class="form-input" type="number" id="prod-price" placeholder="199000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-currency">통화</label>
+            <select class="form-select" id="prod-currency">
+              <option value="KRW">KRW (원)</option>
+              <option value="USD">USD (달러)</option>
+              <option value="EUR">EUR (유로)</option>
+              <option value="JPY">JPY (엔)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prod-url">제품 URL *</label>
+            <input class="form-input" type="url" id="prod-url" placeholder="https://example.com/product/earbuds" required>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="generateProduct()">JSON-LD 생성</button>
+        </form>
+        <div id="product-output" class="mt-6 hidden">
+          <h4>생성된 JSON-LD</h4>
+          <div class="schema-card">
+            <button class="copy-btn" onclick="copyOutput('product-output-code')">복사</button>
+            <pre><code id="product-output-code"></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-info mt-6">
+        <p class="callout-title">💡 도움말</p>
+        <p>Product 스키마를 적용하면 Google 검색 결과에 가격, 가용성, 평점이 표시되며, 쇼핑 광고에도 활용됩니다.</p>
+      </div>
+
+      <div class="flex gap-4 mt-6" style="flex-wrap: wrap; justify-content: center;">
+        <a href="../tools.html" class="btn btn-secondary">← 도구 목록으로</a>
+        <a href="../structured-data.html" class="btn btn-outline">구조화 데이터 가이드</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p>
+      </div>
+      <div class="footer-section"><h4>가이드</h4><ul><li><a href="../seo-fundamentals.html">SEO 기초</a></li><li><a href="../geo-guide.html">GEO</a></li><li><a href="../aeo-guide.html">AEO</a></li></ul></div>
+      <div class="footer-section"><h4>심화</h4><ul><li><a href="../eeat-content.html">E-E-A-T</a></li><li><a href="../ai-crawlers.html">AI 크롤러</a></li></ul></div>
+      <div class="footer-section"><h4>도구</h4><ul><li><a href="../tools.html">실전 도구</a></li><li><a href="../checklist.html">체크리스트</a></li></ul></div>
+      <div class="footer-section">
+        <h4>사이트</h4>
+        <ul>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../about.html">소개</a></li>
+          <li><a href="../contact.html">문의하기</a></li>
+          <li><a href="../privacy-policy.html">개인정보 처리방침</a></li>
+          <li><a href="../terms-of-service.html">이용약관</a></li>
+          <li><a href="../disclaimer.html">면책조항</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GEO·SEO·AEO 가이드. | <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central</a> 공식 문서 기반</p>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools.js"></script>
+</body>
+</html>
