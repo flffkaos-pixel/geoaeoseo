@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEO(답변 엔진 최적화) 가이드 - Google 공식 문서 기반</title>
+  <meta name="description" content="Answer Engine Optimization(AEO) 가이드. Featured Snippet, People Also Ask, 음성 검색, AI 어시스턴트에서 선택받도록 콘텐츠를 구조화하는 방법.">
+  <meta name="keywords" content="AEO, Answer Engine Optimization, 답변 엔진 최적화, Featured Snippet, PAA, 음성 검색, FAQ 스키마, HowTo 스키마, QAPage">
+  <link rel="canonical" href="https://geo-seo-aeo-guide.example.com/pages/aeo-guide.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AEO(답변 엔진 최적화) 가이드",
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-06-05"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="seo-fundamentals.html">SEO 기초</a></li>
+        <li><a href="geo-guide.html">GEO 가이드</a></li>
+        <li><a href="aeo-guide.html" class="active" aria-current="page">AEO 가이드</a></li>
+        <li><a href="structured-data.html">구조화 데이터</a></li>
+        <li><a href="eeat-content.html">E-E-A-T</a></li>
+        <li><a href="ai-crawlers.html">AI 크롤러</a></li>
+        <li><a href="measurement.html">성과 측정</a></li>
+        <li><a href="tools.html">도구</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="../index.html">홈</a></li><li>AEO 가이드</li></ol>
+        <h1>💡 AEO (답변 엔진 최적화) 가이드</h1>
+        <p>Featured Snippet, 음성 검색, AI 답변 엔진에서 직접 답변으로 선택되는 콘텐츠 구조화 전략</p>
+      </div>
+    </header>
+
+    <div class="layout-with-sidebar">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <h4>섹션</h4>
+          <ul>
+            <li><a href="#what-is-aeo">AEO란?</a></li>
+            <li><a href="#aeo-vs-geo">AEO vs GEO</a></li>
+            <li><a href="#featured-snippet">Featured Snippet</a></li>
+            <li><a href="#content-structure">콘텐츠 구조</a></li>
+            <li><a href="#schema">스키마 활용</a></li>
+            <li><a href="#voice">음성 검색</a></li>
+            <li><a href="#checklist">AEO 체크리스트</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <section id="what-is-aeo">
+          <h2>💡 AEO(Answer Engine Optimization)란?</h2>
+          <p><strong>AEO는 AI 기반 답변 엔진(Google Assistant, Alexa, ChatGPT 등)이 콘텐츠를 추출하여 직접 답변으로 제시할 수 있도록 최적화하는 전략</strong>입니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">📌 핵심 차이점</p>
+            <p>AEO는 <strong>추출(Extraction)</strong> 기반이고, GEO는 <strong>종합(Generation)</strong> 기반입니다. AEO는 미리 준비된 답변을 그대로 보여주고, GEO는 여러 출처를 종합해 새로운 답변을 만듭니다.</p>
+          </div>
+
+          <h3>주요 답변 엔진 종류</h3>
+          <div class="grid grid-2 mt-6">
+            <div class="card">
+              <h4>🎯 Google SERP Features</h4>
+              <ul>
+                <li>Featured Snippet (0순위)</li>
+                <li>People Also Ask (PAA)</li>
+                <li>Knowledge Panel</li>
+                <li>FAQ 리치 결과</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>🗣️ 음성/AI 어시스턴트</h4>
+              <ul>
+                <li>Google Assistant</li>
+                <li>Apple Siri</li>
+                <li>Amazon Alexa</li>
+                <li>ChatGPT 음성 모드</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="aeo-vs-geo">
+          <h2>⚖️ AEO vs GEO 상세 비교</h2>
+
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr><th>측면</th><th>AEO</th><th>GEO</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>기본 메커니즘</strong></td><td>추출 (Extraction)</td><td>종합 (Generation)</td></tr>
+                <tr><td><strong>콘텐츠 형식</strong></td><td>스니펫 친화적 (리스트, FAQ, 표)</td><td>서술형, 풍부한 메타데이터</td></tr>
+                <tr><td><strong>기술적 신호</strong></td><td>스키마, Q&A 블록, 짧은 단락</td><td>시맨틱 HTML, 토픽 허브, 내부 링크</td></tr>
+                <tr><td><strong>답변 길이</strong></td><td>40-60단어 짧은 답변</td><td>여러 문단, 종합적 분석</td></tr>
+                <tr><td><strong>성공 지표</strong></td><td>Featured Snippet 점유율, 음성 답변</td><td>LLM 인용 빈도</td></tr>
+                <tr><td><strong>최적화 대상</strong></td><td>구조화된 답변 추출 시스템</td><td>LLM (대형 언어 모델)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quote-box">
+            "AEO는 추출 기반 스니펫에 최적화했고, GEO는 LLM의 이해와 인용에 최적화했습니다. 이 둘은 서로 다른 기술에서 온 서로 다른 메커니즘입니다."
+            <cite>WebTrek, "Answer Engine Optimization vs Generative Engine Optimization"</cite>
+          </div>
+        </section>
+
+        <section id="featured-snippet">
+          <h2>🎯 Featured Snippet 최적화</h2>
+          <p>Featured Snippet(0순위 박스)은 Google 검색 결과 최상단에 표시되는 답변 박스입니다.</p>
+
+          <h3>Featured Snippet의 3가지 유형</h3>
+          <div class="grid grid-3 mt-6">
+            <div class="card">
+              <div class="card-icon">📋</div>
+              <h4>단락형 (Paragraph)</h4>
+              <p>질문에 대한 40-60단어의 짧은 단락 답변</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">📊</div>
+              <h4>리스트형 (List)</h4>
+              <p>단계별 목록 또는 항목 리스트</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">📈</div>
+              <h4>표 형 (Table)</h4>
+              <p>비교 데이터를 표로 정리</p>
+            </div>
+          </div>
+
+          <h3>Featured Snippet 획득 전략</h3>
+
+          <h4>1. 질문형 헤딩 사용</h4>
+          <p>대부분의 Featured Snippet은 질문 형태의 쿼리로 트리거됩니다. H2/H3를 질문 형식으로 작성하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>## GEO란 무엇인가요?
+## AEO와 GEO의 차이는 무엇인가요?
+## Featured Snippet을 어떻게 얻나요?</code></pre>
+          </div>
+
+          <h4>2. 답변을 바로 다음에 배치</h4>
+          <p>질문 헤딩 바로 아래에 간결한 답변을 작성하세요. 40-60단어가 이상적입니다.</p>
+
+          <div class="ai-answer-box">
+            <p style="margin: 0;"><strong>GEO란?</strong> GEO(Generative Engine Optimization)는 ChatGPT, Gemini 같은 생성형 AI 검색 엔진에서 콘텐츠가 인용되도록 최적화하는 전략입니다. Google은 이를 별도 카테고리가 아닌 SEO의 확장으로 간주합니다.</p>
+          </div>
+
+          <h4>3. 리스트와 표 활용</h4>
+          <p>"How to", "Steps to", "Best X" 류의 쿼리는 리스트형 Snippet이 잘 나옵니다.</p>
+        </section>
+
+        <section id="content-structure">
+          <h2>📐 답변 친화적 콘텐츠 구조</h2>
+
+          <h3>BLUF 원칙 (Bottom Line Up Front)</h3>
+          <p>가장 중요한 답변을 먼저 제시하세요. 독자와 AI 모두에게 효과적입니다.</p>
+
+          <div class="grid grid-2 mt-6">
+            <div class="card">
+              <h4>❌ 나쁜 예</h4>
+              <p style="color: var(--color-text-secondary); font-size: 14px;">긴 도입부 → 배경 설명 → 단계적 설명 → 결론</p>
+            </div>
+            <div class="card">
+              <h4>✅ 좋은 예</h4>
+              <p style="color: var(--color-text-secondary); font-size: 14px;"><strong>핵심 답변 (40-60단어)</strong> → 배경 → 상세 설명 → 예시 → 결론</p>
+            </div>
+          </div>
+
+          <h3>질문-답변 (Q&A) 패턴</h3>
+          <p>콘텐츠 내에서 자연스러운 Q&A 구조를 사용하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>&lt;h2&gt;SEO란 무엇인가요?&lt;/h2&gt;
+&lt;p&gt;SEO(Search Engine Optimization)는 검색엔진에서 웹페이지가
+상위 노출되도록 최적화하는 작업입니다. (40-60단어 답변)&lt;/p&gt;
+
+&lt;h2&gt;왜 SEO가 중요한가요?&lt;/h2&gt;
+&lt;p&gt;SEO는 광고비 없이 자연 트래픽을 확보할 수 있는 가장 효과적인
+방법입니다. (간결한 답변)&lt;/p&gt;</code></pre>
+          </div>
+
+          <h3>명확한 헤딩 계층</h3>
+          <p>논리적인 H1 → H2 → H3 구조로 콘텐츠를 정리하세요.</p>
+        </section>
+
+        <section id="schema">
+          <h2>🔖 AEO에 필수적인 Schema.org 마크업</h2>
+
+          <h3>FAQPage 스키마</h3>
+          <p>FAQ 리치 결과와 AI 답변 추출에 필수적입니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AEO란 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AEO(Answer Engine Optimization)는 Featured Snippet, 음성 검색, AI 답변 엔진에서 콘텐츠가 추출되어 직접 답변으로 제시되도록 최적화하는 전략입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "FAQ 스키마는 어떻게 사용하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JSON-LD 형식으로 FAQPage 타입을 선언하고, 각 질문과 답변을 Question과 Answer 타입으로 구조화하여 마크업합니다."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+          </div>
+
+          <h3>QAPage 스키마</h3>
+          <p>커뮤니티 Q&A 형태의 페이지에 사용됩니다.</p>
+
+          <h3>HowTo 스키마</h3>
+          <p>단계별 가이드 콘텐츠에 사용되어 리치 결과로 표시됩니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Schema.org 마크업 추가 방법",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "페이지 타입 결정",
+      "text": "콘텐츠가 FAQ, HowTo, QAPage 중 어떤 유형인지 결정합니다."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "JSON-LD 작성",
+      "text": "구조화된 데이터를 JSON-LD 형식으로 작성합니다."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "HTML에 삽입",
+      "text": "페이지 head 또는 body에 script 태그로 삽입합니다."
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+          </div>
+
+          <h3>Speakable 스키마</h3>
+          <p>음성 검색 답변에 적합한 콘텐츠 섹션을 지정합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "음성 검색 최적화 가이드",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".summary", ".key-answer"]
+  }
+}
+&lt;/script&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-success">
+            <p class="callout-title">✅ 검증 도구</p>
+            <p>Google의 <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Rich Results Test</a>로 마크업이 올바르게 구현되었는지 검증하세요.</p>
+          </div>
+        </section>
+
+        <section id="voice">
+          <h2>🗣️ 음성 검색 최적화</h2>
+          <p>음성 검색은 텍스트 검색과 다른 패턴을 보입니다.</p>
+
+          <h3>음성 검색의 특징</h3>
+          <ul>
+            <li><strong>긴 문장 쿼리</strong>: "서울 근처 24시간 운영하는 약국 어디?" (vs "서울 약국")</li>
+            <li><strong>질의형</strong>: "What is...", "How to...", "Where is..."</li>
+            <li><strong>지역 의도</strong>: "내 근처", "이 근처" 등 위치 기반</li>
+            <li><strong>단일 답변</strong>: 하나의 명확한 답변을 기대</li>
+          </ul>
+
+          <h3>음성 검색 최적화 전략</h3>
+
+          <div class="alert alert-info">
+            <span class="alert-icon">💡</span>
+            <div class="alert-content">
+              <strong>핵심 전략 5가지</strong>
+              <ol style="margin-top: 8px;">
+                <li>자연스러운 대화체로 작성 (구어체)</li>
+                <li>30단어 이내의 짧은 답변 블록</li>
+                <li>FAQ 형식으로 질문-답변 구성</li>
+                <li>Speakable 스키마 마크업</li>
+                <li>로컬 SEO 최적화 (Google Business Profile)</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="checklist">
+          <h2>✅ AEO 실행 체크리스트</h2>
+
+          <ul class="checklist" id="aeo-checklist">
+            <li>각 페이지/섹션에 질문형 H2/H3 헤딩 사용</li>
+            <li>질문 직후 40-60단어 답변 배치 (BLUF)</li>
+            <li>FAQPage 스키마 마크업 추가</li>
+            <li>HowTo 콘텐츠에 HowTo 스키마 추가</li>
+            <li>리스트와 표로 정보 구조화</li>
+            <li>시맨틱 HTML5 태그 사용 (article, section, aside)</li>
+            <li>Speakable 스키마로 음성 검색 신호</li>
+            <li>People Also Ask 질문에 대한 답변 포함</li>
+            <li>Featured Snippet 경쟁 페이지 분석</li>
+            <li>Rich Results Test로 마크업 검증</li>
+            <li>콘텐츠의 명확성과 간결성 검토</li>
+            <li>모바일 가독성 확보</li>
+          </ul>
+
+          <div class="mt-8" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
+            <h2>📚 더 깊이 학습하기</h2>
+            <div class="grid grid-3">
+              <a href="structured-data.html" class="card">
+                <h4>구조화 데이터 가이드</h4>
+                <p>Schema.org 마크업 심화</p>
+              </a>
+              <a href="geo-guide.html" class="card">
+                <h4>GEO 가이드</h4>
+                <p>생성형 AI 인용 전략</p>
+              </a>
+              <a href="tools.html" class="card">
+                <h4>JSON-LD 생성기</h4>
+                <p>즉시 스키마 생성</p>
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p>
+      </div>
+      <div class="footer-section"><h4>가이드</h4><ul><li><a href="seo-fundamentals.html">SEO 기초</a></li><li><a href="geo-guide.html">GEO 가이드</a></li><li><a href="aeo-guide.html">AEO 가이드</a></li></ul></div>
+      <div class="footer-section"><h4>심화</h4><ul><li><a href="eeat-content.html">E-E-A-T</a></li><li><a href="ai-crawlers.html">AI 크롤러</a></li></ul></div>
+      <div class="footer-section"><h4>도구</h4><ul><li><a href="tools.html">실전 도구</a></li><li><a href="checklist.html">체크리스트</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GEO·SEO·AEO 가이드.</p></div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

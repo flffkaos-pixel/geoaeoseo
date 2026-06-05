@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO 기초 가이드 - Google 공식 문서 기반 | GEO/SEO/AEO 가이드</title>
+  <meta name="description" content="Google Search Essentials, SEO 스타터 가이드, 검색 작동 원리 등 Google 공식 문서 기반의 SEO 기초를 학습하세요. 크롤링, 색인, 랭킹의 3단계 작동 방식을 이해합니다.">
+  <meta name="keywords" content="SEO 기초, Google Search Essentials, SEO 스타터 가이드, 크롤링, 색인, 랭킹, 메타태그, 사이트맵, robots.txt, HTTPS, 모바일 최적화">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://geo-seo-aeo-guide.example.com/pages/seo-fundamentals.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SEO 기초 가이드 - Google 공식 문서 기반">
+  <meta property="og:description" content="Google 공식 문서 기반의 SEO 기초 완벽 가이드">
+  <meta property="og:url" content="https://geo-seo-aeo-guide.example.com/pages/seo-fundamentals.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#1a73e8">
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SEO 기초 가이드 - Google 공식 문서 기반",
+    "description": "Google Search Essentials, SEO 스타터 가이드 등 Google 공식 문서 기반의 SEO 기초",
+    "author": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드"
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-06-05"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://geo-seo-aeo-guide.example.com/"},
+      {"@type": "ListItem", "position": 2, "name": "SEO 기초", "item": "https://geo-seo-aeo-guide.example.com/pages/seo-fundamentals.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="주 네비게이션">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">G</span>
+        <span>GEO·SEO·AEO 가이드</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="seo-fundamentals.html" class="active" aria-current="page">SEO 기초</a></li>
+        <li><a href="geo-guide.html">GEO 가이드</a></li>
+        <li><a href="aeo-guide.html">AEO 가이드</a></li>
+        <li><a href="structured-data.html">구조화 데이터</a></li>
+        <li><a href="eeat-content.html">E-E-A-T</a></li>
+        <li><a href="ai-crawlers.html">AI 크롤러</a></li>
+        <li><a href="measurement.html">성과 측정</a></li>
+        <li><a href="tools.html">도구</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드 전환" type="button"></button>
+        <button class="mobile-menu-btn" aria-label="메뉴 열기" aria-expanded="false" type="button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <header class="page-header">
+      <div class="container">
+        <nav aria-label="브레드크럼" style="display: flex; justify-content: center;">
+          <ol class="breadcrumb">
+            <li><a href="../index.html">홈</a></li>
+            <li>SEO 기초</li>
+          </ol>
+        </nav>
+        <h1>SEO 기초 가이드</h1>
+        <p>Google Search Central 공식 문서에서 검증한 검색 엔진 최적화의 모든 기초</p>
+      </div>
+    </header>
+
+    <div class="layout-with-sidebar">
+      <aside class="sidebar" aria-label="사이드바 네비게이션">
+        <nav class="sidebar-nav" aria-label="섹션 네비게이션">
+          <h4>섹션 바로가기</h4>
+          <ul>
+            <li><a href="#how-search-works">검색 작동 원리</a></li>
+            <li><a href="#search-essentials">Search Essentials</a></li>
+            <li><a href="#technical-requirements">기술적 요구사항</a></li>
+            <li><a href="#crawling">크롤링 최적화</a></li>
+            <li><a href="#indexing">색인 최적화</a></li>
+            <li><a href="#ranking">랭킹 요소</a></li>
+            <li><a href="#on-page">온페이지 SEO</a></li>
+            <li><a href="#mobile">모바일 최적화</a></li>
+            <li><a href="#spam-policies">스팸 정책</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <!-- 검색 작동 원리 -->
+        <section id="how-search-works">
+          <h2>🔍 Google 검색은 어떻게 작동하는가?</h2>
+          <p>Google 검색은 세 가지 주요 단계로 작동합니다. 이 과정을 이해하는 것이 SEO의 출발점입니다.</p>
+
+          <div class="stepper">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>크롤링 (Crawling)</h4>
+                <p>Googlebot(웹 크롤러)이 인터넷을 탐색하며 새롭거나 업데이트된 페이지를 발견합니다. 링크를 따라 이동하며 페이지를 가져옵니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>색인 (Indexing)</h4>
+                <p>수집한 페이지의 콘텐츠, 이미지, 비디오를 분석하고 Google의 대규모 데이터베이스(검색 인덱스)에 저장합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>랭킹 (Ranking)</h4>
+                <p>사용자의 검색 의도에 가장 잘 부합하는 페이지를 200개 이상의 신호(키워드, 콘텐츠 품질, 사용자 경험 등)를 기반으로 순위를 매깁니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 핵심 포인트</p>
+            <p>SEO는 이 세 단계 모두에서 검색엔진이 우리 페이지를 잘 발견하고, 정확히 이해하고, 적절한 순위를 매길 수 있도록 돕는 작업입니다.</p>
+          </div>
+        </section>
+
+        <!-- Search Essentials -->
+        <section id="search-essentials">
+          <h2>📋 Google Search Essentials (검색 핵심 원칙)</h2>
+          <p>Google이 명시한 3가지 핵심 원칙은 모든 SEO 작업의 기반입니다.</p>
+
+          <div class="grid grid-3 mt-6">
+            <div class="card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #e6f4ea, #ffffff);">⚙️</div>
+              <h3>기술적 요구사항</h3>
+              <p>Google이 페이지를 크롤링하고 색인할 수 있도록 보장하는 기술적 조건을 충족해야 합니다.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #fef7e0, #ffffff);">🚫</div>
+              <h3>스팸 정책</h3>
+              <p>스팸성 행위는 Google의 웹마스터 가이드라인을 위반하며, 검색 결과에서 페널티를 받게 됩니다.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #fce8e6, #ffffff);">⭐</div>
+              <h3>핵심 신호</h3>
+              <p>의미, 품질, 사용자 경험에 대한 핵심 신호를 파악하여 효과적인 SEO를 수행합니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 기술적 요구사항 -->
+        <section id="technical-requirements">
+          <h2>⚙️ 기술적 요구사항 (Technical Requirements)</h2>
+
+          <h3>HTTPS 보안 연결</h3>
+          <p>Google은 <strong>HTTPS를 랭킹 신호로 공식 사용</strong>합니다. SSL 인증서를 설치하여 모든 페이지에 HTTPS를 적용하세요.</p>
+
+          <div class="alert alert-warning">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-content">
+              <strong>중요:</strong> HTTP 사이트는 브라우저에서 "안전하지 않음" 경고를 표시하여 사용자 이탈률이 높아지고, 이는 SEO에도 부정적 영향을 줍니다.
+            </div>
+          </div>
+
+          <h3>크롤링 가능성</h3>
+          <p>Googlebot이 페이지를 방문하고 콘텐츠를 읽을 수 있도록 보장해야 합니다.</p>
+
+          <ul class="checklist" id="crawl-checklist">
+            <li>robots.txt 파일로 크롤링 허용 범위 명시</li>
+            <li>메타 robots 태그로 색인 허용/차단 설정</li>
+            <li>JavaScript 렌더링 가능 여부 확인</li>
+            <li>사이트맵 제출으로 중요 페이지 안내</li>
+            <li>404/500 에러 페이지 최소화</li>
+            <li>리디렉션 체인 제거 (301, 302)</li>
+          </ul>
+
+          <h3>페이지 속도</h3>
+          <p>Core Web Vitals는 사용자 경험과 SEO 모두에 영향을 미치는 핵심 지표입니다.</p>
+
+          <div class="grid grid-3 mt-6">
+            <div class="stat-card">
+              <div class="stat-number">2.5초</div>
+              <div class="stat-label">LCP (Largest Contentful Paint) 권장</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100ms</div>
+              <div class="stat-label">INP (Interaction to Next Paint) 권장</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">0.1</div>
+              <div class="stat-label">CLS (Cumulative Layout Shift) 권장</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 크롤링 최적화 -->
+        <section id="crawling">
+          <h2>🕷️ 크롤링 최적화</h2>
+
+          <h3>robots.txt 파일</h3>
+          <p>robots.txt는 검색엔진 봇에게 어떤 페이지를 크롤링할 수 있는지 알려주는 표준 파일입니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># 모든 봇이 모든 페이지를 크롤링하도록 허용
+User-agent: *
+Allow: /
+
+# 관리자 페이지 차단
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# AI 크롤러 명시적 관리
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# 사이트맵 위치 명시
+Sitemap: https://example.com/sitemap.xml</code></pre>
+          </div>
+
+          <h3>사이트맵 (Sitemap.xml)</h3>
+          <p>사이트맵은 사이트의 모든 중요 URL을 검색엔진에 알려주는 파일입니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-01&lt;/lastmod&gt;
+    &lt;changefreq&gt;daily&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/about/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-05-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 팁</p>
+            <p>대규모 사이트의 경우 <strong>사이트맵 인덱스 파일</strong>을 사용하여 여러 사이트맵을 묶어 관리할 수 있습니다. Google은 최대 50,000개 URL과 50MB 크기까지 지원합니다.</p>
+          </div>
+        </section>
+
+        <!-- 색인 최적화 -->
+        <section id="indexing">
+          <h2>📚 색인 (Indexing) 최적화</h2>
+
+          <h3>메타태그 활용</h3>
+
+          <h4>Title 태그</h4>
+          <p>페이지 제목은 검색 결과에 표시되며 SEO에서 가장 중요한 요소 중 하나입니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;head&gt;
+  &lt;title&gt;SEO 기초 가이드 - Google 공식 문서 기반 | 2026&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+          </div>
+
+          <div class="alert alert-success">
+            <span class="alert-icon">✅</span>
+            <div class="alert-content">
+              <strong>좋은 타이틀 예시:</strong> 각 페이지마다 고유한 타이틀, 50-60자 내외, 핵심 키워드 포함, 브랜드명 끝에 추가
+            </div>
+          </div>
+
+          <h4>Meta Description</h4>
+          <p>검색 결과의 스니펫에 표시되는 설명입니다. 직접적인 랭킹 요소는 아니지만 클릭률(CTR)에 큰 영향을 줍니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta name="description" content="Google Search Essentials, SEO 스타터 가이드 등 Google 공식 문서 기반의 SEO 기초를 학습하세요. 크롤링, 색인, 랭킹의 3단계 작동 방식을 이해합니다."&gt;</code></pre>
+          </div>
+
+          <h4>메타 robots 태그</h4>
+          <p>특정 페이지의 색인/크롤링 동작을 제어합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 색인 허용, 스니펫 표시 허용 --&gt;
+&lt;meta name="robots" content="index, follow"&gt;
+
+&lt;!-- 색인 차단 --&gt;
+&lt;meta name="robots" content="noindex"&gt;
+
+&lt;!-- 색인 허용, 외부 링크 추적 차단 --&gt;
+&lt;meta name="robots" content="index, nofollow"&gt;</code></pre>
+          </div>
+
+          <h3>Canonical 태그</h3>
+          <p>중복 또는 유사한 페이지가 있을 때, 어떤 URL이 원본인지 검색엔진에 알려줍니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;link rel="canonical" href="https://example.com/original-page"&gt;</code></pre>
+          </div>
+        </section>
+
+        <!-- 랭킹 요소 -->
+        <section id="ranking">
+          <h2>📊 랭킹 요소</h2>
+          <p>Google은 200개 이상의 신호를 사용하지만, 주요 카테고리는 다음과 같습니다.</p>
+
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>카테고리</th>
+                  <th>주요 요소</th>
+                  <th>중요도</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>콘텐츠</strong></td>
+                  <td>키워드 관련성, 콘텐츠 품질, 깊이, 독창성</td>
+                  <td><span class="badge badge-success">매우 높음</span></td>
+                </tr>
+                <tr>
+                  <td><strong>백링크</strong></td>
+                  <td>외부 사이트의 권위 링크, 도메인 권위</td>
+                  <td><span class="badge badge-success">매우 높음</span></td>
+                </tr>
+                <tr>
+                  <td><strong>사용자 경험</strong></td>
+                  <td>Core Web Vitals, 모바일 친화성, 안전성 (HTTPS)</td>
+                  <td><span class="badge badge-primary">높음</span></td>
+                </tr>
+                <tr>
+                  <td><strong>온페이지 SEO</strong></td>
+                  <td>Title, H 태그, 내부 링크, 이미지 Alt</td>
+                  <td><span class="badge badge-primary">높음</span></td>
+                </tr>
+                <tr>
+                  <td><strong>기술적 SEO</strong></td>
+                  <td>크롤링 가능성, 구조화 데이터, 사이트맵</td>
+                  <td><span class="badge badge-primary">높음</span></td>
+                </tr>
+                <tr>
+                  <td><strong>사용자 신호</strong></td>
+                  <td>클릭률(CTR), 체류시간, 이탈률</td>
+                  <td><span class="badge badge-warning">중간</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 온페이지 SEO -->
+        <section id="on-page">
+          <h2>📝 온페이지 SEO 핵심 요소</h2>
+
+          <h3>제목 태그 계층 구조 (Heading Hierarchy)</h3>
+          <p>논리적인 H1 → H2 → H3 구조로 콘텐츠를 구성하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;h1&gt;SEO 기초 가이드 (페이지당 1개)&lt;/h1&gt;
+  &lt;h2&gt;검색 작동 원리&lt;/h2&gt;
+    &lt;h3&gt;크롤링&lt;/h3&gt;
+    &lt;h3&gt;색인&lt;/h3&gt;
+    &lt;h3&gt;랭킹&lt;/h3&gt;
+  &lt;h2&gt;기술적 요구사항&lt;/h2&gt;
+    &lt;h3&gt;HTTPS&lt;/h3&gt;
+    &lt;h3&gt;사이트맵&lt;/h3&gt;</code></pre>
+          </div>
+
+          <h3>시맨틱 HTML5</h3>
+          <p>의미 있는 HTML5 태그를 사용하여 콘텐츠 구조를 명확히 표현하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;article&gt;
+  &lt;header&gt;
+    &lt;h1&gt;제목&lt;/h1&gt;
+    &lt;p&gt;작성자, 작성일&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;h2&gt;섹션 제목&lt;/h2&gt;
+    &lt;p&gt;본문...&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;nav aria-label="관련 링크"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/related"&gt;관련 글&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/article&gt;</code></pre>
+          </div>
+
+          <h3>이미지 최적화</h3>
+          <p>이미지는 SEO에서 자주 간과되지만 큰 기회를 제공합니다.</p>
+
+          <ul class="checklist" id="image-checklist">
+            <li>모든 이미지에 설명적인 <code>alt</code> 텍스트 제공</li>
+            <li>파일명을 의미 있게 작성 (예: <code>seo-guide.png</code>)</li>
+            <li>최신 이미지 포맷 사용 (WebP, AVIF)</li>
+            <li>이미지 크기 최적화 및 lazy loading 적용</li>
+            <li>이미지 사이트맵 제출</li>
+            <li>CDN 사용으로 전송 속도 향상</li>
+          </ul>
+
+          <h3>내부 링크 전략</h3>
+          <p>내부 링크는 페이지 간 권위를 분산하고 사용자 탐색을 돕습니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 내부 링크 모범 사례</p>
+            <ul style="margin: 0;">
+              <li>관련성 높은 페이지끼리 연결</li>
+              <li>의미 있는 앵커 텍스트 사용 (단순 "여기" 금지)</li>
+              <li>3클릭 이내 모든 페이지 도달 가능하게</li>
+              <li>중요 페이지로의 링크가 많을수록 좋음</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 모바일 최적화 -->
+        <section id="mobile">
+          <h2>📱 모바일 최적화</h2>
+          <p>Google은 <strong>모바일 우선 인덱싱(Mobile-First Indexing)</strong>을 사용합니다. 모바일 버전이 기본 순위 결정의 기준입니다.</p>
+
+          <h3>반응형 디자인</h3>
+          <p>하나의 HTML로 모든 기기에 최적화된 화면을 제공하는 것이 권장됩니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+          </div>
+
+          <h3>모바일 친화성 체크리스트</h3>
+          <ul class="checklist" id="mobile-checklist">
+            <li>반응형 레이아웃 사용</li>
+            <li>터치 타겟이 최소 48x48px</li>
+            <li>가로 스크롤 발생하지 않음</li>
+            <li>글꼴 크기가 모바일에서 읽기 편함 (최소 16px)</li>
+            <li>인트루시브 인터스티셜(전체 화면 광고) 회피</li>
+            <li>모바일 페이지 속도 최적화 (3초 이내 로드)</li>
+          </ul>
+        </section>
+
+        <!-- 스팸 정책 -->
+        <section id="spam-policies">
+          <h2>🚫 스팸 정책 (피해야 할 행위)</h2>
+          <p>Google은 명확한 스팸 정책을 운영하며, 위반 시 수동 조치나 알고리즘 필터로 페널티를 받습니다.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>절대 하지 말아야 할 스팸 행위</strong>
+            </div>
+          </div>
+
+          <div class="accordion" data-single-open="false">
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Cloaking (클로킹)</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  사용자에게는 다른 콘텐츠를 보여주면서 검색엔진에는 다른 콘텐츠를 보여주는 행위. 즉시 수동 조치 대상입니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Doorway Pages (도어웨이 페이지)</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  검색 순위를 위해 키워드를 과도하게詰め込んだ中間 페이지로, 사용자에게 가치를 제공하지 않고 다른 페이지로 리디렉션하는 행위.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Scaled Content Abuse (대량 생성 콘텐츠)</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  자동화 도구로 대량 생성된, 사용자 가치가 없거나 검색 결과 조작 목적의 콘텐츠. 2024년 3월 코어 업데이트에서 강화된 정책입니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Link Spam (링크 스팸)</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  링크 구매/판매, 링크 팜, 자동화된 링크 생성 등 인위적인 백링크 구축 행위.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Keyword Stuffing (키워드 스터핑)</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  의미 없이 키워드를 반복하여 검색 순위를 조작하려는 행위. 자연스러운 언어를 사용하세요.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-success mt-6">
+            <p class="callout-title">✅ Google의 권장 사항</p>
+            <p>사용자를 위해 콘텐츠를 만들고, 검색엔진이 그 가치를 발견할 수 있도록 도우세요. 진정성 있는 콘텐츠가 항상 장기적으로 승리합니다.</p>
+          </div>
+        </section>
+
+        <!-- 다음 단계 -->
+        <section class="mt-8" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
+          <h2>🚀 다음 단계</h2>
+          <p>SEO 기초를 이해했다면, 이제 더 깊이 들어갈 시간입니다.</p>
+          <div class="flex gap-4" style="flex-wrap: wrap;">
+            <a href="geo-guide.html" class="btn btn-primary">GEO 가이드 학습 →</a>
+            <a href="aeo-guide.html" class="btn btn-outline">AEO 가이드 학습 →</a>
+            <a href="structured-data.html" class="btn btn-secondary">구조화 데이터 →</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../index.html" class="logo" style="margin-bottom: 16px;">
+          <span class="logo-icon">G</span>
+          <span>GEO·SEO·AEO 가이드</span>
+        </a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반의 AI 검색 시대 최적화 가이드</p>
+      </div>
+      <div class="footer-section">
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="seo-fundamentals.html">SEO 기초</a></li>
+          <li><a href="geo-guide.html">GEO 가이드</a></li>
+          <li><a href="aeo-guide.html">AEO 가이드</a></li>
+          <li><a href="structured-data.html">구조화 데이터</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>심화 학습</h4>
+        <ul>
+          <li><a href="eeat-content.html">E-E-A-T</a></li>
+          <li><a href="ai-crawlers.html">AI 크롤러</a></li>
+          <li><a href="measurement.html">성과 측정</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>도구</h4>
+        <ul>
+          <li><a href="tools.html">실전 도구</a></li>
+          <li><a href="checklist.html">체크리스트</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GEO·SEO·AEO 가이드. Google Search Central 공식 문서 기반.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

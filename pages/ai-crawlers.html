@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 크롤러 관리 가이드 - GPTBot, ClaudeBot, CCBot, llms.txt</title>
+  <meta name="description" content="AI 크롤러(GPTBot, ClaudeBot, CCBot 등) 관리 가이드. robots.txt 설정으로 AI 학습 및 인용 허용/차단 전략. llms.txt는 필요한가에 대한 Google의 공식 답변.">
+  <meta name="keywords" content="AI 크롤러, GPTBot, ClaudeBot, CCBot, Common Crawl, robots.txt, llms.txt, AI 학습 차단, GEO 크롤러">
+  <link rel="canonical" href="https://geo-seo-aeo-guide.example.com/pages/ai-crawlers.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+      <ul class="nav-menu">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="seo-fundamentals.html">SEO 기초</a></li>
+        <li><a href="geo-guide.html">GEO 가이드</a></li>
+        <li><a href="aeo-guide.html">AEO 가이드</a></li>
+        <li><a href="structured-data.html">구조화 데이터</a></li>
+        <li><a href="eeat-content.html">E-E-A-T</a></li>
+        <li><a href="ai-crawlers.html" class="active" aria-current="page">AI 크롤러</a></li>
+        <li><a href="measurement.html">성과 측정</a></li>
+        <li><a href="tools.html">도구</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="../index.html">홈</a></li><li>AI 크롤러</li></ol>
+        <h1>🕷️ AI 크롤러 관리 가이드</h1>
+        <p>GPTBot, ClaudeBot, CCBot 등 AI 크롤러를 이해하고 적절히 관리하기</p>
+      </div>
+    </header>
+
+    <div class="layout-with-sidebar">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <h4>섹션</h4>
+          <ul>
+            <li><a href="#ai-crawlers-list">주요 AI 크롤러</a></li>
+            <li><a href="#llms-txt">llms.txt 논쟁</a></li>
+            <li><a href="#robots-txt">robots.txt 설정</a></li>
+            <li><a href="#strategy">허용/차단 전략</a></li>
+            <li><a href="#checklist">관리 체크리스트</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <section id="ai-crawlers-list">
+          <h2>🕷️ 주요 AI 크롤러 목록</h2>
+          <p>AI 시대에 등장한 주요 크롤러들을 이해하고 각각의 목적을 파악하세요.</p>
+
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr><th>크롤러</th><th>운영사</th><th>용도</th><th>User Agent</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>GPTBot</strong></td>
+                  <td>OpenAI</td>
+                  <td>ChatGPT 학습 데이터 수집</td>
+                  <td><code>GPTBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>ChatGPT-User</strong></td>
+                  <td>OpenAI</td>
+                  <td>ChatGPT가 실시간으로 페이지를 가져올 때</td>
+                  <td><code>ChatGPT-User</code></td>
+                </tr>
+                <tr>
+                  <td><strong>OAI-SearchBot</strong></td>
+                  <td>OpenAI</td>
+                  <td>SearchGPT 검색 결과용</td>
+                  <td><code>OAI-SearchBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>ClaudeBot</strong></td>
+                  <td>Anthropic</td>
+                  <td>Claude 학습 데이터 수집</td>
+                  <td><code>ClaudeBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Claude-User</strong></td>
+                  <td>Anthropic</td>
+                  <td>Claude의 실시간 페이지 접근</td>
+                  <td><code>Claude-User</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Claude-SearchBot</strong></td>
+                  <td>Anthropic</td>
+                  <td>Claude 검색 기능</td>
+                  <td><code>Claude-SearchBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>CCBot</strong></td>
+                  <td>Common Crawl</td>
+                  <td>대부분 LLM의 학습 데이터 소스</td>
+                  <td><code>CCBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>PerplexityBot</strong></td>
+                  <td>Perplexity</td>
+                  <td>Perplexity AI 검색 및 인덱싱</td>
+                  <td><code>PerplexityBot</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Google-Extended</strong></td>
+                  <td>Google</td>
+                  <td>제미나이(Bard) 학습 데이터</td>
+                  <td><code>Google-Extended</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Applebot-Extended</strong></td>
+                  <td>Apple</td>
+                  <td>Apple Intelligence 학습</td>
+                  <td><code>Applebot-Extended</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Bytespider</strong></td>
+                  <td>ByteDance</td>
+                  <td>틱톡/도우인 AI 학습</td>
+                  <td><code>Bytespider</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Meta-ExternalAgent</strong></td>
+                  <td>Meta</td>
+                  <td>Meta AI 학습</td>
+                  <td><code>Meta-ExternalAgent</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="llms-txt">
+          <h2>📄 llms.txt는 정말 필요한가?</h2>
+          <p>2024년 출시된 <code>llms.txt</code>는 LLM이 사이트 콘텐츠를 쉽게 읽을 수 있도록 돕는다는 명목의 제안 표준입니다.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>Google의 공식 입장: 필요하지 않습니다.</strong>
+              <p>Google Search Central은 "AI 검색에 나타나기 위해 새로운 기계 판독 파일, AI 텍스트 파일, 마크업, 마크다운을 만들 필요가 없다"고 명시했습니다. Google은 HTML 외 다양한 파일을 크롤링할 수 있지만, 그 파일이 특별 취급되는 것은 아닙니다.</p>
+            </div>
+          </div>
+
+          <h3>llms.txt에 대한 평가</h3>
+          <div class="grid grid-2 mt-6">
+            <div class="card">
+              <h4>❌ 반대 의견</h4>
+              <ul>
+                <li>Google, OpenAI, Anthropic 모두 공식 채택 안 함</li>
+                <li>표준이 아닌 제안 수준</li>
+                <li>추가 유지보수 부담</li>
+                <li>실제 효과 입증 부족</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>🟡 긍정 의견 (제한적)</h4>
+              <ul>
+                <li>대규모 사이트에서 컨텐츠 큐레이션 도움</li>
+                <li>라이선스/이용약관 명시 가능</li>
+                <li>특정 LLM 크롤러를 위한 가이드 제공</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>llms.txt 예시 (참고용)</h3>
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code># 예시 사이트 (https://example.com)
+
+> AI 검색 엔진 및 LLM 학습용 사이트 요약
+
+## 가이드
+- [SEO 기초 가이드](https://example.com/seo-fundamentals): 검색엔진 최적화 핵심 원칙
+- [GEO 가이드](https://example.com/geo-guide): 생성형 AI 검색 최적화
+- [AEO 가이드](https://example.com/aeo-guide): 답변 엔진 최적화
+
+## 도구
+- [JSON-LD 생성기](https://example.com/tools): 구조화 데이터 생성 도구
+- [메타태그 분석기](https://example.com/tools/meta): 페이지 메타태그 분석
+
+## 옵트아웃
+- AI 학습을 원치 않을 경우: robots.txt에서 GPTBot, CCBot 등을 차단해주세요.
+- 자세한 정책: https://example.com/ai-policy</code></pre>
+          </div>
+
+          <div class="callout callout-warning">
+            <p class="callout-title">💡 권장 사항</p>
+            <p>현재로서는 llms.txt에 시간 투자하기보다 <strong>표준 SEO 베스트 프랙티스(sitemap, robots.txt, 구조화 데이터, E-E-A-T)</strong>에 집중하는 것이 더 효과적입니다.</p>
+          </div>
+        </section>
+
+        <section id="robots-txt">
+          <h2>🤖 robots.txt로 AI 크롤러 관리</h2>
+
+          <h3>모든 AI 크롤러 허용 (권장)</h3>
+          <p>GEO 관점에서 AI 인용을 원하는 경우 모든 주요 AI 크롤러를 허용하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code># robots.txt - 모든 AI 크롤러 허용
+User-agent: *
+Allow: /
+
+# 사이트맵 위치
+Sitemap: https://example.com/sitemap.xml</code></pre>
+          </div>
+
+          <h3>특정 AI 크롤러 선택적 차단</h3>
+          <p>원치 않는 AI 크롤러만 차단할 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code># OpenAI의 학습용 크롤러는 차단하지만, 검색 기능은 허용
+User-agent: GPTBot
+Disallow: /
+
+# 검색용 OAI-SearchBot은 허용 (인용 기회를 위해)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Common Crawl 차단 (대부분 LLM의 학습 소스)
+User-agent: CCBot
+Disallow: /
+
+# Anthropic 학습 차단, 검색은 허용
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google-Extended는 차단 (제미나이 학습 차단)
+# 단, Google 검색 크롤링은 계속 허용됨
+User-agent: Google-Extended
+Disallow: /
+
+# Applebot-Extended 차단
+User-agent: Applebot-Extended
+Disallow: /
+
+# 다른 모든 봇은 허용
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+          </div>
+
+          <h3>메타태그로 AI 크롤러 제어 (Google-Extended)</h3>
+          <p>Google-Extended는 메타 태그로도 제어 가능합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code>&lt;meta name="googlebot" content="index, follow"&gt;
+&lt;meta name="google-extended" content="noindex"&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 Google-Extended 이해</p>
+            <p>Google-Extended은 <strong>제미나이(Bard) 학습에만</strong> 영향을 줍니다. <code>noindex</code>로 설정해도 Google 검색 결과에는 정상적으로 노출됩니다.</p>
+          </div>
+
+          <h3>특정 섹션만 차단</h3>
+          <p>사이트 전체는 허용하되 특정 섹션(예: 유료 콘텐츠, 내부 문서)만 차단할 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn">복사</button>
+<pre><code># 모든 크롤러 허용
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /members-only/
+Disallow: /internal-docs/
+
+# AI 학습 크롤러는 추가 제한
+User-agent: GPTBot
+Disallow: /private/
+Disallow: /members-only/
+Disallow: /internal-docs/
+Disallow: /drafts/</code></pre>
+          </div>
+        </section>
+
+        <section id="strategy">
+          <h2>🎯 AI 크롤러 허용 vs 차단 전략</h2>
+
+          <h3>허용해야 하는 경우 (대부분)</h3>
+          <div class="callout callout-success">
+            <ul style="margin: 0;">
+              <li>✅ AI 검색에서 인용되어 브랜드 노출을 원하는 경우</li>
+              <li>✅ 컨텐츠가 공개 정보인 경우</li>
+              <li>✅ 광고/구독 모델이 아닌 트래픽 의존 사이트</li>
+              <li>✅ E-E-A-T 신호 구축이 중요한 경우</li>
+            </ul>
+          </div>
+
+          <h3>차단을 고려해야 하는 경우</h3>
+          <div class="callout callout-warning">
+            <ul style="margin: 0;">
+              <li>⚠️ 독점적인 유료 콘텐츠 (강의, 연구 자료)</li>
+              <li>⚠️ 초안/미공개 자료</li>
+              <li>⚠️ 개인 정보가 포함된 내부 문서</li>
+              <li>⚠️ 경쟁 우위를 가진 독점 데이터</li>
+              <li>⚠️ 법적으로 AI 학습을 금지해야 하는 콘텐츠</li>
+            </ul>
+          </div>
+
+          <h3>하이브리드 전략 (권장)</h3>
+          <ol>
+            <li><strong>공개 콘텐츠</strong>: 모든 AI 크롤러 허용 → 인용 기회 극대화</li>
+            <li><strong>학습 데이터</strong>: 학습용 크롤러(GPTBot, ClaudeBot, CCBot)는 허용</li>
+            <li><strong>유료/독점 콘텐츠</strong>: 모든 AI 크롤러 차단</li>
+            <li><strong>Google-Extended만 차단</strong>: 제미나이 학습은 거부, 검색은 허용</li>
+          </ol>
+        </section>
+
+        <section id="checklist">
+          <h2>✅ AI 크롤러 관리 체크리스트</h2>
+
+          <ul class="checklist" id="ai-crawler-checklist">
+            <li>현재 robots.txt 파일 점검 (주요 AI 크롤러 허용 여부)</li>
+            <li>Google-Extended 메타 태그 결정 (제미나이 학습 허용 여부)</li>
+            <li>유료/독점 콘텐츠 영역 정의</li>
+            <li>GPTBot, ClaudeBot 정책 결정</li>
+            <li>CCBot 정책 결정 (대부분 LLM 학습 소스)</li>
+            <li>SearchGPT(OAI-SearchBot) 허용 (인용 기회)</li>
+            <li>PerplexityBot 허용 (인용 기회)</li>
+            <li>사이트맵 제출로 AI 크롤러에 콘텐츠 안내</li>
+            <li>AI 정책 페이지 작성 (투명성)</li>
+            <li>정기적으로 AI 트래픽 모니터링 (GA4)</li>
+          </ul>
+
+          <div class="alert alert-info">
+            <span class="alert-icon">💡</span>
+            <div class="alert-content">
+              <strong>검증 도구:</strong> robots.txt의 문법과 효과를 <a href="https://support.google.com/webmasters/answer/6062598" target="_blank" rel="noopener noreferrer">Google의 robots.txt 테스터</a>로 검증할 수 있습니다.
+            </div>
+          </div>
+
+          <div class="mt-8" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
+            <h2>📚 관련 가이드</h2>
+            <div class="grid grid-3">
+              <a href="seo-fundamentals.html" class="card">
+                <h4>robots.txt 기본</h4>
+                <p>크롤링 제어 기초</p>
+              </a>
+              <a href="geo-guide.html" class="card">
+                <h4>GEO 전략</h4>
+                <p>AI 인용 극대화</p>
+              </a>
+              <a href="measurement.html" class="card">
+                <h4>성과 측정</h4>
+                <p>AI 트래픽 분석</p>
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../index.html" class="logo" style="margin-bottom: 16px;"><span class="logo-icon">G</span><span>GEO·SEO·AEO 가이드</span></a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">Google 공식 문서 기반</p>
+      </div>
+      <div class="footer-section"><h4>가이드</h4><ul><li><a href="seo-fundamentals.html">SEO 기초</a></li><li><a href="geo-guide.html">GEO</a></li><li><a href="aeo-guide.html">AEO</a></li></ul></div>
+      <div class="footer-section"><h4>심화</h4><ul><li><a href="eeat-content.html">E-E-A-T</a></li><li><a href="ai-crawlers.html">AI 크롤러</a></li></ul></div>
+      <div class="footer-section"><h4>도구</h4><ul><li><a href="tools.html">실전 도구</a></li><li><a href="checklist.html">체크리스트</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 GEO·SEO·AEO 가이드.</p></div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
