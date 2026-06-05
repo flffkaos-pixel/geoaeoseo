@@ -114,7 +114,9 @@
           <p>가이드 내용에 대한 질문이나 피드백을 남겨주세요. 모든 문의는 영업일 기준 3-5일 이내에 답변 드립니다.</p>
 
           <div class="tool-container">
-            <form id="contact-form" onsubmit="submitContactForm(event)">
+            <form id="contact-form" action="https://formspree.io/f/xeewovkl" method="POST" onsubmit="submitContactForm(event)">
+              <input type="hidden" name="_subject" id="form-subject-template" value="[문의] GEO·SEO·AEO 가이드 웹사이트 문의">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form-group">
                 <label class="form-label" for="contact-name">이름 *</label>
                 <input class="form-input" type="text" id="contact-name" name="name" required>
@@ -151,7 +153,7 @@
                   <span>본인은 <a href="privacy-policy.html">개인정보 처리방침</a>에 동의하며, 입력한 정보가 문의 응대를 위해 사용됨에 동의합니다. *</span>
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">문의 보내기</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="contact-submit-btn">문의 보내기</button>
             </form>
 
             <div id="form-success" class="hidden mt-6">
@@ -160,6 +162,16 @@
                 <div class="alert-content">
                   <strong>문의가 접수되었습니다!</strong>
                   <p>빠른 시일 내에 입력하신 이메일로 답변 드리겠습니다. 영업일 기준 3-5일 정도 소요될 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="form-error" class="hidden mt-6">
+              <div class="alert alert-error">
+                <span class="alert-icon">⚠️</span>
+                <div class="alert-content">
+                  <strong>전송에 실패했습니다.</strong>
+                  <p>잠시 후 다시 시도해 주세요. 문제가 계속되면 <a href="mailto:contact@geoptmize.pages.dev">contact@geoptmize.pages.dev</a>로 직접 이메일을 보내주세요.</p>
                 </div>
               </div>
             </div>
@@ -191,16 +203,16 @@
               <p>게스트 포스팅, 인터뷰, 공동 연구 등</p>
             </div>
             <div class="card">
-              <h4>🎤 강연/세미나</h4>
-              <p>컨퍼런스, 기업 교육, 웨비나 등</p>
-            </div>
-            <div class="card">
               <h4>🔧 도구 제휴</h4>
               <p>SEO 도구, 분석 플랫폼 등과의 통합</p>
             </div>
             <div class="card">
               <h4>📰 미디어 보도</h4>
               <p>인용, 인터뷰, 보도자료 등</p>
+            </div>
+            <div class="card">
+              <h4>💼 B2B 협업</h4>
+              <p>기업 교육, 워크숍, 자문 등</p>
             </div>
           </div>
 
@@ -343,10 +355,45 @@
     function submitContactForm(e) {
       e.preventDefault();
       const form = document.getElementById('contact-form');
+      const btn = document.getElementById('contact-submit-btn');
       const success = document.getElementById('form-success');
-      form.style.display = 'none';
-      success.classList.remove('hidden');
-      window.scrollTo({ top: success.offsetTop - 100, behavior: 'smooth' });
+      const errorBox = document.getElementById('form-error');
+      const subjectField = document.getElementById('form-subject-template');
+      const typeLabel = (form.elements['type'].options[form.elements['type'].selectedIndex] || {}).text || '문의';
+      const subjectText = form.elements['subject'].value || '';
+      subjectField.value = '[' + typeLabel + '] ' + subjectText;
+      const originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = '전송 중...';
+      errorBox.classList.add('hidden');
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          form.style.display = 'none';
+          success.classList.remove('hidden');
+          window.scrollTo({ top: success.offsetTop - 100, behavior: 'smooth' });
+        } else {
+          response.json().then(function (data) {
+            if (data && data.errors) {
+              errorBox.querySelector('p').textContent = data.errors.map(function (e) { return e.message; }).join(', ');
+            }
+            errorBox.classList.remove('hidden');
+            btn.disabled = false;
+            btn.textContent = originalText;
+          }).catch(function () {
+            errorBox.classList.remove('hidden');
+            btn.disabled = false;
+            btn.textContent = originalText;
+          });
+        }
+      }).catch(function () {
+        errorBox.classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
     }
   </script>
 </body>
