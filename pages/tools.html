@@ -9,8 +9,8 @@
   <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
   <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
 
-  <title>실전 도구 - JSON-LD 생성기, 메타태그 분석기, robots.txt 생성기</title>
-  <meta name="description" content="SEO/GEO/AEO에 필요한 모든 실전 도구를 한 곳에서. JSON-LD 스키마 생성기, 메타태그 분석기, robots.txt 생성기, OG 태그 생성기 등 무료 제공.">
+  <title>실전 도구 - JSON-LD, robots.txt | GEO/SEO/AEO 가이드</title>
+  <meta name="description" content="JSON-LD, 메타태그, robots.txt, OG, 헤드라인 분석 등 무료 도구.">
   <meta name="keywords" content="JSON-LD 생성기, 메타태그 생성기, robots.txt 생성기, OG 태그 생성기, Schema.org 생성기, 무료 SEO 도구">
   <link rel="canonical" href="https://geoptmize.pages.dev/pages/tools.html">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
@@ -20,15 +20,21 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": "CollectionPage",
     "name": "GEO/SEO/AEO 도구 모음",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "KRW"
-    }
+    "description": "JSON-LD, 메타태그, robots.txt, OG 등 SEO/GEO/AEO 실무 도구 10종",
+    "hasPart": [
+      {"@type": "WebApplication", "name": "Article 스키마 생성기", "url": "https://geoptmize.pages.dev/pages/tools/article-schema.html"},
+      {"@type": "WebApplication", "name": "FAQ 스키마 생성기", "url": "https://geoptmize.pages.dev/pages/tools/faq-schema.html"},
+      {"@type": "WebApplication", "name": "HowTo 스키마 생성기", "url": "https://geoptmize.pages.dev/pages/tools/howto-schema.html"},
+      {"@type": "WebApplication", "name": "Product 스키마 생성기", "url": "https://geoptmize.pages.dev/pages/tools/product-schema.html"},
+      {"@type": "WebApplication", "name": "Organization 스키마 생성기", "url": "https://geoptmize.pages.dev/pages/tools/organization-schema.html"},
+      {"@type": "WebApplication", "name": "메타태그 생성기", "url": "https://geoptmize.pages.dev/pages/tools/meta-tags.html"},
+      {"@type": "WebApplication", "name": "robots.txt 생성기", "url": "https://geoptmize.pages.dev/pages/tools/robots-txt.html"},
+      {"@type": "WebApplication", "name": "Open Graph 생성기", "url": "https://geoptmize.pages.dev/pages/tools/open-graph.html"},
+      {"@type": "WebApplication", "name": "헤드라인 분석기", "url": "https://geoptmize.pages.dev/pages/tools/headline-analyzer.html"},
+      {"@type": "WebApplication", "name": "JSON-LD 검증기", "url": "https://geoptmize.pages.dev/pages/tools/schema-validator.html"}
+    ]
   }
   </script>
 
@@ -49,6 +55,7 @@
         <li><a href="ai-crawlers.html">AI 크롤러</a></li>
         <li><a href="measurement.html">성과 측정</a></li>
         <li><a href="tools.html" class="active" aria-current="page">도구</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
       <div class="nav-actions">
         <button class="theme-toggle" aria-label="다크 모드"></button>
@@ -62,448 +69,106 @@
       <div class="container">
         <ol class="breadcrumb"><li><a href="../index.html">홈</a></li><li>도구</li></ol>
         <h1>🛠️ 실전 도구 모음</h1>
-        <p>SEO/GEO/AEO에 필요한 모든 도구를 무료로 사용하세요</p>
+        <p>SEO/GEO/AEO에 필요한 10가지 도구를 무료로 사용하세요</p>
       </div>
     </header>
 
-    <div class="layout-with-sidebar">
-      <aside class="sidebar">
-        <nav class="sidebar-nav">
-          <h4>도구 목록</h4>
-          <ul>
-            <li><a href="#jsonld-generator">JSON-LD 생성기</a></li>
-            <li><a href="#meta-generator">메타태그 생성기</a></li>
-            <li><a href="#robots-generator">robots.txt 생성기</a></li>
-            <li><a href="#og-generator">Open Graph 생성기</a></li>
-            <li><a href="#headline-analyzer">헤드라인 분석기</a></li>
-            <li><a href="#schema-validator">스키마 검증기</a></li>
-          </ul>
-        </nav>
-      </aside>
+    <div class="container">
+      <section class="mb-8">
+        <h2>📐 JSON-LD 구조화 데이터 생성기</h2>
+        <p class="text-secondary">Schema.org 표준 JSON-LD 마크업을 생성합니다. 리치 결과와 AI 검색 인용에 효과적입니다.</p>
+        <div class="grid grid-3 mt-6">
+          <a href="tools/article-schema.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #e6f4ea, #ffffff);">📰</div>
+            <h3>Article 스키마</h3>
+            <p>블로그/뉴스 콘텐츠용 JSON-LD</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/faq-schema.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #fef7e0, #ffffff);">❓</div>
+            <h3>FAQ 스키마</h3>
+            <p>FAQ 리치 결과용 JSON-LD</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/howto-schema.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #fce8e6, #ffffff);">📋</div>
+            <h3>HowTo 스키마</h3>
+            <p>단계별 가이드용 JSON-LD</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/product-schema.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #e8f0fe, #ffffff);">🛍️</div>
+            <h3>Product 스키마</h3>
+            <p>제품 정보용 JSON-LD</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/organization-schema.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #f3e8fd, #ffffff);">🏢</div>
+            <h3>Organization 스키마</h3>
+            <p>회사/조직 정보용 JSON-LD</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+        </div>
+      </section>
 
-      <article class="content">
-        <section id="jsonld-generator">
-          <h2>🏗️ JSON-LD 스키마 생성기</h2>
-          <p>폼을 채우면 Schema.org JSON-LD 마크업이 자동 생성됩니다.</p>
+      <section class="mb-8">
+        <h2>🔧 SEO 메타 & 크롤러 도구</h2>
+        <p class="text-secondary">검색엔진 최적화를 위한 메타태그, robots.txt, Open Graph 태그를 생성합니다.</p>
+        <div class="grid grid-3 mt-6">
+          <a href="tools/meta-tags.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #fef7e0, #ffffff);">📝</div>
+            <h3>메타태그 생성기</h3>
+            <p>title, description, canonical</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/robots-txt.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #e6f4ea, #ffffff);">🤖</div>
+            <h3>robots.txt 생성기</h3>
+            <p>AI 크롤러 정책 포함</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/open-graph.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #e8f0fe, #ffffff);">📱</div>
+            <h3>Open Graph 생성기</h3>
+            <p>SNS 공유 미리보기 태그</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+        </div>
+      </section>
 
-          <div class="tabs">
-            <div class="tabs-nav" role="tablist">
-              <button class="active" data-tab="article-tab" role="tab">Article</button>
-              <button data-tab="faq-tab" role="tab">FAQ</button>
-              <button data-tab="howto-tab" role="tab">HowTo</button>
-              <button data-tab="product-tab" role="tab">Product</button>
-              <button data-tab="org-tab" role="tab">Organization</button>
-            </div>
+      <section class="mb-8">
+        <h2>📊 분석 & 검증 도구</h2>
+        <p class="text-secondary">콘텐츠 품질과 생성된 코드를 분석·검증합니다.</p>
+        <div class="grid grid-3 mt-6">
+          <a href="tools/headline-analyzer.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #fce8e6, #ffffff);">📰</div>
+            <h3>헤드라인 분석기</h3>
+            <p>제목 SEO 점수 분석</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="tools/schema-validator.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #e6f4ea, #ffffff);">✅</div>
+            <h3>JSON-LD 검증기</h3>
+            <p>구조화 데이터 기본 검증</p>
+            <span class="btn btn-outline btn-sm">사용하기 →</span>
+          </a>
+          <a href="checklist.html" class="card tool-card">
+            <div class="card-icon" style="background: linear-gradient(135deg, #fef7e0, #ffffff);">📋</div>
+            <h3>SEO 체크리스트</h3>
+            <p>150+ 항목 점검표</p>
+            <span class="btn btn-outline btn-sm">보기 →</span>
+          </a>
+        </div>
+      </section>
 
-            <div class="tabs-panel active" id="article-tab">
-              <div class="tool-container">
-                <h3>Article (블로그/뉴스) 생성기</h3>
-                <form id="article-form">
-                  <div class="form-group">
-                    <label class="form-label" for="art-title">제목 *</label>
-                    <input class="form-input" type="text" id="art-title" placeholder="SEO 기초 가이드" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-desc">설명 *</label>
-                    <textarea class="form-textarea" id="art-desc" placeholder="Google 공식 문서 기반의 SEO 기초 가이드" required></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-image">이미지 URL *</label>
-                    <input class="form-input" type="url" id="art-image" placeholder="https://example.com/cover.jpg" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-author">작성자명 *</label>
-                    <input class="form-input" type="text" id="art-author" placeholder="홍길동" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-author-url">작성자 URL</label>
-                    <input class="form-input" type="url" id="art-author-url" placeholder="https://example.com/about">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-publisher">퍼블리셔명 *</label>
-                    <input class="form-input" type="text" id="art-publisher" placeholder="예시 컴퍼니" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-pub-logo">퍼블리셔 로고 URL</label>
-                    <input class="form-input" type="url" id="art-pub-logo" placeholder="https://example.com/logo.png">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="art-date">발행일 *</label>
-                    <input class="form-input" type="datetime-local" id="art-date" required>
-                  </div>
-                  <button type="button" class="btn btn-primary" onclick="generateArticle()">JSON-LD 생성</button>
-                </form>
-                <div id="article-output" class="mt-6 hidden">
-                  <h4>생성된 JSON-LD</h4>
-                  <div class="schema-card">
-                    <button class="copy-btn" onclick="copyOutput('article-output-code')">복사</button>
-                    <pre><code id="article-output-code"></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="callout callout-info">
+        <p class="callout-title">💡 Google 공식 검증 도구</p>
+        <p>더 정밀한 검증이 필요하면 <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a> 또는 <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema Markup Validator</a>를 사용하세요.</p>
+      </div>
 
-            <div class="tabs-panel" id="faq-tab">
-              <div class="tool-container">
-                <h3>FAQ (자주 묻는 질문) 생성기</h3>
-                <form id="faq-form">
-                  <div id="faq-items">
-                    <div class="faq-item">
-                      <div class="form-group">
-                        <label class="form-label">질문 1 *</label>
-                        <input class="form-input" type="text" name="faq-q" placeholder="질문을 입력하세요" required>
-                      </div>
-                      <div class="form-group">
-                        <label class="form-label">답변 1 *</label>
-                        <textarea class="form-textarea" name="faq-a" placeholder="답변을 입력하세요" required></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-secondary" onclick="addFaqItem()">+ 질문 추가</button>
-                  <button type="button" class="btn btn-primary" onclick="generateFAQ()">JSON-LD 생성</button>
-                </form>
-                <div id="faq-output" class="mt-6 hidden">
-                  <h4>생성된 JSON-LD</h4>
-                  <div class="schema-card">
-                    <button class="copy-btn" onclick="copyOutput('faq-output-code')">복사</button>
-                    <pre><code id="faq-output-code"></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs-panel" id="howto-tab">
-              <div class="tool-container">
-                <h3>HowTo (단계별 가이드) 생성기</h3>
-                <form id="howto-form">
-                  <div class="form-group">
-                    <label class="form-label" for="howto-name">가이드 이름 *</label>
-                    <input class="form-input" type="text" id="howto-name" placeholder="Schema.org 마크업 추가하는 방법" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="howto-desc">설명 *</label>
-                    <textarea class="form-textarea" id="howto-desc" placeholder="웹페이지에 구조화 데이터를 추가하는 가이드" required></textarea>
-                  </div>
-                  <div id="howto-steps">
-                    <div class="howto-step">
-                      <div class="form-group">
-                        <label class="form-label">단계 1 이름 *</label>
-                        <input class="form-input" type="text" name="step-name" placeholder="콘텐츠 유형 파악" required>
-                      </div>
-                      <div class="form-group">
-                        <label class="form-label">단계 1 설명 *</label>
-                        <textarea class="form-textarea" name="step-text" placeholder="페이지가 Article, FAQ, HowTo 등 어떤 유형인지 결정합니다." required></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-secondary" onclick="addHowToStep()">+ 단계 추가</button>
-                  <button type="button" class="btn btn-primary" onclick="generateHowTo()">JSON-LD 생성</button>
-                </form>
-                <div id="howto-output" class="mt-6 hidden">
-                  <h4>생성된 JSON-LD</h4>
-                  <div class="schema-card">
-                    <button class="copy-btn" onclick="copyOutput('howto-output-code')">복사</button>
-                    <pre><code id="howto-output-code"></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs-panel" id="product-tab">
-              <div class="tool-container">
-                <h3>Product (제품) 생성기</h3>
-                <form id="product-form">
-                  <div class="form-group">
-                    <label class="form-label" for="prod-name">제품명 *</label>
-                    <input class="form-input" type="text" id="prod-name" placeholder="무선 이어폰 Pro X" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-desc">설명 *</label>
-                    <textarea class="form-textarea" id="prod-desc" placeholder="프리미엄 노이즈 캔슬링 무선 이어폰" required></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-image">이미지 URL *</label>
-                    <input class="form-input" type="url" id="prod-image" placeholder="https://example.com/earbuds.jpg" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-brand">브랜드 *</label>
-                    <input class="form-input" type="text" id="prod-brand" placeholder="오디오브랜드" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-price">가격 (숫자) *</label>
-                    <input class="form-input" type="number" id="prod-price" placeholder="199000" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-currency">통화</label>
-                    <select class="form-select" id="prod-currency">
-                      <option value="KRW">KRW (원)</option>
-                      <option value="USD">USD (달러)</option>
-                      <option value="EUR">EUR (유로)</option>
-                      <option value="JPY">JPY (엔)</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="prod-url">제품 URL *</label>
-                    <input class="form-input" type="url" id="prod-url" placeholder="https://example.com/product/earbuds" required>
-                  </div>
-                  <button type="button" class="btn btn-primary" onclick="generateProduct()">JSON-LD 생성</button>
-                </form>
-                <div id="product-output" class="mt-6 hidden">
-                  <h4>생성된 JSON-LD</h4>
-                  <div class="schema-card">
-                    <button class="copy-btn" onclick="copyOutput('product-output-code')">복사</button>
-                    <pre><code id="product-output-code"></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs-panel" id="org-tab">
-              <div class="tool-container">
-                <h3>Organization (조직) 생성기</h3>
-                <form id="org-form">
-                  <div class="form-group">
-                    <label class="form-label" for="org-name">조직명 *</label>
-                    <input class="form-input" type="text" id="org-name" placeholder="예시 컴퍼니" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="org-url">웹사이트 URL *</label>
-                    <input class="form-input" type="url" id="org-url" placeholder="https://example.com" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="org-logo">로고 URL *</label>
-                    <input class="form-input" type="url" id="org-logo" placeholder="https://example.com/logo.png" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="org-desc">설명</label>
-                    <textarea class="form-textarea" id="org-desc" placeholder="AI 검색 시대 최적화 솔루션 제공"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="org-phone">전화번호</label>
-                    <input class="form-input" type="tel" id="org-phone" placeholder="+82-2-1234-5678">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="org-twitter">Twitter URL</label>
-                    <input class="form-input" type="url" id="org-twitter" placeholder="https://twitter.com/example">
-                  </div>
-                  <button type="button" class="btn btn-primary" onclick="generateOrganization()">JSON-LD 생성</button>
-                </form>
-                <div id="org-output" class="mt-6 hidden">
-                  <h4>생성된 JSON-LD</h4>
-                  <div class="schema-card">
-                    <button class="copy-btn" onclick="copyOutput('org-output-code')">복사</button>
-                    <pre><code id="org-output-code"></code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="meta-generator" class="mt-12">
-          <h2>📝 메타태그 생성기</h2>
-          <p>SEO에 필수적인 메타태그를 한 번에 생성합니다.</p>
-
-          <div class="tool-container">
-            <form id="meta-form">
-              <div class="form-group">
-                <label class="form-label" for="meta-title">페이지 제목 (50-60자) *</label>
-                <input class="form-input" type="text" id="meta-title" maxlength="60" placeholder="SEO 기초 가이드 - Google 공식 문서 기반" required>
-                <div class="form-help"><span id="meta-title-count">0</span>/60자</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="meta-desc">설명 (150-160자) *</label>
-                <textarea class="form-textarea" id="meta-desc" maxlength="160" placeholder="Google 공식 문서 기반의 SEO 기초 가이드" required></textarea>
-                <div class="form-help"><span id="meta-desc-count">0</span>/160자</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="meta-keywords">키워드 (쉼표로 구분)</label>
-                <input class="form-input" type="text" id="meta-keywords" placeholder="SEO, 검색최적화, Google">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="meta-canonical">Canonical URL</label>
-                <input class="form-input" type="url" id="meta-canonical" placeholder="https://example.com/page">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="meta-author">작성자</label>
-                <input class="form-input" type="text" id="meta-author" placeholder="홍길동">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="meta-robots">로봇 지시</label>
-                <select class="form-select" id="meta-robots">
-                  <option value="index, follow">index, follow (권장)</option>
-                  <option value="index, nofollow">index, nofollow</option>
-                  <option value="noindex, follow">noindex, follow</option>
-                  <option value="noindex, nofollow">noindex, nofollow</option>
-                </select>
-              </div>
-              <button type="button" class="btn btn-primary" onclick="generateMetaTags()">메타태그 생성</button>
-            </form>
-            <div id="meta-output" class="mt-6 hidden">
-              <h4>생성된 메타태그</h4>
-              <div class="schema-card">
-                <button class="copy-btn" onclick="copyOutput('meta-output-code')">복사</button>
-                <pre><code id="meta-output-code"></code></pre>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="robots-generator" class="mt-12">
-          <h2>🤖 robots.txt 생성기</h2>
-          <p>AI 크롤러 정책을 포함한 robots.txt를 생성합니다.</p>
-
-          <div class="tool-container">
-            <form id="robots-form">
-              <div class="form-group">
-                <label class="form-label" for="robots-site">사이트 도메인 *</label>
-                <input class="form-input" type="text" id="robots-site" placeholder="https://example.com" required>
-              </div>
-
-              <h4 class="mt-6">차단할 경로 (선택사항)</h4>
-              <div id="robots-disallow-list">
-                <div class="form-group">
-                  <input class="form-input" type="text" name="disallow-path" placeholder="/admin/">
-                </div>
-              </div>
-              <button type="button" class="btn btn-secondary" onclick="addDisallowPath()">+ 경로 추가</button>
-
-              <h4 class="mt-6">AI 크롤러 정책</h4>
-              <div class="form-group">
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-gptbot" checked>
-                  <span>GPTBot (OpenAI 학습)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-chatgpt-search" checked>
-                  <span>OAI-SearchBot (SearchGPT)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-claudebot" checked>
-                  <span>ClaudeBot (Anthropic 학습)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-ccbot" checked>
-                  <span>CCBot (Common Crawl)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-perplexity">
-                  <span>PerplexityBot</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-google-ext" checked>
-                  <span>Google-Extended (제미나이 학습 차단)</span>
-                </label>
-                <label style="display: flex; align-items: center; gap: 8px;">
-                  <input type="checkbox" id="opt-apple-ext">
-                  <span>Applebot-Extended (Apple Intelligence 차단)</span>
-                </label>
-              </div>
-
-              <button type="button" class="btn btn-primary" onclick="generateRobotsTxt()">robots.txt 생성</button>
-            </form>
-            <div id="robots-output" class="mt-6 hidden">
-              <h4>생성된 robots.txt</h4>
-              <div class="schema-card">
-                <button class="copy-btn" onclick="copyOutput('robots-output-code')">복사</button>
-                <pre><code id="robots-output-code"></code></pre>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="og-generator" class="mt-12">
-          <h2>📱 Open Graph / Twitter Card 생성기</h2>
-          <p>소셜 미디어 공유 시 표시되는 태그를 생성합니다.</p>
-
-          <div class="tool-container">
-            <form id="og-form">
-              <div class="form-group">
-                <label class="form-label" for="og-title">제목 *</label>
-                <input class="form-input" type="text" id="og-title" placeholder="SEO 기초 가이드" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="og-desc">설명 *</label>
-                <textarea class="form-textarea" id="og-desc" placeholder="공식 문서 기반 SEO 가이드" required></textarea>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="og-image">이미지 URL (1200x630 권장) *</label>
-                <input class="form-input" type="url" id="og-image" placeholder="https://example.com/og-image.png" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="og-url">페이지 URL *</label>
-                <input class="form-input" type="url" id="og-url" placeholder="https://example.com/page" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="og-type">콘텐츠 타입</label>
-                <select class="form-select" id="og-type">
-                  <option value="website">website</option>
-                  <option value="article" selected>article</option>
-                  <option value="product">product</option>
-                  <option value="video.other">video</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="og-site-name">사이트명</label>
-                <input class="form-input" type="text" id="og-site-name" placeholder="예시 사이트">
-              </div>
-              <button type="button" class="btn btn-primary" onclick="generateOpenGraph()">OG 태그 생성</button>
-            </form>
-            <div id="og-output" class="mt-6 hidden">
-              <h4>생성된 Open Graph / Twitter 태그</h4>
-              <div class="schema-card">
-                <button class="copy-btn" onclick="copyOutput('og-output-code')">복사</button>
-                <pre><code id="og-output-code"></code></pre>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="headline-analyzer" class="mt-12">
-          <h2>📰 헤드라인 분석기</h2>
-          <p>제목의 SEO 효과를 점수와 함께 분석합니다.</p>
-
-          <div class="tool-container">
-            <div class="form-group">
-              <label class="form-label" for="headline-input">제목 입력 *</label>
-              <input class="form-input" type="text" id="headline-input" placeholder="분석할 제목을 입력하세요">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="headline-keyword">타겟 키워드 (선택)</label>
-              <input class="form-input" type="text" id="headline-keyword" placeholder="SEO">
-            </div>
-            <button type="button" class="btn btn-primary" onclick="analyzeHeadline()">분석하기</button>
-            <div id="headline-output" class="mt-6 hidden">
-              <h4>분석 결과</h4>
-              <div class="score">
-                <div class="score-label">전체 점수</div>
-                <div class="score-bar"><div class="score-fill" id="headline-score-fill" style="width: 0%"></div></div>
-                <div class="score-value" id="headline-score">0</div>
-              </div>
-              <div id="headline-feedback" class="mt-4"></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="schema-validator" class="mt-12">
-          <h2>✅ 스키마 검증기 (기본 검사)</h2>
-          <p>JSON-LD 코드의 기본 구조를 검증합니다.</p>
-
-          <div class="tool-container">
-            <div class="form-group">
-              <label class="form-label" for="schema-input">JSON-LD 코드 붙여넣기 *</label>
-              <textarea class="form-textarea" id="schema-input" style="min-height: 200px;" placeholder='{"@context": "https://schema.org", "@type": "Article", "headline": "..."}'></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" onclick="validateSchema()">검증하기</button>
-            <div id="schema-output" class="mt-6"></div>
-          </div>
-
-          <div class="callout callout-info mt-6">
-            <p class="callout-title">💡 Google 공식 검증 도구</p>
-            <p>더 정밀한 검증은 <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Results Test</a> 또는 <a href="https://validator.schema.org/" target="_blank" rel="noopener noreferrer">Schema Markup Validator</a>를 사용하세요.</p>
-          </div>
-        </section>
-      </article>
+      <div class="text-center mt-8">
+        <a href="../index.html" class="btn btn-primary">← 홈으로 돌아가기</a>
+      </div>
     </div>
   </main>
 
@@ -515,7 +180,8 @@
       </div>
       <div class="footer-section"><h4>가이드</h4><ul><li><a href="seo-fundamentals.html">SEO 기초</a></li><li><a href="geo-guide.html">GEO</a></li><li><a href="aeo-guide.html">AEO</a></li></ul></div>
       <div class="footer-section"><h4>심화</h4><ul><li><a href="eeat-content.html">E-E-A-T</a></li><li><a href="ai-crawlers.html">AI 크롤러</a></li></ul></div>
-      <div class="footer-section"><h4>도구</h4><ul><li><a href="tools.html">실전 도구</a></li><li><a href="checklist.html">체크리스트</a></li></ul></div>      <div class="footer-section">
+      <div class="footer-section"><h4>도구</h4><ul><li><a href="tools.html">실전 도구</a></li><li><a href="checklist.html">체크리스트</a></li></ul></div>
+      <div class="footer-section">
         <h4>사이트</h4>
         <ul>
           <li><a href="faq.html">FAQ</a></li>
@@ -528,10 +194,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-<p>© 2026 GEO·SEO·AEO 가이드.</p></div>
+      <p>© 2026 GEO·SEO·AEO 가이드. | <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central</a> 공식 문서 기반</p>
+    </div>
   </footer>
-
   <script src="../js/main.js"></script>
-  <script src="../js/tools.js"></script>
 </body>
 </html>
