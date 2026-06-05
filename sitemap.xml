@@ -74,4 +74,47 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 정보 / 법적 페이지 -->
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/about.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/contact.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/faq.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/privacy-policy.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/terms-of-service.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://geo-seo-aeo-guide.example.com/pages/disclaimer.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
