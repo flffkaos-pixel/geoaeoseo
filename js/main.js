@@ -70,6 +70,18 @@
           this.btn.setAttribute('aria-expanded', 'false');
         }
       });
+
+      // 드롭다운 클릭 토글 (모바일)
+      this.dropdowns = this.menu.querySelectorAll('.has-dropdown > .nav-link');
+      this.dropdowns.forEach((trigger) => {
+        trigger.addEventListener('click', (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const parent = trigger.parentElement;
+            parent.classList.toggle('open');
+          }
+        });
+      });
     }
   };
 
