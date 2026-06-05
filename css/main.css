@@ -867,6 +867,18 @@ blockquote {
   margin-bottom: var(--space-2);
 }
 
+.footer-linkbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.footer-linkbar a {
+  white-space: nowrap;
+}
+
 .footer-section a {
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
