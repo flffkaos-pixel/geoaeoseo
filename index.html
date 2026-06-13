@@ -23,6 +23,10 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://geoptmize.pages.dev/">
 
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="ko" href="https://geoptmize.pages.dev/" />
+  <link rel="alternate" hreflang="x-default" href="https://geoptmize.pages.dev/" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://geoptmize.pages.dev/">
@@ -30,7 +34,7 @@
   <meta property="og:description" content="Google 공식 문서 기반의 GEO, SEO, AEO 완벽 가이드. AI 검색 시대의 최신 최적화 전략을 제공합니다.">
   <meta property="og:site_name" content="GEO/SEO/AEO 가이드">
   <meta property="og:locale" content="ko_KR">
-  <meta property="og:image" content="https://geoptmize.pages.dev/images/og-image.png">
+  <meta property="og:image" content="https://geoptmize.pages.dev/images/og-image.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="GEO/SEO/AEO 최적화 가이드">
@@ -40,12 +44,12 @@
   <meta name="twitter:url" content="https://geoptmize.pages.dev/">
   <meta name="twitter:title" content="GEO/SEO/AEO 최적화 가이드 - Google 공식 문서 기반">
   <meta name="twitter:description" content="Google 공식 문서 기반의 GEO, SEO, AEO 완벽 가이드. AI 검색 시대의 최신 최적화 전략을 제공합니다.">
-  <meta name="twitter:image" content="https://geoptmize.pages.dev/images/twitter-card.png">
+  <meta name="twitter:image" content="https://geoptmize.pages.dev/images/twitter-card.svg">
   <meta name="twitter:creator" content="@geo_seo_aeo">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
 
   <!-- Theme Color -->
   <meta name="theme-color" content="#1a73e8">
@@ -67,6 +71,10 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GEO/SEO/AEO 최적화 가이드",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".speakable-summary", ".hero-subtitle", "#intro .text-center p"]
+    },
     "alternateName": "AI 검색 최적화 가이드",
     "url": "https://geoptmize.pages.dev/",
     "description": "Google 공식 문서 기반의 GEO, SEO, AEO 최적화 가이드. AI 검색 시대에 맞는 최신 SEO 전략을 제공합니다.",
@@ -212,11 +220,13 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-content fade-in">
         <span class="badge badge-primary">Google 공식 문서 기반</span>
-        <h1 id="hero-title">AI 검색 시대의<br>완벽한 최적화 가이드</h1>
-        <p class="hero-subtitle">
-          SEO, GEO, AEO를 아우르는 2026년 최신 전략.
-          Google Search Central 공식 문서만으로 검증했습니다.
-        </p>
+        <div class="featured-snippet-target" id="snippet-hero">
+          <h1 id="hero-title">AI 검색 시대의<br>완벽한 최적화 가이드</h1>
+          <p class="hero-subtitle speakable-summary">
+            SEO, GEO, AEO를 아우르는 2026년 최신 전략.
+            Google Search Central 공식 문서만으로 검증했습니다.
+          </p>
+        </div>
         <div class="hero-actions">
           <a href="pages/seo-fundamentals.html" class="btn btn-primary btn-lg">
             가이드 시작하기
@@ -242,7 +252,7 @@
         </header>
 
         <div class="compare-grid">
-          <article class="compare-card">
+          <a href="pages/seo-fundamentals.html" class="compare-card">
             <h4>
               <span style="color: var(--color-primary);">🔍</span> SEO
               <span class="badge badge-primary">기본</span>
@@ -257,9 +267,11 @@
               <li>백링크 구축</li>
               <li>기술적 SEO (사이트 속도, SSL 등)</li>
               <li>콘텐츠 품질 향상</li>
-            </ul></article>
+            </ul>
+            <span class="compare-card-cta">SEO 가이드 학습하기</span>
+          </a>
 
-          <article class="compare-card">
+          <a href="pages/aeo-guide.html" class="compare-card">
             <h4>
               <span style="color: var(--color-secondary);">⚡</span> AEO
               <span class="badge badge-success">중급</span>
@@ -273,9 +285,11 @@
               <li>40-60단어 짧은 답변</li>
               <li>FAQ / HowTo 스키마</li>
               <li>음성 검색 최적화</li>
-            </ul></article>
+            </ul>
+            <span class="compare-card-cta">AEO 가이드 학습하기</span>
+          </a>
 
-          <article class="compare-card">
+          <a href="pages/geo-guide.html" class="compare-card">
             <h4>
               <span style="color: var(--color-accent);">🤖</span> GEO
               <span class="badge badge-warning">최신</span>
@@ -289,8 +303,15 @@
               <li>신뢰 신호 (E-E-A-T)</li>
               <li>통계/출처 인용</li>
               <li>구조화된 사실 정보</li>
-            </ul></article>
+            </ul>
+            <span class="compare-card-cta">GEO 가이드 학습하기</span>
+          </a>
         </div>
+
+        <aside class="citation-ready mt-8" data-entity="SEO-GEO-AEO" style="max-width: 800px; margin: 0 auto; padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background-color: var(--color-bg-secondary);">
+          <strong>SEO</strong>는 전통 검색엔진 최적화, <strong>AEO</strong>는 답변 엔진(Featured Snippet/음성) 최적화, <strong>GEO</strong>는 생성형 AI(ChatGPT, Gemini) 인용 최적화입니다. Google은 이 셋을 별도의 카테고리가 아닌 <strong>SEO의 확장</strong>으로 간주합니다.
+          <span class="source-ref" style="display: block; margin-top: var(--space-2); font-size: var(--font-size-sm); color: var(--color-text-secondary);">[출처: Google Search Central, "Optimizing for generative AI features"]</span>
+        </aside>
       </div>
     </section>
 
@@ -318,43 +339,6 @@
             <div class="stat-number">25%</div>
             <div class="stat-label">2026년 예상 전통 검색 감소율</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 학습 로드맵 -->
-    <section class="section" aria-labelledby="roadmap-title">
-      <div class="container">
-        <header class="text-center mb-8">
-          <span class="badge badge-primary">학습 로드맵</span>
-          <h2 id="roadmap-title">단계별로 마스터하기</h2>
-          <p class="text-secondary">초보자부터 전문가까지, 체계적인 학습 경로</p>
-        </header>
-
-        <div class="grid grid-3">
-          <article class="card" style="cursor:pointer" onclick="window.location.href='pages/seo-fundamentals.html'">
-            <div class="card-icon" aria-hidden="true">1️⃣</div>
-            <h3>기초 단계</h3>
-            <p>Google이 인정한 SEO 핵심 원칙과 Search Essentials를 이해합니다.</p>
-            <ul style="font-size: 14px; color: var(--color-text-secondary);">
-              <li>SEO 작동 원리 (크롤링, 색인, 랭킹) · 기술적 요구사항 · 스팸 정책</li>
-            </ul></article>
-
-          <article class="card" style="cursor:pointer" onclick="window.location.href='pages/eeat-content.html'">
-            <div class="card-icon" aria-hidden="true">2️⃣</div>
-            <h3>중급 단계</h3>
-            <p>고품질 콘텐츠 제작과 E-E-A-T 신호 구축 방법을 학습합니다.</p>
-            <ul style="font-size: 14px; color: var(--color-text-secondary);">
-              <li>사람 중심 콘텐츠 작성 · 경험/전문성/권위/신뢰성 · 구조화 데이터 활용</li>
-            </ul></article>
-
-          <article class="card" style="cursor:pointer" onclick="window.location.href='pages/geo-guide.html'">
-            <div class="card-icon" aria-hidden="true">3️⃣</div>
-            <h3>고급 단계</h3>
-            <p>AI 검색 시대에 맞는 GEO/AEO 전략을 구현합니다.</p>
-            <ul style="font-size: 14px; color: var(--color-text-secondary);">
-              <li>AI 크롤러 최적화 · RAG &amp; 쿼리 팬아웃 이해 · 생성형 AI 인용 전략</li>
-            </ul></article>
         </div>
       </div>
     </section>
