@@ -1,0 +1,38 @@
+# GEO/SEO/AEO 최적화 가이드
+> Google 공식 문서 기반 AI 검색 시대 최적화 전략
+> https://geoptmize.pages.dev/
+
+## 사이트 개요
+GEO(Generative Engine Optimization), SEO(Search Engine Optimization), AEO(Answer Engine Optimization)를 아우르는 2026년 최신 가이드. Google Search Central 공식 문서만으로 검증했습니다.
+
+## 주요 문서
+
+### 가이드
+- [SEO 기초 가이드](https://geoptmize.pages.dev/pages/seo-fundamentals.html) - Google Search Essentials부터 크롤링·색인·랭킹의 작동 원리
+- [GEO 가이드](https://geoptmize.pages.dev/pages/geo-guide.html) - 생성형 AI 검색(ChatGPT, Gemini)에 인용되는 GEO 전략
+- [AEO 가이드](https://geoptmize.pages.dev/pages/aeo-guide.html) - Featured Snippet, 음성 검색을 위한 AEO 전략
+- [구조화 데이터](https://geoptmize.pages.dev/pages/structured-data.html) - Schema.org와 JSON-LD 리치 결과 마크업
+- [E-E-A-T 콘텐츠](https://geoptmize.pages.dev/pages/eeat-content.html) - 경험·전문성·권위·신뢰성 구축
+- [AI 크롤러](https://geoptmize.pages.dev/pages/ai-crawlers.html) - GPTBot, ClaudeBot 등 AI 크롤러 이해와 설정
+- [성과 측정](https://geoptmize.pages.dev/pages/measurement.html) - Search Console, GA4, AI 가시성 추적
+
+### 도구
+- [실전 도구 모음](https://geoptmize.pages.dev/pages/tools.html) - JSON-LD 생성기, 스키마 검증 등 10종
+- [체크리스트](https://geoptmize.pages.dev/pages/checklist.html) - 단계별 SEO/GEO/AEO 실행 체크리스트
+- [SEO 체커](https://geoptmize.pages.dev/pages/tools/seo-checker.html) - URL 종합 점검 도구
+- [GEO 체커](https://geoptmize.pages.dev/pages/tools/geo-checker.html) - 생성형 AI 최적화 분석
+- [AEO 체커](https://geoptmize.pages.dev/pages/tools/aeo-checker.html) - 답변 엔진 최적화 분석
+
+### 정보
+- [FAQ](https://geoptmize.pages.dev/pages/faq.html) - 자주 묻는 질문
+- [용어집](https://geoptmize.pages.dev/pages/glossary.html) - SEO/GEO/AEO 주요 용어
+- [케이스 스터디](https://geoptmize.pages.dev/pages/case-studies.html) - 실제 적용 사례
+- [리소스](https://geoptmize.pages.dev/pages/resources.html) - 추천 도구 및 자료
+- [소개](https://geoptmize.pages.dev/pages/about.html) - 사이트 소개
+
+## 구조화된 사실 정보
+- SEO는 Google 검색엔진 최적화, 3단계(크롤링→색인→랭킹)로 작동
+- AEO는 Featured Snippet/음성 검색 답변 추출 최적화
+- GEO는 생성형 AI(ChatGPT, Gemini, Perplexity) 인용 최적화
+- Google은 GEO를 별도 카테고리가 아닌 SEO의 확장으로 간주
+- llms.txt나 AI 전용 마크업은 Google 검색에 불필요함

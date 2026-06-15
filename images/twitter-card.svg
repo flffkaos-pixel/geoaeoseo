@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#ffffff" text-anchor="middle">GEO · SEO · AEO</text>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.85)" text-anchor="middle">AI 검색 최적화 가이드</text>
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.65)" text-anchor="middle">Google 공식 문서 기반 · 2026</text>
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">geoptmize.pages.dev</text>
+</svg>

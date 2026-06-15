@@ -256,6 +256,44 @@
   background-color: var(--color-bg);
 }
 
+/* 클릭 가능한 compare-card (<a>로 사용) */
+a.compare-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+a.compare-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 24px rgba(26, 115, 232, 0.14);
+  text-decoration: none;
+  color: inherit;
+}
+a.compare-card:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+a.compare-card .compare-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-4);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+a.compare-card .compare-card-cta::after {
+  content: '→';
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+a.compare-card:hover .compare-card-cta::after {
+  transform: translateX(4px);
+}
+
 .compare-card h4 {
   margin-bottom: var(--space-3);
   display: flex;
