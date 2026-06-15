@@ -47,9 +47,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Google - Gemini(Bard) 학습 차단 (검색은 계속 허용)
+# Google - Gemini(Bard) 학습 허용 (검색은 계속 허용)
+# Google-Extended를 차단하면 Gemini에서 콘텐츠가 제공되지 않음
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 # Apple - Apple Intelligence 학습 차단
 User-agent: Applebot-Extended
