@@ -1226,25 +1226,25 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .nav-container {
-    position: relative;
-  }
   .nav-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+  }
+  .nav-menu.active {
+    display: flex;
+    position: fixed;
+    top: 60px;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: var(--color-bg);
     flex-direction: column;
     padding: var(--space-4);
-    border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-lg);
-    max-height: calc(100vh - 70px);
+    z-index: 9999;
     overflow-y: auto;
-    z-index: calc(var(--z-header) + 1);
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 60px);
   }
-  .nav-menu.active { display: flex; }
   .mobile-menu-btn { display: flex; }
 
   .nav-menu > li > .nav-link {
