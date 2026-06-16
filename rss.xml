@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>GEO/SEO/AEO 최적화 가이드</title>
+    <link>https://geoptmize.pages.dev/</link>
+    <description>Google 공식 문서 기반의 AI 검색 시대 SEO/GEO/AEO 최적화 가이드</description>
+    <language>ko-kr</language>
+    <copyright>Copyright 2026 GEO/SEO/AEO 가이드</copyright>
+    <managingEditor>contact@geoptmize.pages.dev (GEO/SEO/AEO 가이드)</managingEditor>
+    <webMaster>contact@geoptmize.pages.dev (GEO/SEO/AEO 가이드)</webMaster>
+    <pubDate>2026-06-05T00:00:00+09:00</pubDate>
+    <lastBuildDate>2026-06-15T00:00:00+09:00</lastBuildDate>
+    <atom:link href="https://geoptmize.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://geoptmize.pages.dev/images/logo.png</url>
+      <title>GEO/SEO/AEO 최적화 가이드</title>
+      <link>https://geoptmize.pages.dev/</link>
+    </image>
+
+    <item>
+      <title>SEO 기초 가이드 - Google 공식 문서 기반</title>
+      <link>https://geoptmize.pages.dev/pages/seo-fundamentals.html</link>
+      <description>Google Search Essentials 기반 SEO 완벽 가이드. 크롤링, 인덱싱, 랭킹, 모바일 최적화까지.</description>
+      <pubDate>2026-01-01T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/seo-fundamentals.html</guid>
+      <category>SEO</category>
+    </item>
+
+    <item>
+      <title>GEO 최적화 가이드 - 생성형 AI 인용 전략</title>
+      <link>https://geoptmize.pages.dev/pages/geo-guide.html</link>
+      <description>ChatGPT, Gemini, Perplexity 등 생성형 AI에서 콘텐츠가 인용되도록 최적화하는 Google 공식 전략.</description>
+      <pubDate>2026-01-15T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/geo-guide.html</guid>
+      <category>GEO</category>
+    </item>
+
+    <item>
+      <title>AEO 최적화 가이드 - Featured Snippet 전략</title>
+      <link>https://geoptmize.pages.dev/pages/aeo-guide.html</link>
+      <description>Featured Snippet, 음성 검색, AI 답변 엔진에서 선택받는 콘텐츠 구조화 전략.</description>
+      <pubDate>2026-02-01T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/aeo-guide.html</guid>
+      <category>AEO</category>
+    </item>
+
+    <item>
+      <title>구조화 데이터 가이드 - Schema.org JSON-LD</title>
+      <link>https://geoptmize.pages.dev/pages/structured-data.html</link>
+      <description>Schema.org와 JSON-LD로 리치 결과에 노출되는 마크업 작성법. Article, FAQ, HowTo 스키마.</description>
+      <pubDate>2026-02-15T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/structured-data.html</guid>
+      <category>구조화 데이터</category>
+    </item>
+
+    <item>
+      <title>E-E-A-T 콘텐츠 가이드 - 품질 4요소</title>
+      <link>https://geoptmize.pages.dev/pages/eeat-content.html</link>
+      <description>경험, 전문성, 권위성, 신뢰성. Google이 평가하는 콘텐츠 품질 4요소 완벽 가이드.</description>
+      <pubDate>2026-03-01T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/eeat-content.html</guid>
+      <category>E-E-A-T</category>
+    </item>
+
+    <item>
+      <title>AI 크롤러 가이드 - GPTBot, ClaudeBot 설정</title>
+      <link>https://geoptmize.pages.dev/pages/ai-crawlers.html</link>
+      <description>GPTBot, ClaudeBot, CCBot 등 AI 크롤러의 이해와 robots.txt 최적화 설정.</description>
+      <pubDate>2026-03-15T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/ai-crawlers.html</guid>
+      <category>AI 크롤러</category>
+    </item>
+
+    <item>
+      <title>SEO/GEO/AEO 체크리스트 - 완벽 실행 가이드</title>
+      <link>https://geoptmize.pages.dev/pages/checklist.html</link>
+      <description>단계별 실행 가능한 SEO/GEO/AEO 체크리스트로 누락 없이 сай트을 점검하세요.</description>
+      <pubDate>2026-04-01T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/checklist.html</guid>
+      <category>체크리스트</category>
+    </item>
+
+    <item>
+      <title>성과 측정 가이드 - Search Console, GA4</title>
+      <link>https://geoptmize.pages.dev/pages/measurement.html</link>
+      <description>Search Console, GA4, AI 가시성 추적으로 ROI를 증명하는 방법.</description>
+      <pubDate>2026-04-15T00:00:00+09:00</pubDate>
+      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/measurement.html</guid>
+      <category>성과 측정</category>
+    </item>
+
+  </channel>
+</rss>
