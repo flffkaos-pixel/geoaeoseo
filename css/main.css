@@ -385,23 +385,6 @@ blockquote {
   color: var(--color-text);
 }
 
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--color-bg);
-    flex-direction: column;
-    padding: var(--space-4);
-    border-bottom: 1px solid var(--color-border);
-    box-shadow: var(--shadow-lg);
-  }
-  .nav-menu.active { display: flex; }
-  .mobile-menu-btn { display: flex; }
-}
-
 /* ==========================================================================
    버튼
    ========================================================================== */
@@ -1243,6 +1226,9 @@ blockquote {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
   .nav-menu {
     display: none;
     position: absolute;
@@ -1256,6 +1242,7 @@ blockquote {
     box-shadow: var(--shadow-lg);
     max-height: calc(100vh - 70px);
     overflow-y: auto;
+    z-index: calc(var(--z-header) + 1);
   }
   .nav-menu.active { display: flex; }
   .mobile-menu-btn { display: flex; }
