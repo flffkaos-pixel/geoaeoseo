@@ -383,6 +383,9 @@ blockquote {
   align-items: center;
   justify-content: center;
   color: var(--color-text);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* ==========================================================================
