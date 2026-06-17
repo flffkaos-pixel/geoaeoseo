@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Site Verification -->
+  <meta name="naver-site-verification" content="a87a8cabc2c9e1f7d9d1fa16b8fc0cb9dbc5102a" />
+  <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
+  <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
+
+  <title>SEO 기초 - Naver 검색엔진 최적화 기본 가이드</title>
+  <meta name="description" content="네이버 SEO 기초 가이드: 검색엔진 최적화 목적, 사이트 만들기, robots.txt, 리다이렉트, 사이트 이전, HTTP 규약">
+  <meta name="keywords" content="Naver SEO, 네이버 검색엔진 최적화, SEO 기초, robots.txt, Yeti, 사이트맵, 301 리다이렉트, 네이버 웹마스터도구">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://geoptmize.pages.dev/pages/naver-seo-basic.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SEO 기초 - Naver 검색엔진 최적화 기본 가이드">
+  <meta property="og:description" content="네이버 SEO 기초 가이드: 검색엔진 최적화 목적, 사이트 만들기, robots.txt, 리다이렉트, 사이트 이전, HTTP 규약">
+  <meta property="og:url" content="https://geoptmize.pages.dev/pages/naver-seo-basic.html">
+  <meta property="og:image" content="https://geoptmize.pages.dev/images/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO 기초 - Naver 검색엔진 최적화 기본 가이드">
+  <meta name="twitter:description" content="네이버 SEO 기초 가이드: 검색엔진 최적화 목적, 사이트 만들기, robots.txt, 리다이렉트, 사이트 이전, HTTP 규약">
+  <meta name="twitter:image" content="https://geoptmize.pages.dev/images/twitter-card.svg">
+  <link rel="alternate" hreflang="ko" href="https://geoptmize.pages.dev/pages/naver-seo-basic.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EN%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#1a73e8">
+
+  <link rel="stylesheet" href="../css/main.css?v2">
+  <link rel="stylesheet" href="../css/components.css?v2">
+  <link rel="stylesheet" href="../css/responsive.css?v2">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SEO 기초 - Naver 검색엔진 최적화 기본 가이드",
+    "description": "네이버 검색엔진 최적화의 기초. 검색엔진 최적화의 목적, 사이트 구축 방법, robots.txt 설정, 리다이렉트, 사이트 이전, HTTP 규약을 다룹니다.",
+    "author": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드",
+      "logo": {"@type": "ImageObject", "url": "https://geoptmize.pages.dev/images/logo.svg"}
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-06-13",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://geoptmize.pages.dev/pages/naver-seo-basic.html"},
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".speakable-summary", ".featured-snippet-target"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://geoptmize.pages.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Naver SEO 가이드", "item": "https://geoptmize.pages.dev/pages/naver-seo-index.html"},
+      {"@type": "ListItem", "position": 3, "name": "SEO 기초", "item": "https://geoptmize.pages.dev/pages/naver-seo-basic.html"}
+    ]
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1955893232253258" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="주 네비게이션">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">G</span>
+        <span>GEO·SEO·AEO 가이드</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">홈</a></li>
+        <li class="has-dropdown">
+          <span class="nav-link">가이드 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="seo-fundamentals.html">SEO 기초</a></li>
+            <li><a href="geo-guide.html">GEO 가이드</a></li>
+            <li><a href="aeo-guide.html">AEO 가이드</a></li>
+            <li><a href="structured-data.html">구조화 데이터</a></li>
+            <li><a href="eeat-content.html">E-E-A-T</a></li>
+            <li><a href="ai-crawlers.html">AI 크롤러</a></li>
+            <li><a href="measurement.html">성과 측정</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <span class="nav-link">도구 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="tools.html">실전 도구</a></li>
+            <li><a href="checklist.html">체크리스트</a></li>
+            <li><a href="tools/seo-checker.html">SEO 체커</a></li>
+            <li><a href="tools/geo-checker.html">GEO 체커</a></li>
+            <li><a href="tools/aeo-checker.html">AEO 체커</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <span class="nav-link">정보 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="contact.html">문의하기</a></li>
+            <li><a href="privacy-policy.html">개인정보 처리방침</a></li>
+            <li><a href="terms-of-service.html">이용약관</a></li>
+            <li><a href="disclaimer.html">면책조항</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-layout">
+      <aside class="sidebar" role="navigation" aria-label="Naver SEO 사이드바">
+        <nav class="sidebar-nav">
+          <h3>Naver SEO 가이드</h3>
+          <ul>
+            <li><a href="naver-seo-index.html">가이드 소개</a></li>
+            <li><a href="naver-seo-basic.html" class="active" aria-current="page">SEO 기초</a></li>
+            <li><a href="naver-seo-advanced.html">SEO 고급</a></li>
+            <li><a href="naver-structured-data.html">구조화된 데이터</a></li>
+            <li><a href="naver-tools.html">검색 연동 &amp; 도구</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+
+        <div class="featured-snippet-target" id="snippet-naver-seo">
+          <p class="speakable-summary" style="font-size: var(--font-size-lg); line-height: 1.8; background: var(--color-primary-light); padding: var(--space-5); border-radius: var(--radius-md); margin-bottom: var(--space-6);">
+            <strong>네이버 SEO(검색엔진 최적화)</strong>는 여러분의 사이트 내 콘텐츠 정보를 네이버 검색엔진이 잘 이해할 수 있도록 정리하는 작업입니다. 이 작업을 통해 사이트 내 콘텐츠가 네이버의 검색 결과에 누락되지 않도록 조치하고, 사용자가 원하는 콘텐츠의 내용을 명확하게 검색엔진에게 알려 줄 수 있습니다. 네이버 검색은 검색엔진에 친화적인 사이트를 우대합니다.
+          </p>
+          <aside class="citation-ready" data-entity="Naver SEO" style="font-size: var(--font-size-sm); padding: var(--space-3); border: 1px dashed var(--color-primary); border-radius: var(--radius-sm); margin-bottom: var(--space-6);">
+            <strong>인용 가능 정의:</strong> 네이버 SEO는 네이버 검색엔진이 콘텐츠를 잘 이해하고 검색 결과에 노출될 수 있도록 사이트를 최적화하는 작업입니다. 네이버는 검색엔진에 친화적인 사이트를 검색 결과에서 우대합니다.
+            <span class="source-ref" style="display: block; margin-top: var(--space-1); color: var(--color-text-secondary);">[출처: Naver Search Advisor, "검색엔진 최적화 가이드"]</span>
+          </aside>
+        </div>
+
+        <section id="purpose">
+          <h2>1. 검색엔진 최적화의 목적</h2>
+          <p>검색엔진 최적화 작업은 여러분의 사이트 내 콘텐츠 정보를 검색엔진이 잘 이해할 수 있도록 정리하는 작업입니다. 이 작업을 통하여 사이트 내 콘텐츠가 네이버의 검색 결과에 누락되지 않도록 조치할 수 있으며, 무엇보다 사용자가 원하는 콘텐츠의 내용을 명확하게 네이버 검색엔진에게 알려 줄 수 있습니다.</p>
+          <p>네이버 검색은 검색엔진에 친화적인 사이트를 우대합니다.</p>
+
+          <h3>핵심 체크리스트 10가지</h3>
+          <ol>
+            <li><strong>웹마스터도구에 사이트 등록 및 소유확인</strong> - 네이버 웹마스터도구(Search Advisor)에 사이트를 등록하고 소유권을 인증하세요.</li>
+            <li><strong>방화벽/robots.txt 차단 확인</strong> - 검색로봇이 사이트에 접근 가능한지 확인합니다. 방화벽이나 robots.txt로 차단되지 않았는지 점검하세요.</li>
+            <li><strong>검색로봇 접근 허용 (Yeti User-Agent)</strong> - 네이버 검색로봇 Yeti의 접근을 허용해야 합니다. 서버 방화벽에서 Yeti의 User-Agent를 차단하지 않도록 주의하세요.</li>
+            <li><strong>중복 콘텐츠 확인</strong> - 동일하거나 유사한 콘텐츠가 여러 URL에 존재하지 않는지 확인합니다. 중복 콘텐츠는 검색 품질을 저하시킵니다.</li>
+            <li><strong>사이트맵 및 RSS 제출</strong> - 사이트맵(Sitemap)과 RSS 피드를 생성하여 웹마스터도구에 제출하세요.</li>
+            <li><strong>사이트 연관 채널 마크업</strong> - 사이트와 연관된 채널(블로그, 카페, SNS 등)을 마크업으로 연결하세요.</li>
+            <li><strong>검색 결과 확인 (site: 질의)</strong> - <code>site:yourdomain.com</code> 질의로 사이트가 검색 결과에 얼마나 노출되는지 확인하세요.</li>
+            <li><strong>메인 페이지 noindex 확인</strong> - 메인 페이지에 실수로 noindex 메타 태그가 설정되지 않았는지 확인합니다.</li>
+            <li><strong>콘텐츠 JS 로딩 구조 확인</strong> - JavaScript로 콘텐츠를 동적으로 로딩하는 경우 검색로봇이 해당 콘텐츠를 수집할 수 있는지 확인하세요.</li>
+            <li><strong>표준 링크 URL 사용</strong> - 모든 페이지에서 일관된 URL 구조(표준 URL)를 사용하세요. <code>&lt;link rel="canonical"&gt;</code> 태그를 활용합니다.</li>
+          </ol>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 핵심 포인트</p>
+            <p>검색엔진 최적화는 검색엔진을 위한 작업이 아닌, <strong>사용자를 위한 작업</strong>입니다. 사용자가 원하는 정보를 잘 전달할 수 있도록 콘텐츠를 구조화하는 것이 SEO의 본질입니다.</p>
+          </div>
+        </section>
+
+        <section id="building-site">
+          <h2>2. 웹 사이트를 만들 때</h2>
+          <p>검색엔진에 최적화된 웹 사이트를 구축하기 위해 다음 원칙을 지켜야 합니다.</p>
+
+          <h3>단일 호스트 명, 단일 URL 사용</h3>
+          <p>하나의 사이트는 하나의 호스트 명(도메인)과 하나의 URL 체계를 사용해야 합니다. 예를 들어 <code>example.com</code>, <code>www.example.com</code>, <code>example.kr</code> 등 여러 도메인이 동일한 콘텐츠를 서비스하면 검색엔진이 혼란을 겪습니다.</p>
+
+          <h3>대표(canonical) 주소로 301 redirect</h3>
+          <p>여러 도메인 또는 URL로 접근이 가능한 경우, 대표 주소를 하나 선정하고 나머지 주소는 301 리다이렉트로 대표 주소로 이동시켜야 합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># www 주소를 non-www로 리다이렉트 (Apache .htaccess 예시)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.example\.com [NC]
+RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]
+
+# 또는 non-www를 www로 리다이렉트
+RewriteCond %{HTTP_HOST} ^example\.com [NC]
+RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]</code></pre>
+          </div>
+
+          <h3>호스트 명에 underscore 사용 금지</h3>
+          <p>호스트 명(도메인)에는 underscore(<code>_</code>) 대신 hyphen(<code>-</code>)을 사용해야 합니다. 예: <code>my-site.com</code> (O), <code>my_site.com</code> (X)</p>
+
+          <h3>robots.txt 설정 방법</h3>
+          <p>robots.txt 파일은 웹 사이트의 루트 디렉토리에 위치해야 하며, 검색로봇의 접근을 제어합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml</code></pre>
+          </div>
+
+          <h3>사이트맵 XML 파일 생성</h3>
+          <p>사이트맵은 사이트의 모든 중요 페이지를 검색엔진에 알려주는 XML 파일입니다. 웹마스터도구를 통해 제출할 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-06-01&lt;/lastmod&gt;
+    &lt;changefreq&gt;daily&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/about/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-05-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+          </div>
+
+          <h3>오류 페이지 HTTP 규약 준수 (404, 403, 503)</h3>
+          <p>오류 페이지는 반드시 적절한 HTTP 응답 코드를 반환해야 합니다. 존재하지 않는 페이지는 404, 접근 권한이 없는 페이지는 403, 일시적으로 서비스를 사용할 수 없는 경우 503을 반환합니다.</p>
+
+          <h3>모바일 친화적인 사이트 (반응형 웹)</h3>
+          <p>네이버는 모바일 검색 사용자가 증가함에 따라 모바일 친화적인 사이트를 권장합니다. 반응형 웹 디자인(Responsive Web Design)을 적용하여 하나의 HTML로 모든 기기에 최적화된 화면을 제공하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="robots-txt">
+          <h2>3. robots.txt 설정하기</h2>
+          <p>robots.txt는 검색로봇에게 사이트 수집을 허용하거나 제한하는 국제 권고안입니다. 웹 사이트의 루트 디렉토리에 위치해야 하며, 검색로봇이 사이트에 접근하기 전에 가장 먼저 확인하는 파일입니다.</p>
+
+          <h3>robots.txt HTTP 응답 코드별 동작</h3>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>응답 코드</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>2xx</strong></td>
+                  <td>로봇 배제 표준 규칙 해석 - robots.txt 파일을 정상적으로 읽고 규칙을 적용합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>3xx</strong></td>
+                  <td>리다이렉트를 최대 5회까지 허용하며, 최종 도착지의 robots.txt 규칙을 적용합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>4xx</strong></td>
+                  <td>모든 접근을 허용하는 것으로 해석합니다. (robots.txt를 찾을 수 없으므로 제한 없음)</td>
+                </tr>
+                <tr>
+                  <td><strong>5xx</strong></td>
+                  <td>모든 접근을 허용하지 않는 것으로 해석합니다. (서버 오류로 안전하게 차단)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>robots.txt 예제</h3>
+
+          <h4>전체 차단 후 Yeti만 허용</h4>
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>User-agent: *
+Disallow: /
+
+User-agent: Yeti
+Allow: /</code></pre>
+          </div>
+
+          <h4>특정 디렉토리만 차단</h4>
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+User-agent: Yeti
+Allow: /</code></pre>
+          </div>
+
+          <div class="callout callout-warning">
+            <p class="callout-title">⚠️ 주의사항</p>
+            <p>robots.txt로 차단된 페이지는 검색 결과에 <strong>완전히 누락</strong>될 수 있습니다. 중요한 페이지가 실수로 차단되지 않도록 주의하세요. 또한, robots.txt는 보안 기능이 아니므로 민감한 페이지는 인증 시스템으로 보호해야 합니다.</p>
+          </div>
+        </section>
+
+        <section id="redirect">
+          <h2>4. 웹 페이지의 이동 (Redirect)</h2>
+          <p>웹 페이지를 다른 주소로 이동할 때는 반드시 적절한 HTTP 리다이렉트를 사용해야 합니다.</p>
+
+          <h3>JS redirect 사용 금지</h3>
+          <p>JavaScript를 사용한 리다이렉트(<code>window.location</code>, <code>meta refresh</code> 등)는 검색엔진이 제대로 인식하지 못할 수 있습니다. 반드시 서버 단의 HTTP 리다이렉트를 사용하세요.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>사용 금지:</strong> 아래와 같은 JavaScript 리다이렉트는 검색엔진 최적화에 적합하지 않습니다.
+            </div>
+          </div>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 사용 금지: JavaScript 리다이렉트 --&gt;
+&lt;script&gt;window.location.href = 'https://example.com/new-page';&lt;/script&gt;
+
+&lt;!-- 사용 금지: meta refresh 리다이렉트 --&gt;
+&lt;meta http-equiv="refresh" content="0; url=https://example.com/new-page"&gt;</code></pre>
+          </div>
+
+          <h3>영구 이동: 301 Moved Permanently</h3>
+          <p>페이지가 영구적으로 다른 주소로 이동한 경우 301 리다이렉트를 사용합니다. 검색엔진은 기존 페이지의 랭킹 점수를 새 주소로 이전합니다.</p>
+
+          <h3>임시 이동: 302 Temporarily Moved</h3>
+          <p>페이지가 일시적으로 다른 주소로 이동한 경우 302 리다이렉트를 사용합니다. 검색엔진은 기존 URL을 유지하고 랭킹 점수도 유지합니다.</p>
+
+          <h3>연속 redirect 최소화 (최대 5회)</h3>
+          <p>여러 번의 연속적인 리다이렉트(리다이렉트 체인)는 검색로봇의 크롤링 효율을 저하시킵니다. 가능한 한 직접적인 리다이렉트를 사용하고, 최대 5회를 초과하지 않도록 합니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 권장 사항</p>
+            <p>리다이렉트 체인은 검색로봇이 페이지를 발견하는 데 지연을 발생시킵니다. <strong>A → B → C → D</strong>보다 <strong>A → D</strong>로 직접 리다이렉트하도록 설정을 정리하세요.</p>
+          </div>
+        </section>
+
+        <section id="site-migration">
+          <h2>5. 웹 사이트 이전</h2>
+          <p>사이트를 다른 도메인이나 서버로 이전할 때는 반드시 아래 5단계 절차를 따라야 검색 순위 손실을 최소화할 수 있습니다.</p>
+
+          <div class="stepper">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>신규 사이트로 콘텐츠 이동</h4>
+                <p>기존 사이트의 모든 콘텐츠를 신규 사이트로 이동합니다. 콘텐츠의 구조와 URL 체계를 가능한 한 유지하는 것이 좋습니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>신규 도메인 할당</h4>
+                <p>신규 도메인을 설정하고 SSL 인증서를 포함한 모든 서버 구성을 완료합니다. 신규 사이트가 정상적으로 작동하는지 충분히 테스트합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>301 HTTP redirect 설정</h4>
+                <p>기존 사이트의 모든 URL을 대응하는 신규 사이트 URL로 301 영구 리다이렉트를 설정합니다. URL 구조가 변경된 경우에도 올바르게 매핑되어야 합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>웹마스터도구에 신규 사이트 등록</h4>
+                <p>네이버 웹마스터도구(Search Advisor)에 신규 사이트를 등록하고 소유권을 인증합니다. 사이트맵을 제출하여 검색로봇이 새 사이트를 빠르게 발견할 수 있도록 합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>구 사이트 종료</h4>
+                <p>모든 리다이렉트가 정상 작동하고 신규 사이트가 검색 결과에 안정적으로 노출되기 시작하면 구 사이트를 종료합니다. 구 사이트는 최소 30일 이상 301 리다이렉트를 유지하는 것이 좋습니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-content">
+              <strong>주의:</strong> 사이트 이전 시 URL 구조를 변경하면 검색 순위에 일시적인 변동이 발생할 수 있습니다. 가능한 한 URL 구조를 유지하고, 변경이 불가피한 경우 웹마스터도구의 "주소 변경" 기능을 활용하세요.
+            </div>
+          </div>
+        </section>
+
+        <section id="site-termination">
+          <h2>6. 웹 사이트 운영 종료</h2>
+          <p>더 이상 사이트를 운영하지 않을 경우, 적절한 종료 절차를 따라야 합니다.</p>
+
+          <h3>사용자 쓰기 권한 회수</h3>
+          <p>더 이상 사용자가 콘텐츠를 작성하거나 수정할 수 없도록 모든 쓰기 권한을 회수합니다. 회원가입, 댓글 작성, 게시판 글쓰기 등의 기능을 비활성화합니다.</p>
+
+          <h3>최소 1개월 이상 종료 공지</h3>
+          <p>사이트 운영 종료를 최소 1개월 전부터 사이트 메인 페이지와 중요 페이지에 공지합니다. 사용자에게 데이터 백업 기회를 제공하고, 대체 서비스가 있다면 안내합니다.</p>
+
+          <h3>방치 시 스팸/도메인 탈취 위험</h3>
+          <p>운영 종료 후 사이트를 방치하면 악의적인 제3자가 사이트를 탈취하거나 스팸 페이지로 활용할 위험이 있습니다. 도메인 만료 전에 필요한 조치를 완료하고, 가능하다면 사이트를 완전히 삭제하는 것이 안전합니다.</p>
+
+          <div class="callout callout-danger">
+            <p class="callout-title">🚨 보안 주의</p>
+            <p>운영 종료된 사이트를 장기간 방치하면 <strong>스팸 링크 유포, 피싱 사이트, 악성코드 배포</strong> 등에 악용될 수 있습니다. 사이트 종료 후에는 반드시 서버를 중단하거나 적절한 조치를 취하세요.</p>
+          </div>
+        </section>
+
+        <section id="crawler-verification">
+          <h2>7. 검색로봇 확인 방법</h2>
+          <p>네이버 검색로봇(Yeti)이 사이트에 접근하는 것을 확인하거나, 서버 로그에서 Yeti의 접근을 식별하는 방법입니다.</p>
+
+          <h3>User-Agent: Yeti</h3>
+          <p>네이버 검색로봇의 User-Agent는 <code>Yeti/1.1</code>입니다. 서버 로그에서 아래 User-Agent 문자열을 확인할 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>Mozilla/5.0 (compatible; Yeti/1.1; +https://naver.com/bot.html)</code></pre>
+          </div>
+
+          <h3>IP 확인: 역 DNS 조회</h3>
+          <p>Yeti의 IP 주소는 역 DNS 조회를 통해 <code>crawl.xxx.web.naver.com</code> 형태로 확인됩니다. 서버 로그에서 Yeti의 접근을 확인하려면 IP에 대해 역 DNS 조회를 수행하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># Windows 명령 프롬프트
+nslookup xxx.xxx.xxx.xxx
+
+# 결과 예시
+# Name: crawl123.web.naver.com</code></pre>
+          </div>
+
+          <h3>IP 범위 목록 제공 (JSON/CIDR)</h3>
+          <p>네이버는 검색로봇 Yeti의 IP 범위를 CIDR 형식으로 제공합니다. 서버 방화벽 설정 시 이 IP 범위를 참고하여 Yeti의 접근을 허용할 수 있습니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 Yeti IP 확인 방법</p>
+            <p>네이버 웹마스터도구에서 Yeti의 최신 IP 범위 목록을 확인할 수 있습니다. 방화벽에서 검색로봇을 차단하지 않도록 주의하세요.</p>
+          </div>
+        </section>
+
+        <section id="http-protocol">
+          <h2>8. HTTP 규약</h2>
+          <p>검색엔진 최적화를 위해 서버는 반드시 HTTP 규약을 올바르게 준수해야 합니다. 특히 응답 코드(Status Code)는 검색로봇이 페이지 상태를 판단하는 중요한 기준입니다.</p>
+
+          <h3>HTTP 응답코드 표</h3>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>코드</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>200 OK</strong></td>
+                  <td>정상 - 페이지가 정상적으로 로드되었습니다. 검색로봇이 콘텐츠를 수집하여 색인합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>301</strong></td>
+                  <td>영구 이동 - 페이지가 영구적으로 다른 주소로 이동했습니다. 검색엔진은 기존 랭킹을 새 주소로 이전합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>302</strong></td>
+                  <td>임시 이동 (호환성) - 페이지가 일시적으로 다른 주소로 이동했습니다. 기존 URL을 유지합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>303 / 307</strong></td>
+                  <td>임시 이동 (HTTP 1.1) - HTTP 1.1 규약에서의 임시 이동을 나타냅니다. 302와 유사하게 동작합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>404</strong></td>
+                  <td>Not Found - 요청한 페이지를 찾을 수 없습니다. 존재하지 않는 페이지는 반드시 404를 반환해야 합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>403</strong></td>
+                  <td>Forbidden - 페이지에 접근할 권한이 없습니다. 인증이 필요한 페이지에서 사용합니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>500</strong></td>
+                  <td>Server Error - 서버 내부 오류가 발생했습니다. 지속적인 500 오류는 크롤링 효율을 저하시킵니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>503</strong></td>
+                  <td>Service Unavailable - 서비스를 일시적으로 사용할 수 없습니다. 점검 등 일시적 중단 시 사용합니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout callout-warning">
+            <p class="callout-title">⚠️ 주의사항</p>
+            <p>존재하지 않는 페이지에 200 OK를 반환하면 (Soft 404) 검색엔진이 불필요한 페이지를 색인하게 됩니다. 반드시 올바른 HTTP 응답 코드를 반환해야 합니다.</p>
+          </div>
+
+          <h3>올바른 HTTP 응답 코드 설정 예제</h3>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># Apache .htaccess 예시
+
+# 404 에러 페이지
+ErrorDocument 404 /404.html
+
+# 403 에러 페이지
+ErrorDocument 403 /403.html
+
+# 503 에러 페이지
+ErrorDocument 503 /503.html
+
+# 301 리다이렉트
+Redirect 301 /old-page.html /new-page.html</code></pre>
+          </div>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># Nginx 설정 예시
+
+# 404 에러 페이지
+error_page 404 /404.html;
+
+# 403 에러 페이지
+error_page 403 /403.html;
+
+# 503 에러 페이지
+error_page 503 /503.html;
+
+# 301 리다이렉트
+rewrite ^/old-page\.html$ /new-page.html permanent;</code></pre>
+          </div>
+        </section>
+
+        <section class="mt-8" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
+          <h2>🚀 다음 단계</h2>
+          <p>SEO 기초를 이해했다면, 이제 더 심화된 내용을 학습할 차례입니다.</p>
+          <div class="flex gap-4" style="flex-wrap: wrap;">
+            <a href="naver-seo-advanced.html" class="btn btn-primary">SEO 고급 가이드 →</a>
+            <a href="naver-structured-data.html" class="btn btn-outline">구조화된 데이터 가이드 →</a>
+            <a href="naver-tools.html" class="btn btn-secondary">검색 연동 &amp; 도구 →</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../index.html" class="logo" style="margin-bottom: 16px;">
+          <span class="logo-icon">G</span>
+          <span>GEO·SEO·AEO 가이드</span>
+        </a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">네이버 검색엔진 최적화 공식 가이드 기반</p>
+      </div>
+      <div class="footer-section">
+        <h4>가이드</h4>
+        <p class="footer-linkbar"><a href="seo-fundamentals.html">SEO 기초</a> · <a href="geo-guide.html">GEO 가이드</a> · <a href="aeo-guide.html">AEO 가이드</a> · <a href="structured-data.html">구조화 데이터</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>심화 학습</h4>
+        <p class="footer-linkbar"><a href="eeat-content.html">E-E-A-T</a> · <a href="ai-crawlers.html">AI 크롤러</a> · <a href="measurement.html">성과 측정</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>도구</h4>
+        <p class="footer-linkbar"><a href="tools.html">실전 도구</a> · <a href="checklist.html">체크리스트</a></p>
+      </div>      <div class="footer-section">
+        <h4>사이트</h4>
+        <p class="footer-linkbar"><a href="faq.html">FAQ</a> · <a href="about.html">소개</a> · <a href="contact.html">문의하기</a> · <a href="privacy-policy.html">개인정보 처리방침</a> · <a href="terms-of-service.html">이용약관</a> · <a href="disclaimer.html">면책조항</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GEO·SEO·AEO 가이드. Naver Search Advisor 공식 문서 기반.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v2"></script>
+  <script>
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

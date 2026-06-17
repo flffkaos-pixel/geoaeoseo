@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Site Verification -->
+  <meta name="naver-site-verification" content="a87a8cabc2c9e1f7d9d1fa16b8fc0cb9dbc5102a" />
+  <meta name="google-site-verification" content="90ObN9YY1jH6ZHRfL3tGx5HvKoHC8boT6jdFhbSe80s" />
+  <meta name="google-adsense-account" content="ca-pub-1955893232253258" />
+
+  <title>SEO 고급 & 콘텐츠 가이드 - Naver 검색엔진 최적화</title>
+  <meta name="description" content="네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성">
+  <meta name="keywords" content="Naver SEO, 네이버 SEO, 네이버 검색엔진 최적화, 자바스크립트 SEO, URL 구조, HTML 마크업, 모바일 사용성, 콘텐츠 가이드, robots.txt, canonical, 오픈 그래프">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://geoptmize.pages.dev/pages/naver-seo-advanced.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="SEO 고급 & 콘텐츠 가이드 - Naver 검색엔진 최적화">
+  <meta property="og:description" content="네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성">
+  <meta property="og:url" content="https://geoptmize.pages.dev/pages/naver-seo-advanced.html">
+  <meta property="og:image" content="https://geoptmize.pages.dev/images/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO 고급 & 콘텐츠 가이드 - Naver 검색엔진 최적화">
+  <meta name="twitter:description" content="네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성">
+  <meta name="twitter:image" content="https://geoptmize.pages.dev/images/twitter-card.svg">
+  <link rel="alternate" hreflang="ko" href="https://geoptmize.pages.dev/pages/naver-seo-advanced.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a73e8'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#1a73e8">
+
+  <link rel="stylesheet" href="../css/main.css?v2">
+  <link rel="stylesheet" href="../css/components.css?v2">
+  <link rel="stylesheet" href="../css/responsive.css?v2">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SEO 고급 & 콘텐츠 가이드 - Naver 검색엔진 최적화",
+    "description": "네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성",
+    "author": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GEO/SEO/AEO 가이드",
+      "logo": {"@type": "ImageObject", "url": "https://geoptmize.pages.dev/images/logo.svg"}
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-06-17",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://geoptmize.pages.dev/pages/naver-seo-advanced.html"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://geoptmize.pages.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "SEO 고급 & 콘텐츠 가이드", "item": "https://geoptmize.pages.dev/pages/naver-seo-advanced.html"}
+    ]
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1955893232253258" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="주 네비게이션">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">G</span>
+        <span>GEO·SEO·AEO 가이드</span>
+      </a>
+                  <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">홈</a></li>
+        <li class="has-dropdown">
+          <span class="nav-link">가이드 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="seo-fundamentals.html">SEO 기초</a></li>
+            <li><a href="geo-guide.html">GEO 가이드</a></li>
+            <li><a href="aeo-guide.html">AEO 가이드</a></li>
+            <li><a href="structured-data.html">구조화 데이터</a></li>
+            <li><a href="eeat-content.html">E-E-A-T</a></li>
+            <li><a href="ai-crawlers.html">AI 크롤러</a></li>
+            <li><a href="naver-seo-index.html">Naver SEO 가이드</a></li>
+            <li><a href="measurement.html">성과 측정</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <span class="nav-link">도구 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="tools.html">실전 도구</a></li>
+            <li><a href="checklist.html">체크리스트</a></li>
+            <li><a href="tools/seo-checker.html">SEO 체커</a></li>
+            <li><a href="tools/geo-checker.html">GEO 체커</a></li>
+            <li><a href="tools/aeo-checker.html">AEO 체커</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <span class="nav-link">정보 <span class="nav-arrow">▼</span></span>
+          <ul class="nav-dropdown">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="contact.html">문의하기</a></li>
+            <li><a href="privacy-policy.html">개인정보 처리방침</a></li>
+            <li><a href="terms-of-service.html">이용약관</a></li>
+            <li><a href="disclaimer.html">면책조항</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="다크 모드"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="mobile-menu-btn" aria-label="메뉴"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="layout-with-sidebar">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <h4>목차</h4>
+          <ul>
+            <li><a href="#js-optimization">1. 자바스크립트 검색 최적화</a></li>
+            <li><a href="#url-structure">2. 검색 친화적인 URL</a></li>
+            <li><a href="#index-efficiency">3. 색인 효율성 개선</a></li>
+            <li><a href="#html-checklist">4. HTML 마크업 체크리스트</a></li>
+            <li><a href="#resource-links">5. 리소스와 링크 관리</a></li>
+            <li><a href="#content-spam">6. 웹 콘텐츠 스팸 사례</a></li>
+            <li><a href="#content-guidelines">7. 콘텐츠 작성 권장</a></li>
+            <li><a href="#preferred-url">8. 선호 URL 및 로봇 메타</a></li>
+            <li><a href="#content-markup">9. 콘텐츠 마크업</a></li>
+            <li><a href="#mobile-usability">10. 모바일 사용성</a></li>
+            <li><a href="#favicon">11. 파비콘</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+
+        <div class="featured-snippet-target" id="snippet-naver-seo-advanced">
+          <p class="speakable-summary" style="font-size: var(--font-size-lg); line-height: 1.8; background: var(--color-primary-light); padding: var(--space-5); border-radius: var(--radius-md); margin-bottom: var(--space-6);">
+            <strong>Naver 검색엔진 최적화(SEO) 고급 가이드</strong>는 네이버 검색에서 웹사이트가 효율적으로 수집·색인되고 사용자에게 정확히 노출되도록 최적화하는 방법을 다룹니다. 자바스크립트 렌더링, URL 구조, HTML 마크업, 콘텐츠 품질, 모바일 사용성까지 포괄하는 실전 가이드입니다.
+          </p>
+          <aside class="citation-ready" data-entity="Naver SEO" style="font-size: var(--font-size-sm); padding: var(--space-3); border: 1px dashed var(--color-primary); border-radius: var(--radius-sm); margin-bottom: var(--space-6);">
+            <strong>인용 가능 정의:</strong> 네이버 SEO는 네이버 검색로봇이 웹사이트를 수집·색인하고 사용자 검색 의도에 맞게 노출되도록 최적화하는 전 과정입니다.
+            <span class="source-ref" style="display: block; margin-top: var(--space-1); color: var(--color-text-secondary);">[출처: 네이버 서치 어드바이저, "검색엔진 최적화 가이드"]</span>
+          </aside>
+        </div>
+
+        <!-- 1. 자바스크립트 검색 최적화 -->
+        <section id="js-optimization">
+          <h2>1. 자바스크립트 검색 최적화</h2>
+          <p>네이버 검색로봇은 SPA(Single Page Application) 사이트도 수집과 색인이 가능합니다. 하지만 자바스크립트 의존도가 높은 사이트는 크롤링 효율이 낮아질 수 있으므로 다음과 같은 최적화가 필요합니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 핵심 원칙</p>
+            <p>네이버는 자바스크립트를 지원하지만, <strong>서버 사이드 렌더링(SSR)</strong>을 권장합니다. SSR을 적용하면 검색로봇이 추가 렌더링 없이 콘텐츠를 바로 수집할 수 있어 크롤링 효율과 정확도가 향상됩니다.</p>
+          </div>
+
+          <h3>SPA 사이트 수집/색인 지원</h3>
+          <p>네이버 검색로봇은 React, Vue, Angular 등으로 구축된 SPA 사이트도 수집과 색인이 가능합니다. 다만, 자바스크립트를 실행한 후의 최종 HTML을 기준으로 수집하므로 렌더링 과정에서 문제가 발생하면 콘텐츠가 누락될 수 있습니다.</p>
+
+          <h3>Server Side Rendering (SSR) 권장</h3>
+          <p>SSR은 서버에서 미리 렌더링된 HTML을 검색로봇에 제공하는 방식입니다. 네이버는 SSR 방식을 권장하며, 이를 통해 다음과 같은 이점이 있습니다:</p>
+          <ul>
+            <li>검색로봇이 즉시 콘텐츠를 수집 가능</li>
+            <li>자바스크립트 실행 실패에 따른 수집 누락 방지</li>
+            <li>초기 페이지 로딩 속도 개선으로 사용자 경험 향상</li>
+          </ul>
+
+          <div class="alert alert-warning">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-content">
+              <strong>중요:</strong> 네이버 검색로봇이 수집하는 시점에 자바스크립트가 정상 실행되어야 합니다. robots.txt에서 JS/CSS 리소스가 차단되지 않도록 반드시 확인하세요.
+            </div>
+          </div>
+
+          <h3>JS/CSS 리소스 robots.txt 확인</h3>
+          <p>robots.txt 파일에서 자바스크립트와 CSS 파일에 대한 접근을 차단하면 검색로봇이 페이지를 정상적으로 렌더링할 수 없습니다. 다음을 확인하세요:</p>
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code># 잘못된 설정 (차단)
+Disallow: /js/
+Disallow: /css/
+
+# 올바른 설정 (허용)
+Allow: /js/
+Allow: /css/</code></pre>
+          </div>
+
+          <h3>fragment (#) URL 사용 금지</h3>
+          <p>#(fragment) 또는 #!(hashbang)을 사용한 URL은 네이버 검색에서 정상적으로 인식되지 않습니다. <strong>History API</strong>(pushState, replaceState)를 사용하여 일반 URL 형태로 라우팅을 구성하세요.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ❌ 사용 금지 --&gt;
+https://example.com/#/product/123
+
+&lt;!-- ✅ 권장 --&gt;
+https://example.com/product/123</code></pre>
+          </div>
+
+          <h3>웹 브라우저 기반 렌더링 이해 (5단계)</h3>
+          <p>네이버 검색로봇의 자바스크립트 렌더링 과정은 다음 5단계로 이루어집니다:</p>
+          <div class="stepper">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>URL 수집</h4>
+                <p>검색로봇이 크롤링 대상 URL을 수집하고 HTML을 요청합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>HTML 파싱</h4>
+                <p>HTML 문서 내에서 JS/CSS 리소스 링크를 추출합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>리소스 요청</h4>
+                <p>추출된 JS, CSS 파일을 다운로드합니다. 이 단계에서 robots.txt 차단이 문제가 됩니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>렌더링 실행</h4>
+                <p>웹 브라우저 기반 렌더링 엔진으로 페이지를 렌더링하여 최종 HTML을 생성합니다.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>색인 처리</h4>
+                <p>렌더링된 HTML을 바탕으로 콘텐츠를 추출하여 색인 데이터베이스에 저장합니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. 검색 친화적인 URL 구축하기 -->
+        <section id="url-structure">
+          <h2>2. 검색 친화적인 URL 구축하기</h2>
+          <p>URL은 검색로봇과 사용자 모두에게 페이지의 내용을 이해시키는 중요한 요소입니다. 검색 친화적인 URL을 구축하는 방법을 알아봅니다.</p>
+
+          <h3>URL 구조 이해</h3>
+          <p>URL은 다음과 같은 구성 요소로 이루어집니다:</p>
+          <div class="schema-card" style="background: var(--color-bg-secondary);">
+<pre><code>https://example.com:443/path/to/page?query=value#fragment
+└─1──┘ └──2──┘ └3┘ └────4────┘ └────5────┘ └──6──┘
+
+1. 프로토콜 (https://)
+2. 호스트 (도메인)
+3. 포트 (:443)
+4. 경로 (/path/to/page)
+5. 파라미터 (?query=value)
+6. 프래그먼트 (#fragment)</code></pre>
+          </div>
+
+          <h3>사용자 친화적 도메인</h3>
+          <p>사용자가 신뢰할 수 있는 도메인을 선택하는 것이 중요합니다. <strong>.com</strong>, <strong>.co.kr</strong> 등 일반적으로 인지도가 높은 도메인을 사용하는 것이 유리합니다. 도메인은 짧고 기억하기 쉬울수록 좋습니다.</p>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 도메인 선택 팁</p>
+            <p>서비스 성격과 타겟 사용자층에 맞는 도메인을 선택하세요. 국내 서비스는 .co.kr, .kr도 좋은 선택이며, 글로벌 서비스는 .com이 적합합니다.</p>
+          </div>
+
+          <h3>URL 파라미터 최소화</h3>
+          <p>URL에 불필요한 파라미터가 많아지면 검색로봇이 페이지를 정확히 이해하기 어렵고, 중복 URL이 생성될 위험이 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ❌ 파라미터 과다 --&gt;
+https://example.com/product?category=123&sort=price&page=2&ref=home
+
+&lt;!-- ✅ 깔끔한 URL --&gt;
+https://example.com/product/category/sort/price</code></pre>
+          </div>
+
+          <h3>fragment / hashbang 사용 금지</h3>
+          <p>#(fragment) 또는 #!(hashbang)은 서버에 전달되지 않는 클라이언트 측 정보입니다. 검색로봇은 이 부분을 URL의 일부로 인식하지 않으므로, SPA 라우팅 시 History API를 사용하세요.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>금지:</strong> <code>https://example.com/#!/page</code> 형태의 hashbang URL은 검색로봇이 정상적으로 수집할 수 없습니다.
+            </div>
+          </div>
+
+          <h3>표준 링크 (&lt;a href="..."&gt;) 사용</h3>
+          <p>검색로봇이 페이지의 링크를 정확히 따라가려면 HTML 표준 앵커 태그를 사용해야 합니다. 자바스크립트로 동작하는 링크(onclick, addEventListener)는 검색로봇이 인식하지 못할 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ✅ 표준 링크 (권장) --&gt;
+&lt;a href="/product/123"&gt;상품 보기&lt;/a&gt;
+
+&lt;!-- ❌ 자바스크립트 링크 (사용 금지) --&gt;
+&lt;span onclick="location.href='/product/123'"&gt;상품 보기&lt;/span&gt;</code></pre>
+          </div>
+        </section>
+
+        <!-- 3. 사이트 색인 효율성 개선 -->
+        <section id="index-efficiency">
+          <h2>3. 사이트 색인 효율성 개선</h2>
+          <p>색인 효율성을 높이면 검색로봇이 더 많은 페이지를 정확히 수집하고 색인할 수 있습니다.</p>
+
+          <h3>HTML 내용 없는 경우 문제점</h3>
+          <p>검색로봇이 페이지를 수집했지만, HTML 본문에 유의미한 콘텐츠가 없는 경우 색인에서 제외될 수 있습니다. 특히 다음과 같은 경우 문제가 발생합니다:</p>
+          <ul>
+            <li>자바스크립트로만 콘텐츠를 렌더링하는 경우</li>
+            <li>iframe에만 의존하는 콘텐츠</li>
+            <li>이미지로만 구성된 페이지 (alt 텍스트 부족)</li>
+            <li>빈 HTML 구조에 API 호출로만 콘텐츠를 채우는 경우</li>
+          </ul>
+
+          <div class="callout callout-warning">
+            <p class="callout-title">⚠️ 주의</p>
+            <p>검색로봇이 수집할 수 있는 HTML 콘텐츠가 반드시 존재해야 합니다. 자바스크립트 의존도를 낮추고, 서버 사이드 렌더링(SSR) 또는 프리렌더링을 적극 활용하세요.</p>
+          </div>
+
+          <h3>소프트 404 방지</h3>
+          <p><strong>소프트 404(Soft 404)</strong>는 존재하지 않는 페이지임에도 200 OK 응답을 반환하는 경우입니다. 검색로봇이 이를 실제 페이지로 오인하여 불필요한 크롤링 리소스를 낭비하게 됩니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>// ❌ 소프트 404 - 잘못된 예
+HTTP/1.1 200 OK
+Content-Type: text/html
+&lt;html&gt;&lt;body&gt;&lt;p&gt;페이지를 찾을 수 없습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+
+// ✅ 올바른 404 응답
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+&lt;html&gt;&lt;body&gt;&lt;p&gt;페이지를 찾을 수 없습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+          </div>
+
+          <h3>오류 상황별 적절한 응답코드 지정</h3>
+          <p>각 상황에 맞는 정확한 HTTP 응답 코드를 반환해야 검색로봇이 페이지 상태를 올바르게 이해할 수 있습니다.</p>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>상황</th>
+                  <th>응답 코드</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>정상 페이지</strong></td>
+                  <td>200 OK</td>
+                  <td>페이지가 정상적으로 존재하고 콘텐츠를 제공할 때</td>
+                </tr>
+                <tr>
+                  <td><strong>페이지 없음</strong></td>
+                  <td>404 Not Found</td>
+                  <td>요청한 URL에 해당하는 페이지가 존재하지 않을 때</td>
+                </tr>
+                <tr>
+                  <td><strong>서버 오류</strong></td>
+                  <td>500 Internal Server Error</td>
+                  <td>서버 내부 오류로 페이지를 제공할 수 없을 때</td>
+                </tr>
+                <tr>
+                  <td><strong>일시적 이동</strong></td>
+                  <td>302 Found</td>
+                  <td>페이지가 일시적으로 다른 URL로 이동했을 때</td>
+                </tr>
+                <tr>
+                  <td><strong>영구적 이동</strong></td>
+                  <td>301 Moved Permanently</td>
+                  <td>페이지가 영구적으로 다른 URL로 이동했을 때</td>
+                </tr>
+                <tr>
+                  <td><strong>접근 권한 없음</strong></td>
+                  <td>403 Forbidden</td>
+                  <td>페이지에 접근할 권한이 없을 때</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 4. SEO 기본 가이드 (HTML 마크업 체크리스트) -->
+        <section id="html-checklist">
+          <h2>4. SEO 기본 가이드 (HTML 마크업 체크리스트)</h2>
+          <p>HTML 마크업은 검색엔진이 페이지의 구조와 내용을 이해하는 가장 기본적인 수단입니다. 다음 체크리스트를 반드시 준수하세요.</p>
+
+          <h3>&lt;title&gt; 요소 필수, 고유해야 함</h3>
+          <p>모든 페이지는 고유한 &lt;title&gt; 요소를 가져야 합니다. title은 검색 결과에서 가장 먼저 노출되는 요소로, 페이지의 주제를 명확히 전달해야 합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;title&gt;SEO 고급 &amp; 콘텐츠 가이드 - Naver 검색엔진 최적화&lt;/title&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-success">
+            <p class="callout-title">✅ 체크리스트</p>
+            <ul style="margin: 0;">
+              <li>모든 페이지에 &lt;title&gt; 요소가 존재하는가?</li>
+              <li>각 페이지마다 고유한 title을 사용하는가?</li>
+              <li>핵심 키워드가 title 앞부분에 포함되었는가?</li>
+              <li>title 길이가 적절한가 (40-60자 이내)?</li>
+            </ul>
+          </div>
+
+          <h3>meta description 누락 금지</h3>
+          <p>meta description은 검색 결과 스니펫에 표시되는 설명문입니다. 직접적인 랭킹 요소는 아니지만, 사용자의 클릭률(CTR)에 큰 영향을 미칩니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta name="description"
+  content="네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성"&gt;</code></pre>
+          </div>
+
+          <h3>&lt;title&gt; 2개 이상 금지</h3>
+          <p>하나의 페이지에 &lt;title&gt; 요소가 2개 이상 존재하면 검색로봇이 어떤 제목을 사용해야 할지 혼란스러워집니다. 반드시 하나만 선언하세요.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>오류:</strong> &lt;title&gt; 요소가 2개 이상이면 검색로봇이 임의로 선택하거나 무시할 수 있습니다.
+            </div>
+          </div>
+
+          <h3>H1 1개만 사용</h3>
+          <p>H1은 페이지의 대제목으로, 페이지당 <strong>하나만 사용</strong>해야 합니다. H1이 여러 개이면 검색로봇이 페이지의 주요 주제를 파악하기 어렵습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ✅ 올바른 예 --&gt;
+&lt;h1&gt;SEO 고급 &amp; 콘텐츠 가이드&lt;/h1&gt;
+  &lt;h2&gt;자바스크립트 검색 최적화&lt;/h2&gt;
+  &lt;h2&gt;URL 구조&lt;/h2&gt;
+
+&lt;!-- ❌ 잘못된 예 --&gt;
+&lt;h1&gt;첫 번째 제목&lt;/h1&gt;
+&lt;h1&gt;두 번째 제목&lt;/h1&gt;</code></pre>
+          </div>
+
+          <h3>Alt 속성 필수</h3>
+          <p>모든 &lt;img&gt; 태그에는 <strong>alt 속성</strong>이 반드시 있어야 합니다. alt 텍스트는 검색로봇에게 이미지 내용을 설명하고, 시각 장애 사용자에게도 도움을 줍니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ✅ alt 속성 포함 --&gt;
+&lt;img src="seo-guide.png" alt="SEO 가이드 썸네일 이미지"&gt;
+
+&lt;!-- ❌ alt 속성 누락 --&gt;
+&lt;img src="seo-guide.png"&gt;
+
+&lt;!-- ✅ 장식용 이미지는 alt="" --&gt;
+&lt;img src="decorative-line.png" alt=""&gt;</code></pre>
+          </div>
+        </section>
+
+        <!-- 5. 리소스와 링크 관리 -->
+        <section id="resource-links">
+          <h2>5. 리소스와 링크 관리</h2>
+          <p>검색로봇이 사이트의 모든 리소스와 링크를 정상적으로 탐색할 수 있도록 관리해야 합니다.</p>
+
+          <h3>robots.txt로 인한 리소스 차단 확인</h3>
+          <p>네이버 검색로봇이 페이지를 정확히 렌더링하려면 CSS, JS, 이미지 등 필요한 리소스에 모두 접근할 수 있어야 합니다. robots.txt에서 이러한 리소스를 차단하지 않았는지 반드시 확인하세요.</p>
+
+          <div class="alert alert-warning">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-content">
+              <strong>체크 방법:</strong> 네이버 서치 어드바이저의 <strong>"웹 페이지 수집 현황"</strong> 도구를 사용하여 검색로봇이 페이지를 정상적으로 수집하고 렌더링하는지 확인할 수 있습니다.
+            </div>
+          </div>
+
+          <h3>JS 호출 링크 금지</h3>
+          <p>검색로봇은 &lt;a&gt; 태그의 href 속성에 있는 URL만 따라갈 수 있습니다. 자바스크립트 이벤트(onclick 등)로 동작하는 링크는 인식하지 못하므로 사용을 피해야 합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ✅ 표준 링크 --&gt;
+&lt;a href="/page"&gt;페이지 이동&lt;/a&gt;
+
+&lt;!-- ❌ JS 호출 링크 --&gt;
+&lt;a href="javascript:void(0)" onclick="movePage()"&gt;페이지 이동&lt;/a&gt;
+
+&lt;!-- ❌ onclick만 있는 경우 --&gt;
+&lt;span onclick="location.href='/page'"&gt;페이지 이동&lt;/span&gt;</code></pre>
+          </div>
+
+          <h3>내부 링크 프로토콜 일치</h3>
+          <p>내부 링크를 걸 때 프로토콜(http/https)을 일관되게 사용해야 합니다. 혼용하면 중복 URL이 생기고, 크롤링 효율이 떨어집니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- ✅ 프로토콜 일치 (상대 경로 권장) --&gt;
+&lt;a href="/about"&gt;소개&lt;/a&gt;
+&lt;a href="/contact"&gt;문의&lt;/a&gt;
+
+&lt;!-- ❌ 프로토콜 혼용 --&gt;
+&lt;a href="http://example.com/about"&gt;소개&lt;/a&gt;
+&lt;a href="https://example.com/contact"&gt;문의&lt;/a&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 권장 사항</p>
+            <p>내부 링크는 가능하면 <strong>프로토콜과 도메인을 제외한 상대 경로</strong>를 사용하는 것이 유지보수에 좋고, 프로토콜 불일치 문제를 원천적으로 방지할 수 있습니다.</p>
+          </div>
+        </section>
+
+        <!-- 6. 웹 콘텐츠 스팸 사례 -->
+        <section id="content-spam">
+          <h2>6. 웹 콘텐츠 스팸 사례</h2>
+          <p>네이버는 검색 결과의 품질을 보호하기 위해 스팸 정책을 엄격히 적용합니다. 다음 행위는 검색 결과에서 제외되거나 페널티를 받을 수 있습니다.</p>
+
+          <div class="alert alert-danger">
+            <span class="alert-icon">⛔</span>
+            <div class="alert-content">
+              <strong>네이버 검색 스팸 정책 위반 시:</strong> 검색 결과 노출 제한, 색인 제외, 수동 조치 등의 페널티가 적용될 수 있습니다.
+            </div>
+          </div>
+
+          <h3>유해 문서</h3>
+          <p>악성코드, 피싱, 불법 콘텐츠 등 사용자에게 해를 끼칠 수 있는 문서는 즉시 검색 결과에서 제외됩니다.</p>
+
+          <h3>의미 없는 문서</h3>
+          <p>자동 생성된 콘텐츠, 키워드만 나열된 문서, 다른 사이트의 콘텐츠를 무단 복제한 페이지 등 사용자에게 유용한 정보를 제공하지 않는 문서는 스팸으로 간주됩니다.</p>
+
+          <ul>
+            <li>자동 생성된 의미 없는 문서 (AI 대량 생성, 스크래핑 등)</li>
+            <li>키워드 스터핑(Keyword Stuffing)으로 가득 찬 문서</li>
+            <li>다른 사이트 콘텐츠를 그대로 복사한 문서</li>
+          </ul>
+
+          <h3>클로킹 (Cloaking)</h3>
+          <p>사용자에게는 정상적인 콘텐츠를 보여주고, 검색로봇에게는 다른 콘텐츠(키워드로 가득 찬 페이지 등)를 보여주는 행위입니다. 네이버는 클로킹을 심각한 스팸으로 간주합니다.</p>
+
+          <div class="quote-box">
+            "클로킹은 검색로봇과 사용자에게 서로 다른 콘텐츠를 제공하는 행위로, 네이버 검색 결과에서 영구 제외될 수 있습니다."
+            <cite>네이버 서치 어드바이저, 검색 스팸 정책</cite>
+          </div>
+
+          <h3>백링크 악용</h3>
+          <p>인위적으로 백링크를 구매하거나, 링크 팜(Link Farm)을 이용하여 검색 순위를 조작하는 행위는 스팸 정책 위반입니다.</p>
+
+          <h3>피싱 (Phishing)</h3>
+          <p>정상적인 사이트로 위장하여 사용자의 개인정보나 금융 정보를 탈취하는 피싱 사이트는 검색 결과에서 즉시 차단됩니다.</p>
+        </section>
+
+        <!-- 7. 콘텐츠 작성 권장 사항 -->
+        <section id="content-guidelines">
+          <h2>7. 콘텐츠 작성 권장 사항</h2>
+          <p>검색엔진과 사용자 모두에게 가치 있는 콘텐츠를 작성하는 방법을 알아봅니다.</p>
+
+          <div class="grid grid-2 mt-6">
+            <div class="card">
+              <div class="card-icon">🔗</div>
+              <h3>고유한 브랜드 URL</h3>
+              <p>브랜드의 정체성을 반영하는 고유한 URL을 사용하세요. URL만 봐도 어떤 사이트인지 알 수 있도록 명확하게 구성합니다.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">✂️</div>
+              <h3>간결한 제목과 설명</h3>
+              <p>제목과 설명은 핵심 내용을 간결하게 전달해야 합니다. 불필요한 수식어를 제거하고 핵심 키워드를 자연스럽게 포함하세요.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">👤</div>
+              <h3>사용자를 위한 콘텐츠</h3>
+              <p>검색엔진이 아닌 <strong>사용자</strong>를 위해 콘텐츠를 작성하세요. 사용자의 검색 의도를 파악하고, 그에 맞는 유용한 정보를 제공하는 것이 가장 중요합니다.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">📝</div>
+              <h3>이미지 대신 텍스트 사용</h3>
+              <p>중요한 정보는 이미지가 아닌 <strong>텍스트</strong>로 제공하세요. 검색로봇은 이미지의 내용을 완전히 이해할 수 없으며, 텍스트가 검색和分析의 기본입니다.</p>
+            </div>
+          </div>
+
+          <h3>복사 금지, 독창적 콘텐츠</h3>
+          <p>다른 사이트의 콘텐츠를 그대로 복사하는 것은 검색 결과 품질을 저하시킵니다. 반드시 <strong>독창적이고 차별화된 콘텐츠</strong>를 제공하세요.</p>
+
+          <div class="callout callout-success">
+            <p class="callout-title">✅ 콘텐츠 작성 체크리스트</p>
+            <ul style="margin: 0;">
+              <li>사용자의 검색 의도에 부합하는가?</li>
+              <li>다른 사이트와 차별화된 고유한 정보를 제공하는가?</li>
+              <li>핵심 키워드가 자연스럽게 포함되었는가?</li>
+              <li>정보를 텍스트로 충분히 설명했는가 (이미지 의존도)?</li>
+              <li>제목과 설명이 간결하고 명확한가?</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 8. 선호 URL 및 로봇 메타 태그 -->
+        <section id="preferred-url">
+          <h2>8. 선호 URL 및 로봇 메타 태그</h2>
+          <p>중복 URL 문제를 해결하고 검색로봇의 동작을 제어하는 방법을 알아봅니다.</p>
+
+          <h3>rel="canonical" 사용법</h3>
+          <p>canonical 태그는 여러 URL이 동일하거나 유사한 콘텐츠를 가리킬 때, <strong>대표(선호) URL</strong>을 검색엔진에 알려주는 역할을 합니다. 중복 콘텐츠 문제를 해결하고 링크 권위를 하나의 URL로集中시킬 수 있습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 페이지 URL: https://example.com/product?id=123 --&gt;
+&lt;link rel="canonical" href="https://example.com/product/123"&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 canonical 적용 예시</p>
+            <ul style="margin: 0;">
+              <li>URL 파라미터가 다른 경우 (sort, page 등)</li>
+              <li>HTTP와 HTTPS가 혼용되는 경우</li>
+              <li>www와 non-www가 혼용되는 경우</li>
+              <li>모바일 URL(m.example.com)과 데스크탑 URL</li>
+              <li>인쇄용 페이지, 세션 ID가 포함된 URL</li>
+            </ul>
+          </div>
+
+          <h3>robots meta 태그</h3>
+          <p>robots meta 태그는 개별 페이지 단위로 검색로봇의 동작을 제어합니다. 주로 사용되는 지시어는 다음과 같습니다.</p>
+
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>지시어</th>
+                  <th>의미</th>
+                  <th>사용 예시</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>index</strong></td>
+                  <td>페이지 색인 허용 (기본값)</td>
+                  <td>모든 정상 페이지</td>
+                </tr>
+                <tr>
+                  <td><strong>noindex</strong></td>
+                  <td>페이지 색인 차단</td>
+                  <td>관리자 페이지, 임시 페이지</td>
+                </tr>
+                <tr>
+                  <td><strong>follow</strong></td>
+                  <td>링크 추적 허용 (기본값)</td>
+                  <td>모든 정상 페이지</td>
+                </tr>
+                <tr>
+                  <td><strong>nofollow</strong></td>
+                  <td>링크 추적 차단</td>
+                  <td>댓글 링크, 스폰서 링크</td>
+                </tr>
+                <tr>
+                  <td><strong>nosourceinfo</strong></td>
+                  <td>페이지 출처정보 제공 차단 (네이버 고유)</td>
+                  <td>사용자 생성 콘텐츠</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 색인 허용, 링크 추적 허용 (기본) --&gt;
+&lt;meta name="robots" content="index, follow"&gt;
+
+&lt;!-- 색인 차단 --&gt;
+&lt;meta name="robots" content="noindex"&gt;
+
+&lt;!-- 색인 허용, 링크 추적 차단 --&gt;
+&lt;meta name="robots" content="nofollow"&gt;
+
+&lt;!-- 출처정보 제공 차단 (네이버) --&gt;
+&lt;meta name="robots" content="nosourceinfo"&gt;
+
+&lt;!-- 결합 사용 가능 --&gt;
+&lt;meta name="robots" content="noindex, nofollow"&gt;</code></pre>
+          </div>
+        </section>
+
+        <!-- 9. 콘텐츠 마크업 -->
+        <section id="content-markup">
+          <h2>9. 콘텐츠 마크업</h2>
+          <p>콘텐츠의 제목, 설명, 소셜 미디어 태그를 올바르게 마크업하는 방법을 알아봅니다.</p>
+
+          <h3>페이지 제목 작성 TIP</h3>
+          <p>검색 결과에서 가장 눈에 띄는 요소인 페이지 제목 작성 요령입니다.</p>
+          <ul>
+            <li><strong>핵심 키워드를 앞쪽에 배치</strong> - 사용자와 검색로봇이 주제를 빠르게 파악</li>
+            <li><strong>40-60자 내외</strong> - 너무 길면 검색 결과에서 잘림</li>
+            <li><strong>브랜드명 포함</strong> - 제목 끝에 브랜드명을 추가하여 인지도 향상</li>
+            <li><strong>각 페이지 고유한 제목</strong> - 모든 페이지가 다른 제목을 가져야 함</li>
+          </ul>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 좋은 예 --&gt;
+&lt;title&gt;자바스크립트 SEO 최적화 - Naver 검색엔진 가이드&lt;/title&gt;
+
+&lt;!-- 나쁜 예 (너무 김) --&gt;
+&lt;title&gt;자바스크립트 SEO 최적화하는 방법과 SPA 사이트에서 주의해야 할 점들&lt;/title&gt;</code></pre>
+          </div>
+
+          <h3>페이지 설명 (meta description) TIP</h3>
+          <p>검색 결과 스니펫에 표시되는 meta description 작성 요령입니다.</p>
+          <ul>
+            <li><strong>150-160자 내외</strong>로 핵심 내용 요약</li>
+            <li>사용자가 클릭하고 싶게 만드는 <strong>매력적인 문구</strong> 사용</li>
+            <li>페이지 내용과 <strong>일치하는 설명</strong> 제공 (클릭 후 내용이 다르면 이탈률 증가)</li>
+            <li>핵심 키워드를 <strong>자연스럽게</strong> 포함</li>
+          </ul>
+
+          <h3>오픈 그래프 (Open Graph)</h3>
+          <p>소셜 미디어(페이스북, 카카오톡, 네이버 등)에서 페이지가 공유될 때 표시되는 정보입니다. 네이버 블로그, 카페, 포스트 등에서 페이지 링크가 공유될 때 OG 태그가 사용됩니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta property="og:title" content="SEO 고급 &amp; 콘텐츠 가이드"&gt;
+&lt;meta property="og:description" content="네이버 SEO 고급 가이드"&gt;
+&lt;meta property="og:image" content="https://example.com/og-image.jpg"&gt;
+&lt;meta property="og:url" content="https://example.com/page"&gt;
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:locale" content="ko_KR"&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 OG 이미지 권장 사항</p>
+            <ul style="margin: 0;">
+              <li>권장 크기: 1200x630px (비율 1.91:1)</li>
+              <li>최소 크기: 200x200px</li>
+              <li>포맷: PNG, JPG</li>
+              <li>og:image:width, og:image:height 함께 명시</li>
+            </ul>
+          </div>
+
+          <h3>소셜 미디어 태그 (Twitter Card)</h3>
+          <p>트위터(X)에서 페이지가 공유될 때 표시되는 카드 정보입니다. 네이버는 직접 사용하지 않지만, 글로벌 소셜 미디어 최적화를 위해 함께 설정하는 것이 좋습니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;meta name="twitter:card" content="summary_large_image"&gt;
+&lt;meta name="twitter:title" content="SEO 고급 &amp; 콘텐츠 가이드"&gt;
+&lt;meta name="twitter:description" content="네이버 SEO 고급 가이드"&gt;
+&lt;meta name="twitter:image" content="https://example.com/twitter-card.jpg"&gt;</code></pre>
+          </div>
+
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>카드 타입</th>
+                  <th>설명</th>
+                  <th>사용 예</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>summary</strong></td>
+                  <td>작은 이미지 + 제목 + 설명</td>
+                  <td>일반 블로그 포스트</td>
+                </tr>
+                <tr>
+                  <td><strong>summary_large_image</strong></td>
+                  <td>큰 이미지 + 제목 + 설명</td>
+                  <td>뉴스 기사, 미디어 콘텐츠</td>
+                </tr>
+                <tr>
+                  <td><strong>app</strong></td>
+                  <td>앱 다운로드 카드</td>
+                  <td>모바일 앱 페이지</td>
+                </tr>
+                <tr>
+                  <td><strong>player</strong></td>
+                  <td>미디어 플레이어 카드</td>
+                  <td>비디오, 오디오 콘텐츠</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 10. 모바일 사용성 -->
+        <section id="mobile-usability">
+          <h2>10. 모바일 사용성</h2>
+          <p>네이버 검색은 모바일 사용성을 중요한 평가 요소로 고려합니다. 모바일 환경에서 사용자가 불편함 없이 사이트를 이용할 수 있도록 최적화해야 합니다.</p>
+
+          <h3>반응형 웹 (viewport meta 태그)</h3>
+          <p>반응형 웹 디자인은 하나의 HTML로 모든 기기(데스크탑, 태블릿, 모바일)에 최적화된 화면을 제공하는 방식입니다. 네이버는 반응형 웹을 권장합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 반응형 웹에 필수적인 viewport meta 태그 --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+          </div>
+
+          <h3>별도 모바일 URL (rel="canonical")</h3>
+          <p>반응형 웹을 사용할 수 없는 경우, 별도의 모바일 URL(m.example.com)을 운영할 수 있습니다. 이 경우 <strong>rel="canonical"</strong>과 <strong>rel="alternate"</strong>를 사용하여 데스크탑 URL과 모바일 URL의 관계를 명시해야 합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 데스크탑 페이지에 추가 --&gt;
+&lt;link rel="alternate" media="only screen and (max-width: 640px)"
+  href="https://m.example.com/page"&gt;
+
+&lt;!-- 모바일 페이지에 추가 --&gt;
+&lt;link rel="canonical" href="https://www.example.com/page"&gt;</code></pre>
+          </div>
+
+          <h3>자동 redirect 처리</h3>
+          <p>모바일 사용자가 데스크탑 URL에 접속했을 때, 자동으로 모바일 URL로 리디렉션되도록 처리해야 합니다. 반응형 웹의 경우 이 과정이 필요 없습니다.</p>
+
+          <div class="callout callout-warning">
+            <p class="callout-title">⚠️ 주의사항</p>
+            <ul style="margin: 0;">
+              <li>모바일 리디렉션은 사용자 에이전트(UA) 기반으로 처리</li>
+              <li>검색로봇이 모바일 URL을 정상적으로 크롤링할 수 있도록 허용</li>
+              <li>리디렉션 루프(무한 반복)가 발생하지 않도록 주의</li>
+              <li>모바일 페이지에도 데스크탑과 동일한 콘텐츠가 있어야 함</li>
+            </ul>
+          </div>
+
+          <div class="alert alert-success">
+            <span class="alert-icon">✅</span>
+            <div class="alert-content">
+              <strong>권장:</strong> 가능하면 반응형 웹을 사용하세요. 유지보수가 쉽고, SEO 측면에서도 하나의 URL로 모든 트래픽을集中할 수 있어 가장 효율적입니다.
+            </div>
+          </div>
+        </section>
+
+        <!-- 11. 파비콘 (Favicon) -->
+        <section id="favicon">
+          <h2>11. 파비콘 (Favicon)</h2>
+          <p>파비콘은 브라우저 탭, 북마크, 검색 결과 등에 표시되는 작은 아이콘입니다. 사용자 경험과 브랜드 인지도에 도움을 줍니다.</p>
+
+          <h3>사이즈</h3>
+          <p>파비콘은 <strong>최소 16px 정사각형</strong> 이상이어야 합니다. 다양한 기기와 브라우저를 고려하여 여러 크기의 파비콘을 준비하는 것이 좋습니다.</p>
+          <ul>
+            <li>16x16 (기본 파비콘)</li>
+            <li>32x32 (브라우저 탭, 작업 표시줄)</li>
+            <li>48x48 (바탕화면 바로가기)</li>
+            <li>64x64 (고해상도 디스플레이)</li>
+          </ul>
+
+          <h3>지원 포맷</h3>
+          <p>네이버 검색에서 지원하는 파비콘 포맷은 다음과 같습니다:</p>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>포맷</th>
+                  <th>설명</th>
+                  <th>권장</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ICO</strong></td>
+                  <td>전통적인 파비콘 포맷, 여러 사이즈 포함 가능</td>
+                  <td>권장</td>
+                </tr>
+                <tr>
+                  <td><strong>PNG</strong></td>
+                  <td>투명도 지원, 고품질</td>
+                  <td>권장</td>
+                </tr>
+                <tr>
+                  <td><strong>GIF</strong></td>
+                  <td>애니메이션 가능하나 권장하지 않음</td>
+                  <td>비권장</td>
+                </tr>
+                <tr>
+                  <td><strong>JPEG</strong></td>
+                  <td>투명도 미지원, 파비콘에 부적합</td>
+                  <td>비권장</td>
+                </tr>
+                <tr>
+                  <td><strong>SVG</strong></td>
+                  <td>벡터 기반, 모든 해상도에서 선명</td>
+                  <td>권장</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>마크업</h3>
+          <p>파비콘은 &lt;link&gt; 태그를 사용하여 HTML 문서의 &lt;head&gt;에 선언합니다.</p>
+
+          <div class="schema-card">
+            <button class="copy-btn" type="button">복사</button>
+<pre><code>&lt;!-- 기본 파비콘 --&gt;
+&lt;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&gt;
+
+&lt;!-- 여러 크기 지원 --&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"&gt;
+
+&lt;!-- SVG 파비콘 (모던 브라우저) --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="/favicon.svg"&gt;
+
+&lt;!-- Apple 터치 아이콘 --&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"&gt;</code></pre>
+          </div>
+
+          <div class="callout callout-info">
+            <p class="callout-title">💡 파비콘 Best Practice</p>
+            <ul style="margin: 0;">
+              <li>favicon.ico (16x16)는 루트 디렉토리에 기본 배치</li>
+              <li>SVG 파비콘은 모던 브라우저에서 가장 선명하게 표시됨</li>
+              <li>파비콘 파일이 없으면 브라우저 콘솔에 404 오류 발생</li>
+              <li>네이버 검색 결과에도 파비콘이 표시되므로 브랜드 인지도에 도움</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 다음 단계 -->
+        <section class="mt-8" style="background: var(--color-bg-secondary); padding: var(--space-6); border-radius: var(--radius-lg);">
+          <h2>🚀 관련 가이드</h2>
+          <p>SEO 고급 가이드를 학습했다면, 다음 가이드도 확인해보세요.</p>
+          <div class="flex gap-4" style="flex-wrap: wrap;">
+            <a href="seo-fundamentals.html" class="btn btn-primary">SEO 기초 가이드 →</a>
+            <a href="geo-guide.html" class="btn btn-outline">GEO 가이드 →</a>
+            <a href="aeo-guide.html" class="btn btn-secondary">AEO 가이드 →</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="../index.html" class="logo" style="margin-bottom: 16px;">
+          <span class="logo-icon">G</span>
+          <span>GEO·SEO·AEO 가이드</span>
+        </a>
+        <p style="color: var(--color-text-secondary); font-size: 14px;">네이버 서치 어드바이저 공식 문서 기반의 SEO 최적화 가이드</p>
+      </div>
+      <div class="footer-section">
+        <h4>가이드</h4>
+        <p class="footer-linkbar"><a href="seo-fundamentals.html">SEO 기초</a> · <a href="geo-guide.html">GEO 가이드</a> · <a href="aeo-guide.html">AEO 가이드</a> · <a href="structured-data.html">구조화 데이터</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>심화 학습</h4>
+        <p class="footer-linkbar"><a href="eeat-content.html">E-E-A-T</a> · <a href="ai-crawlers.html">AI 크롤러</a> · <a href="measurement.html">성과 측정</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>도구</h4>
+        <p class="footer-linkbar"><a href="tools.html">실전 도구</a> · <a href="checklist.html">체크리스트</a></p>
+      </div>      <div class="footer-section">
+        <h4>사이트</h4>
+        <p class="footer-linkbar"><a href="faq.html">FAQ</a> · <a href="about.html">소개</a> · <a href="contact.html">문의하기</a> · <a href="privacy-policy.html">개인정보 처리방침</a> · <a href="terms-of-service.html">이용약관</a> · <a href="disclaimer.html">면책조항</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GEO·SEO·AEO 가이드. 네이버 서치 어드바이저 공식 문서 기반.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v2"></script>
+  <script>
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
