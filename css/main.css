@@ -376,7 +376,7 @@ blockquote {
 }
 
 .mobile-menu-btn {
-  display: none;
+  display: flex;
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
@@ -1275,4 +1275,8 @@ blockquote {
   .has-dropdown.open .nav-arrow {
     transform: rotate(180deg);
   }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-btn { display: none; }
 }
