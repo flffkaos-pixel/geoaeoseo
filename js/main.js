@@ -56,41 +56,25 @@
       this.menu = document.querySelector('.nav-menu');
       if (!this.btn || !this.menu) return;
 
-      const toggleMenu = () => {
+      this.btn.addEventListener('click', () => {
         const isActive = this.menu.classList.toggle('active');
         this.btn.setAttribute('aria-expanded', isActive);
         this.btn.innerHTML = isActive
           ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
           : '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
-      };
-
-      this.btn.addEventListener('click', toggleMenu);
-      this.btn.addEventListener('touchend', (e) => {
-        e.preventDefault();
-        toggleMenu();
       });
 
-      const closeMenu = (e) => {
+      document.addEventListener('click', (e) => {
         if (!e.target.closest('.nav-container')) {
           this.menu.classList.remove('active');
           this.btn.setAttribute('aria-expanded', 'false');
         }
-      };
-
-      document.addEventListener('click', closeMenu);
-      document.addEventListener('touchend', closeMenu);
+      });
 
       // 드롭다운 클릭 토글 (모바일)
       this.dropdowns = this.menu.querySelectorAll('.has-dropdown > .nav-link');
       this.dropdowns.forEach((trigger) => {
         trigger.addEventListener('click', (e) => {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            const parent = trigger.parentElement;
-            parent.classList.toggle('open');
-          }
-        });
-        trigger.addEventListener('touchend', (e) => {
           if (window.innerWidth <= 768) {
             e.preventDefault();
             const parent = trigger.parentElement;
