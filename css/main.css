@@ -962,8 +962,7 @@ button svg {
 }
 
 .sidebar {
-  position: sticky;
-  top: 80px;
+  position: static;
   height: fit-content;
 }
 
