@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="418" viewBox="0 0 800 418">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a73e8"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="418" fill="url(#bg)"/>
+  <text x="60" y="150" font-family="Malgun Gothic, Arial, sans-serif" font-size="48" font-weight="bold" fill="white">Naver SEO</text>
+  <text x="60" y="210" font-family="Malgun Gothic, Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.85)">네이버 검색엔진 최적화</text>
+  <text x="60" y="310" font-family="Malgun Gothic, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.6)">GEO·SEO·AEO 가이드</text>
+</svg>
