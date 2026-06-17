@@ -1238,19 +1238,17 @@ button svg {
   }
   .nav-menu.active {
     display: flex;
-    position: fixed;
-    top: 60px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
     background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
     flex-direction: column;
     padding: var(--space-4);
     box-shadow: var(--shadow-lg);
     z-index: 9999;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 60px);
   }
   .mobile-menu-btn { display: flex; }
 
