@@ -1,93 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0">
   <channel>
-    <title>GEO/SEO/AEO 최적화 가이드</title>
-    <link>https://geoptmize.pages.dev/</link>
-    <description>Google 공식 문서 기반의 AI 검색 시대 SEO/GEO/AEO 최적화 가이드</description>
-    <language>ko-kr</language>
-    <copyright>Copyright 2026 GEO/SEO/AEO 가이드</copyright>
-    <managingEditor>contact@geoptmize.pages.dev (GEO/SEO/AEO 가이드)</managingEditor>
-    <webMaster>contact@geoptmize.pages.dev (GEO/SEO/AEO 가이드)</webMaster>
-    <pubDate>2026-06-05T00:00:00+09:00</pubDate>
-    <lastBuildDate>2026-06-15T00:00:00+09:00</lastBuildDate>
-    <atom:link href="https://geoptmize.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
-    <image>
-      <url>https://geoptmize.pages.dev/images/logo.png</url>
-      <title>GEO/SEO/AEO 최적화 가이드</title>
-      <link>https://geoptmize.pages.dev/</link>
-    </image>
-
-    <item>
-      <title>SEO 기초 가이드 - Google 공식 문서 기반</title>
-      <link>https://geoptmize.pages.dev/pages/seo-fundamentals.html</link>
-      <description>Google Search Essentials 기반 SEO 완벽 가이드. 크롤링, 인덱싱, 랭킹, 모바일 최적화까지.</description>
-      <pubDate>2026-01-01T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/seo-fundamentals.html</guid>
-      <category>SEO</category>
-    </item>
-
-    <item>
-      <title>GEO 최적화 가이드 - 생성형 AI 인용 전략</title>
-      <link>https://geoptmize.pages.dev/pages/geo-guide.html</link>
-      <description>ChatGPT, Gemini, Perplexity 등 생성형 AI에서 콘텐츠가 인용되도록 최적화하는 Google 공식 전략.</description>
-      <pubDate>2026-01-15T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/geo-guide.html</guid>
-      <category>GEO</category>
-    </item>
-
-    <item>
-      <title>AEO 최적화 가이드 - Featured Snippet 전략</title>
-      <link>https://geoptmize.pages.dev/pages/aeo-guide.html</link>
-      <description>Featured Snippet, 음성 검색, AI 답변 엔진에서 선택받는 콘텐츠 구조화 전략.</description>
-      <pubDate>2026-02-01T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/aeo-guide.html</guid>
-      <category>AEO</category>
-    </item>
-
-    <item>
-      <title>구조화 데이터 가이드 - Schema.org JSON-LD</title>
-      <link>https://geoptmize.pages.dev/pages/structured-data.html</link>
-      <description>Schema.org와 JSON-LD로 리치 결과에 노출되는 마크업 작성법. Article, FAQ, HowTo 스키마.</description>
-      <pubDate>2026-02-15T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/structured-data.html</guid>
-      <category>구조화 데이터</category>
-    </item>
-
-    <item>
-      <title>E-E-A-T 콘텐츠 가이드 - 품질 4요소</title>
-      <link>https://geoptmize.pages.dev/pages/eeat-content.html</link>
-      <description>경험, 전문성, 권위성, 신뢰성. Google이 평가하는 콘텐츠 품질 4요소 완벽 가이드.</description>
-      <pubDate>2026-03-01T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/eeat-content.html</guid>
-      <category>E-E-A-T</category>
-    </item>
-
-    <item>
-      <title>AI 크롤러 가이드 - GPTBot, ClaudeBot 설정</title>
-      <link>https://geoptmize.pages.dev/pages/ai-crawlers.html</link>
-      <description>GPTBot, ClaudeBot, CCBot 등 AI 크롤러의 이해와 robots.txt 최적화 설정.</description>
-      <pubDate>2026-03-15T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/ai-crawlers.html</guid>
-      <category>AI 크롤러</category>
-    </item>
-
-    <item>
-      <title>SEO/GEO/AEO 체크리스트 - 완벽 실행 가이드</title>
-      <link>https://geoptmize.pages.dev/pages/checklist.html</link>
-      <description>단계별 실행 가능한 SEO/GEO/AEO 체크리스트로 누락 없이 сай트을 점검하세요.</description>
-      <pubDate>2026-04-01T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/checklist.html</guid>
-      <category>체크리스트</category>
-    </item>
-
-    <item>
-      <title>성과 측정 가이드 - Search Console, GA4</title>
-      <link>https://geoptmize.pages.dev/pages/measurement.html</link>
-      <description>Search Console, GA4, AI 가시성 추적으로 ROI를 증명하는 방법.</description>
-      <pubDate>2026-04-15T00:00:00+09:00</pubDate>
-      <guid isPermaLink="true">https://geoptmize.pages.dev/pages/measurement.html</guid>
-      <category>성과 측정</category>
-    </item>
-
+    <title>geoaeoseo</title>
+    <link>https://geoptmize.pages.dev</link>
+    <description>geoaeoseo updates</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jun 2026 16:11:58 GMT</lastBuildDate>
+  <item>
+    <title>GEO/SEO/AEO 최적화 가이드 2026 | Google 공식 문서 기반 AI 검색 전략</title>
+    <link>https://geoptmize.pages.dev//</link>
+    <description>Google 공식 문서 기반 GEO/SEO/AEO 최적화 가이드. AI 검색 시대 필수 전략. SEO 기초부터 GEO/AEO 고급 기술까지. 2026년 최신 AI 검색 최적화 완벽 가이드.</description>
+    <guid>https://geoptmize.pages.dev//</guid>
+  </item>
+  <item>
+    <title>소개 - GEO/SEO/AEO 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/about.html</link>
+    <description>Google 공식 문서 기반의 GEO/SEO/AEO 최적화 가이드 소개.</description>
+    <guid>https://geoptmize.pages.dev//pages/about.html</guid>
+  </item>
+  <item>
+    <title>AEO 가이드 - Featured Snippet</title>
+    <link>https://geoptmize.pages.dev//pages/aeo-guide.html</link>
+    <description>Featured Snippet, 음성 검색을 위한 AEO 가이드와 FAQ/HowTo 스키마.</description>
+    <guid>https://geoptmize.pages.dev//pages/aeo-guide.html</guid>
+  </item>
+  <item>
+    <title>AI 크롤러 가이드 - robots.txt</title>
+    <link>https://geoptmize.pages.dev//pages/ai-crawlers.html</link>
+    <description>GPTBot, ClaudeBot 등 12개 AI 크롤러 정책과 robots.txt 설정법.</description>
+    <guid>https://geoptmize.pages.dev//pages/ai-crawlers.html</guid>
+  </item>
+  <item>
+    <title>체크리스트 - 150+ SEO 항목</title>
+    <link>https://geoptmize.pages.dev//pages/checklist.html</link>
+    <description>150+개 SEO/AEO/GEO 최적화 체크리스트로 점검하세요.</description>
+    <guid>https://geoptmize.pages.dev//pages/checklist.html</guid>
+  </item>
+  <item>
+    <title>문의하기 - 연락처 &amp; 제휴</title>
+    <link>https://geoptmize.pages.dev//pages/contact.html</link>
+    <description>문의·제휴·프레스·버그 신고. 영업일 3-5일 내 답변.</description>
+    <guid>https://geoptmize.pages.dev//pages/contact.html</guid>
+  </item>
+  <item>
+    <title>면책조항</title>
+    <link>https://geoptmize.pages.dev//pages/disclaimer.html</link>
+    <description>본 사이트 정보의 정확성, 보증 부인, 제휴·광고 공개.</description>
+    <guid>https://geoptmize.pages.dev//pages/disclaimer.html</guid>
+  </item>
+  <item>
+    <title>E-E-A-T 가이드 - 콘텐츠 품질</title>
+    <link>https://geoptmize.pages.dev//pages/eeat-content.html</link>
+    <description>경험·전문성·권위·신뢰 E-E-A-T 4요소로 콘텐츠 품질을 높이세요.</description>
+    <guid>https://geoptmize.pages.dev//pages/eeat-content.html</guid>
+  </item>
+  <item>
+    <title>FAQ - 자주 묻는 질문 30+</title>
+    <link>https://geoptmize.pages.dev//pages/faq.html</link>
+    <description>GEO, SEO, AEO 자주 묻는 질문과 답변 30+.</description>
+    <guid>https://geoptmize.pages.dev//pages/faq.html</guid>
+  </item>
+  <item>
+    <title>GEO 가이드 - 생성형 AI 검색 최적화</title>
+    <link>https://geoptmize.pages.dev//pages/geo-guide.html</link>
+    <description>ChatGPT, Gemini 등 생성형 AI 검색에 인용되는 GEO 전략 가이드.</description>
+    <guid>https://geoptmize.pages.dev//pages/geo-guide.html</guid>
+  </item>
+  <item>
+    <title>성과 측정 가이드 - KPI &amp; 도구</title>
+    <link>https://geoptmize.pages.dev//pages/measurement.html</link>
+    <description>SEO/AEO/GEO 성과 측정을 위한 KPI, 도구, 대시보드 가이드.</description>
+    <guid>https://geoptmize.pages.dev//pages/measurement.html</guid>
+  </item>
+  <item>
+    <title>SEO 고급 &amp; 콘텐츠 가이드 - Naver 검색엔진 최적화</title>
+    <link>https://geoptmize.pages.dev//pages/naver-seo-advanced.html</link>
+    <description>네이버 SEO 고급 가이드: 자바스크립트 최적화, URL 구조, 콘텐츠 가이드라인, HTML 마크업, 모바일 사용성</description>
+    <guid>https://geoptmize.pages.dev//pages/naver-seo-advanced.html</guid>
+  </item>
+  <item>
+    <title>SEO 기초 - Naver 검색엔진 최적화 기본 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/naver-seo-basic.html</link>
+    <description>네이버 SEO 기초 가이드: 검색엔진 최적화 목적, 사이트 만들기, robots.txt, 리다이렉트, 사이트 이전, HTTP 규약</description>
+    <guid>https://geoptmize.pages.dev//pages/naver-seo-basic.html</guid>
+  </item>
+  <item>
+    <title>Naver SEO 가이드 - 네이버 검색엔진 최적화</title>
+    <link>https://geoptmize.pages.dev//pages/naver-seo-index.html</link>
+    <description>네이버 서치어드바이저 공식 가이드 기반 SEO 최적화. robots.txt, 사이트맵, 구조화된 데이터, 검색 연동 완벽 가이드</description>
+    <guid>https://geoptmize.pages.dev//pages/naver-seo-index.html</guid>
+  </item>
+  <item>
+    <title>구조화된 데이터 - Naver 검색 Schema.org 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/naver-structured-data.html</link>
+    <description>네이버 검색 구조화된 데이터(Schema.org) 가이드: 채널, 주소, Breadcrumb, FAQ, HowTo, 캐러셀, 평점, 레시피, 리뷰 등</description>
+    <guid>https://geoptmize.pages.dev//pages/naver-structured-data.html</guid>
+  </item>
+  <item>
+    <title>검색 연동 &amp; 진단 도구 - Naver 웹마스터도구 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/naver-tools.html</link>
+    <description>네이버 웹마스터도구 활용법: 수집요청, RSS/사이트맵, URL 검사, SEO 리포트, IndexNow 프로토콜</description>
+    <guid>https://geoptmize.pages.dev//pages/naver-tools.html</guid>
+  </item>
+  <item>
+    <title>개인정보 처리방침</title>
+    <link>https://geoptmize.pages.dev//pages/privacy-policy.html</link>
+    <description>본 사이트의 개인정보 수집·이용·보관·파기 정책 안내.</description>
+    <guid>https://geoptmize.pages.dev//pages/privacy-policy.html</guid>
+  </item>
+  <item>
+    <title>SEO 기초 가이드 - Google 공식 기반</title>
+    <link>https://geoptmize.pages.dev//pages/seo-fundamentals.html</link>
+    <description>Google Search Essentials 기반 SEO. 크롤링, 인덱싱, 랭킹, 모바일 최적화.</description>
+    <guid>https://geoptmize.pages.dev//pages/seo-fundamentals.html</guid>
+  </item>
+  <item>
+    <title>구조화 데이터 - Schema.org 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/structured-data.html</link>
+    <description>JSON-LD로 Schema.org 구조화 데이터를 구현하여 리치 결과 노출.</description>
+    <guid>https://geoptmize.pages.dev//pages/structured-data.html</guid>
+  </item>
+  <item>
+    <title>이용약관</title>
+    <link>https://geoptmize.pages.dev//pages/terms-of-service.html</link>
+    <description>본 사이트 이용에 따른 권리·의무·책임 및 면책 사항.</description>
+    <guid>https://geoptmize.pages.dev//pages/terms-of-service.html</guid>
+  </item>
+  <item>
+    <title>AEO 체커 - Featured Snippet/음성 검색 최적화</title>
+    <link>https://geoptmize.pages.dev//pages/tools/aeo-checker.html</link>
+    <description>URL을 입력하면 Featured Snippet, 음성 검색, AI 답변 엔진에 최적화되었는지 분석합니다.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/aeo-checker.html</guid>
+  </item>
+  <item>
+    <title>Article 스키마 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/article-schema.html</link>
+    <description>Schema.org Article JSON-LD 마크업 무료 생성. 블로그/뉴스에 최적.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/article-schema.html</guid>
+  </item>
+  <item>
+    <title>FAQ 스키마 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/faq-schema.html</link>
+    <description>FAQPage JSON-LD 생성기. 리치 결과와 AI 인용에 효과적.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/faq-schema.html</guid>
+  </item>
+  <item>
+    <title>GEO 체커 - AI 인용 최적화 점검</title>
+    <link>https://geoptmize.pages.dev//pages/tools/geo-checker.html</link>
+    <description>URL을 입력하면 AI 검색 인용에 최적화되었는지 15개 항목으로 분석합니다.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/geo-checker.html</guid>
+  </item>
+  <item>
+    <title>헤드라인 분석기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/headline-analyzer.html</link>
+    <description>제목 SEO 효과 분석. 글자수·키워드·감정 단어 점수 평가.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/headline-analyzer.html</guid>
+  </item>
+  <item>
+    <title>HowTo 스키마 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/howto-schema.html</link>
+    <description>HowTo JSON-LD로 단계별 가이드 구조화. Google 리치 결과.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/howto-schema.html</guid>
+  </item>
+  <item>
+    <title>메타태그 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/meta-tags.html</link>
+    <description>title, description, canonical, robots 메타태그 한 번에 생성.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/meta-tags.html</guid>
+  </item>
+  <item>
+    <title>Open Graph 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/open-graph.html</link>
+    <description>Open Graph &amp; Twitter Card 태그 생성. SNS 공유 미리보기.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/open-graph.html</guid>
+  </item>
+  <item>
+    <title>Organization 스키마 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/organization-schema.html</link>
+    <description>Organization JSON-LD로 회사 정보 구조화. 지식 패널 노출.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/organization-schema.html</guid>
+  </item>
+  <item>
+    <title>Product 스키마 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/product-schema.html</link>
+    <description>Product JSON-LD로 제품 정보 구조화. 가격·평점·리치 결과.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/product-schema.html</guid>
+  </item>
+  <item>
+    <title>robots.txt 생성기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/robots-txt.html</link>
+    <description>AI 크롤러 정책 포함 robots.txt 생성. GPTBot, ClaudeBot 등.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/robots-txt.html</guid>
+  </item>
+  <item>
+    <title>JSON-LD 검증기</title>
+    <link>https://geoptmize.pages.dev//pages/tools/schema-validator.html</link>
+    <description>JSON-LD 코드의 @context, @type 등 필수 요소를 검증.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/schema-validator.html</guid>
+  </item>
+  <item>
+    <title>SEO 체커 - URL 종합 점검 도구</title>
+    <link>https://geoptmize.pages.dev//pages/tools/seo-checker.html</link>
+    <description>URL 입력 시 SEO/모바일/소셜/구조화 데이터를 무료로 분석합니다.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools/seo-checker.html</guid>
+  </item>
+  <item>
+    <title>실전 도구 - JSON-LD, robots.txt | GEO/SEO/AEO 가이드</title>
+    <link>https://geoptmize.pages.dev//pages/tools.html</link>
+    <description>JSON-LD, 메타태그, robots.txt, OG, 헤드라인 분석 등 무료 도구.</description>
+    <guid>https://geoptmize.pages.dev//pages/tools.html</guid>
+  </item>
   </channel>
 </rss>
